@@ -1,24 +1,30 @@
 [[docs]]
-  name = "Prologue"
+  name = "Api Reference"
   weight = 10
-  identifier = "prologue"
-  url = "/docs/prologue/"
+  identifier = "api"
+  url = "/docs/api/"
 
 [[docs]]
-  name = "Help"
+  name = "Guides"
   weight = 60
-  identifier = "help"
-  url = "/docs/help/"
+  identifier = "guides"
+  url = "/docs/guides/"
 
 [[main]]
-  name = "Docs"
-  url = "/docs/prologue/introduction/"
+  name = "Guides"
+  url = "/docs/guides/how-to-update/"
   weight = 10
 
+
 [[main]]
-  name = "Blog"
-  url = "/blog/"
+  name = "Api Reference"
+  url = "/docs/api/introduction/"
   weight = 20
+
+[[main]]
+  name = "FAQs"
+  url = "/docs/faq/"
+  weight = 30
 
 [[social]]
   name = "Twitter"

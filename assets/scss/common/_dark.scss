@@ -180,6 +180,8 @@ body.dark .border-top {
   body.dark .docs-sidebar {
     order: 0;
     border-right: 1px solid $border-dark;
+    background-color: $body-bg-dark;
+    box-shadow: none;
   }
 }
 

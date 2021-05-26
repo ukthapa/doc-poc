@@ -91,12 +91,13 @@ body {
 
 .docs-sidebar {
   order: 2;
+  background: $themeBg;
 }
 
 @include media-breakpoint-up(lg) {
   .docs-sidebar {
     order: 0;
-    border-right: 1px solid $gray-200;
+    // border-right: 1px solid $gray-200;
   }
 
   @supports ((position:-webkit-sticky) or (position:sticky)) {
@@ -176,6 +177,21 @@ body {
   .docs-navigation a {
     font-size: $font-size-base;
   }
+}
+
+.header-bar {
+  display: none;
+}
+
+.navbar-brand {
+  padding-top: 0 !important;
+}
+
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-nav .banner .nav a,
+.banner .nav .navbar-light .navbar-nav a {
+  text-transform: uppercase !important;
+  font-size: .9rem;
 }
 
 .navbar a:hover,

@@ -1,7 +1,7 @@
 .docs-links,
 .docs-toc {
   scrollbar-width: thin;
-  scrollbar-color: $white $white;
+  scrollbar-color: $themeBg $themeBg !important;
 }
 
 .docs-links::-webkit-scrollbar,

@@ -13,15 +13,15 @@
     {{ .Scratch.Add "class" " list" -}}
   {{ end -}}
   <body class="{{ .Scratch.Get "class" }}">
-    {{ partial "header/header.html" . }}
-    <div class="wrap container" role="document">
+    <div class="wrap container-fluid" role="document">
       <div class="content">
+        {{ partial "header/header.html" . }}
         {{ block "main" . }}{{ end }}
       </div>
     </div>
     {{ block "sidebar-prefooter" . }}{{ end }}
     {{ block "sidebar-footer" . }}{{ end }}
-    {{ partial "footer/footer.html" . }}
+    <!-- {{ partial "footer/footer.html" . }} -->
     {{ if and .IsHome .Site.Params.alert }}
       {{ partial "footer/alert.html" . }}
     {{ end }}
