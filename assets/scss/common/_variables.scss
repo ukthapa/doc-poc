@@ -5,8 +5,8 @@ $gray-100: #f8f9fa;
 $gray-200: #e9ecef;
 $gray-300: #dee2e6;
 $gray-400: #ced4da;
-$gray-500: #adb5bd;
-$gray-600: #6c757d;
+$gray-500: #aaafd0;
+$gray-600: #a3a5bc;
 $gray-700: #495057;
 $gray-800: #343a40;
 $gray-900: #212529;
@@ -103,21 +103,21 @@ $border-color:                $gray-200;
 // Font, line-height, and color for body text, headings, and more.
 
 // stylelint-disable value-keyword-case
-$font-family-sans-serif:      "Jost", -apple-system, blinkmacsystemfont, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-sans-serif:      "Roboto", -apple-system, blinkmacsystemfont, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 $font-family-monospace:       sfmono-regular, menlo, monaco, consolas, "Liberation Mono", "Courier New", monospace;
 $font-family-base:            $font-family-sans-serif;
 // stylelint-enable value-keyword-case
 
 $font-size-base:              1rem; // Assumes the browser default, typically `16px`
-$font-size-xl:                $font-size-base * 1.375;
-$font-size-lg:                $font-size-base * 1.25;
-$font-size-md:                $font-size-base * 1.125;
-$font-size-sm:                $font-size-base * 0.875;
+$font-size-xl:                $font-size-base * 1;
+$font-size-lg:                $font-size-base * .9;
+$font-size-md:                $font-size-base * .9;
+$font-size-sm:                $font-size-base * 0.675;
 
 $line-height-base:            1.5;
 
 $headings-font-family:        null;
-$headings-font-weight:        700;
+$headings-font-weight:        500;
 
 $lead-font-weight:            400;
 

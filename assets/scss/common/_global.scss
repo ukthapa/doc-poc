@@ -98,6 +98,7 @@ a.btn:focus {
   .docs-sidebar {
     order: 0;
     // border-right: 1px solid $gray-200;
+    box-shadow: inset -7px -1px 22px #eae8f3;
   }
 
   @supports ((position:-webkit-sticky) or (position:sticky)) {
@@ -122,6 +123,16 @@ a.btn:focus {
   padding-bottom: 5rem;
 }
 
+.docs-links {
+  h3{
+    color: $gray-500;
+    font-weight: 400;
+  }
+  ul li a {
+    color: $gray-600;
+  }
+}
+
 @include media-breakpoint-up(lg) {
   @supports ((position: -webkit-sticky) or (position: sticky)) {
     .docs-links {
@@ -135,7 +146,7 @@ a.btn:focus {
   .docs-links {
     display: block;
     width: auto;
-    margin-right: -1.5rem;
+    // margin-right: -1.5rem;
     padding-bottom: 4rem;
   }
 }
@@ -155,7 +166,7 @@ a.btn:focus {
 }
 
 .docs-content {
-  padding-top: 4rem;
+  padding-top: 5rem;
   padding-bottom: 3rem;
   order: 1;
 }
@@ -179,6 +190,11 @@ a.btn:focus {
   .docs-navigation a {
     font-size: $font-size-base;
   }
+
+  .docs-content {
+    padding-right: calc(var(--bs-gutter-x) / 1.5);
+    padding-left: calc(var(--bs-gutter-x) / 1.5);
+  }
 }
 
 .header-bar {
@@ -192,6 +208,7 @@ a.btn:focus {
 .navbar-light .navbar-nav .nav-link,
 .navbar-light .navbar-nav .banner .nav a,
 .banner .nav .navbar-light .navbar-nav a {
+  color: $gray-600;
   text-transform: uppercase !important;
   font-size: .9rem;
 }

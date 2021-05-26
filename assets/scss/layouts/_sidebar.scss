@@ -4,6 +4,7 @@
   scrollbar-color: $themeBg $themeBg !important;
 }
 
+
 .docs-links::-webkit-scrollbar,
 .docs-toc::-webkit-scrollbar {
   width: 5px;
@@ -38,7 +39,7 @@
 .docs-links h3,
 .page-links h3 {
   text-transform: uppercase;
-  font-size: $font-size-base;
+  font-size: $font-size-md;
   margin: 1.25rem 0 0.5rem 0;
   padding: 1.5rem 0 0 0;
 }
@@ -51,15 +52,19 @@
   }
 }
 
-.docs-links h3:not(:first-child) {
-  border-top: 1px solid $gray-200;
-}
+// .docs-links h3:not(:first-child) {
+//   border-top: 1px solid $gray-200;
+// }
 
 a.docs-link {
-  color: $body-color;
+  color: $gray-600;
   display: block;
-  padding: 0.125rem 0;
-  font-size: $font-size-base;
+  padding: 0.6rem .7rem;
+  font-size: $font-size-md;
+  font-weight: 400;
+  margin-bottom: .2rem;
+  border-radius: 6px;
+  // background: $white;
 }
 
 .page-links li {
@@ -90,6 +95,8 @@ a.docs-link {
 .page-links a:hover {
   text-decoration: none;
   color: $link-color;
+  background: $white;
+  box-shadow: 0px 1px 3px $gray-400;
 }
 
 .docs-links h3.sidebar-link,
