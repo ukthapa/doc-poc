@@ -69,7 +69,7 @@
 .navbar {
   background-color: rgba(255, 255, 255, 0.95);
   border-bottom: 1px solid $gray-200;
-  margin-top: 4px;
+  // margin-top: 4px;
 }
 
 .header-bar {
@@ -85,6 +85,7 @@
 .navbar-form {
   position: relative;
   margin-top: 0.25rem;
+  max-width: 350px;
 }
 
 @include media-breakpoint-up(md) {
@@ -111,30 +112,38 @@
 
 @include media-breakpoint-up(lg) {
   .navbar-form {
-    margin-left: 15rem;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .navbar {
+    left: 320px;
+    margin-top: 0;
   }
 }
 
 @include media-breakpoint-up(xl) {
   .navbar-form {
-    margin-left: 30rem;
+    margin-left: 25rem;
   }
 }
+
 
 .form-control.is-search {
   /*
   padding-right: calc(1.5em + 0.75rem);
   */
   padding-right: 2.5rem;
+  padding-left: 2rem;
   background: $gray-100;
   border: 0;
 
-  /*
+
+
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%236c757d' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-search'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E");
   background-repeat: no-repeat;
-  background-position: right calc(0.375em + 0.1875rem) center;
+  background-position: left calc(0.375em + 0.1875rem) center;
   background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
-  */
+
 }
 
 .navbar-form::after {

@@ -27,7 +27,7 @@ h6,
 @include media-breakpoint-up(md) {
   body {
     font-size: $font-size-md;
-    padding-top: 4rem !important;
+    // padding-top: 4rem !important;
   }
 
   h1,
@@ -85,9 +85,9 @@ a.btn:focus {
 }
 */
 
-body {
-  padding-top: 3.5625rem;
-}
+// body {
+//   padding-top: 3.5625rem;
+// }
 
 .docs-sidebar {
   order: 2;
@@ -104,9 +104,10 @@ body {
     .docs-sidebar {
       position: -webkit-sticky;
       position: sticky;
-      top: 4rem;
+      top: .01rem;
       z-index: 1000;
-      height: calc(100vh - 4rem);
+      height: calc(100vh - .01rem);
+      // height: calc(100vh);
     }
   }
 }
@@ -125,7 +126,7 @@ body {
   @supports ((position: -webkit-sticky) or (position: sticky)) {
     .docs-links {
       max-height: calc(100vh - 4rem);
-      overflow-y: scroll;
+      // overflow-y: scroll;
     }
   }
 }
@@ -154,6 +155,7 @@ body {
 }
 
 .docs-content {
+  padding-top: 4rem;
   padding-bottom: 3rem;
   order: 1;
 }
