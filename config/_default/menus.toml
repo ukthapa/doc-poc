@@ -2,6 +2,7 @@
   name = "Api Reference"
   weight = 10
   identifier = "api"
+  pre= "fa-info-circle"
   url = "/docs/api/"
 
 [[docs]]
