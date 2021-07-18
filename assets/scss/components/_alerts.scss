@@ -31,7 +31,7 @@
 }
 
 .alert-danger {
-  background: $red;
+  background-color: $red;
   color: $white;
 }
 
@@ -49,8 +49,4 @@
 .alert .alert-link:hover,
 .alert .alert-link:focus {
   text-decoration: none;
-}
-.alert-primary {
-  color: $white;
-  background-color: $primary;
 }
