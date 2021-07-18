@@ -80,7 +80,7 @@ $hint-colors: (
 ) !default;
 
 // {{< expand "Label" "icon" >}}
-.gdoc-expand {
+.doc-expand {
   margin-top: $padding-16;
   margin-bottom: $padding-16;
 
@@ -104,21 +104,18 @@ $hint-colors: (
     display: block;
   }
 
-  .gdoc-page__anchor {
+  .doc-page__anchor {
     display: none;
   }
 }
 
 // {{< tabs >}}
-.gdoc-tabs {
+.doc-tabs {
   margin-top: $padding-16;
   margin-bottom: $padding-16;
-
-  border: $border-1 solid var(--accent-color);
-  border-radius: $border-radius;
-
+  // border: $border-1 solid var(--accent-color);
+  // border-radius: $border-radius;
   overflow: hidden;
-
   display: flex;
   flex-wrap: wrap;
 
@@ -133,24 +130,24 @@ $hint-colors: (
     order: 999; //Move content blocks to the end
     width: 100%;
     border-top: $border-1 solid var(--accent-color-lite);
-    padding: $padding-16;
+    // padding: $padding-16;
     display: none;
   }
 
   &__control:checked + &__label {
-    border-bottom: $border-2 solid var(--link-color);
+    border-bottom: $border-2 solid $link-color-visited;
   }
   &__control:checked + &__label + &__content {
     display: block;
   }
 
-  .gdoc-page__anchor {
+  .doc-page__anchor {
     display: none;
   }
 }
 
 // {{< columns >}}
-.gdoc-columns {
+.doc-columns {
   margin-left: -$padding-16;
   margin-right: -$padding-16;
 
@@ -160,13 +157,13 @@ $hint-colors: (
     padding: 0 $padding-16;
   }
 
-  .gdoc-page__anchor {
+  .doc-page__anchor {
     display: none;
   }
 }
 
 // {{< button >}}
-.gdoc-button {
+.doc-button {
   $root: &;
 
   display: inline-block;
@@ -206,7 +203,7 @@ $hint-colors: (
 }
 
 // {{< hint >}}
-.gdoc-hint {
+.doc-hint {
   @each $name, $color in $hint-colors {
     &.#{$name} {
       border-left-color: $color;
@@ -215,12 +212,12 @@ $hint-colors: (
     }
   }
 
-  .gdoc-page__anchor {
+  .doc-page__anchor {
     display: none;
   }
 }
 
 // {{< mermaid >}}
-.gdoc-mermaid {
+.doc-mermaid {
   font-family: "Liberation Sans", sans-serif;
 }

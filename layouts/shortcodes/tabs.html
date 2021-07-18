@@ -2,14 +2,14 @@
 {{ $id := .Get 0 }}
 {{ $group := printf "tabs-%s" $id }}
 
-<div class="gdoc-tabs">
+<div class="doc-tabs">
   {{ range $index, $tab :=  .Scratch.Get $group }}
-    <input type="radio" class="gdoc-tabs__control hidden" name="{{ $group }}" id="{{ printf "%s-%d" $group $index }}"
+    <input type="radio" class="doc-tabs__control hidden" name="{{ $group }}" id="{{ printf "%s-%d" $group $index }}"
       {{ if not $index }}checked="checked" {{ end }} />
-    <label for="{{ printf "%s-%d" $group $index }}" class="gdoc-tabs__label">
+    <label for="{{ printf "%s-%d" $group $index }}" class="doc-tabs__label">
       {{ $tab.Name }}
     </label>
-    <div class="gdoc-markdown--nested gdoc-tabs__content">
+    <div class="doc-markdown--nested doc-tabs__content">
       {{ .Content | $.Page.RenderString }}
     </div>
   {{ end }}

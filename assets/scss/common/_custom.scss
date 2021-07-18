@@ -34,6 +34,20 @@
   transition: transform .2s ease-in-out;
 }
 
+// .doc-tabs__content h2{
+//   margin-top: .5rem;
+//   margin-bottom: .2rem;
+// }
+
+.doc-tabs__content pre {
+  margin-top: 1rem;
+}
+
+
+// helper
+.hidden {
+  display: none;
+}
 
 
 

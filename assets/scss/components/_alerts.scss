@@ -1,63 +1,54 @@
+
 .alert {
-  font-family: $font-family-monospace;
-  font-size: $font-size-lg;
+  position: relative;
+  padding: $alert-padding-y $alert-padding-x;
+  margin-bottom: $alert-margin-bottom;
+  border: $alert-border-width solid transparent;
+  @include border-radius($alert-border-radius);
 }
 
-.alert-icon {
-  margin-right: 0.75rem;
+// Headings for larger alerts
+.alert-heading {
+  // Specified to prevent conflicts of changing $headings-color
+  color: inherit;
 }
 
-// .docs .alert {
-//   margin: 2rem -1.5rem;
-// }
-
-.alert .alert-link {
-  text-decoration: underline;
+// Provide class for links that match alerts
+.alert-link {
+  font-weight: $alert-link-font-weight;
 }
 
-.alert-dark {
-  color: $white;
-  background-color: $black;
+
+// Dismissible alerts
+//
+// Expand the right padding and account for the close button's positioning.
+
+.alert-dismissible {
+  padding-right: $alert-dismissible-padding-r;
+
+  // Adjust close link position
+  .btn-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: $stretched-link-z-index + 1;
+    padding: $alert-padding-y * 1.25 $alert-padding-x;
+  }
 }
 
-.alert-dark .alert-link {
-  color: $white;
-}
 
-.alert-light {
-  color: $black;
-}
+// scss-docs-start alert-modifiers
+// Generate contextual modifier classes for colorizing the alert.
 
-.alert-warning {
-  background: $beige;
-  color: $primary;
+@each $state, $value in $theme-colors {
+  $alert-background: shift-color($value, $alert-bg-scale);
+  $alert-border: shift-color($value, $alert-border-scale);
+  $alert-color: shift-color($value, $alert-color-scale);
+  @if (contrast-ratio($alert-background, $alert-color) < $min-contrast-ratio) {
+    $alert-color: mix($value, color-contrast($alert-background), abs($alert-color-scale));
+  }
+  .alert-#{$state} {
+    @include alert-variant($alert-background, $alert-border, $alert-color);
+  }
 }
-
-/*
-.alert-light {
-  color: #215888;
-  background: linear-gradient(-45deg, rgb(212, 245, 255), rgb(234, 250, 255), rgb(234, 250, 255), #d3f6ef);
-}
-
-.alert-light .alert-link {
-  color: #215888;
-}
-*/
-
-.alert-white {
-  background-color: rgba(255, 255, 255, 0.95);
-}
-
-.alert-primary {
-  color: $white;
-  background-color: $primary;
-}
-
-.alert-primary .alert-link {
-  color: $white;
-}
-
-.alert .alert-link:hover,
-.alert .alert-link:focus {
-  text-decoration: none;
-}
+// scss-docs-end alert-modifiers
