@@ -1,0 +1,40 @@
+.card-stacked {
+  display: flex;
+}
+
+.card-stacked .card-group {
+  display: flex;
+  flex-direction: column;
+  padding: 5px
+}
+
+.card-stacked .card-group:last-child {
+  transform: translateY(20px);
+}
+.card-stacked .card {
+  width: 100%;
+  border-radius: 4px;
+  background: linear-gradient(180deg, #FFFFFF 0%, #F2F1F7 100%);
+  box-shadow: 0 2px 6px 0 #ABB0CD;
+  transform: translateY(0);
+  transition: transform .2s ease-in-out;
+  margin-bottom: 10px;
+}
+
+.card-stacked .card .card-footer{
+  background-color: #fff;
+  text-align: center;
+  font-size: 11px;
+  color: #5E6494;
+}
+
+.card-stacked .card:hover  {
+  text-decoration: none;
+  transform: translateY(-4px);
+  transition: transform .2s ease-in-out;
+}
+
+
+
+
+

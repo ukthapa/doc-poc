@@ -12,17 +12,20 @@
 
 [[main]]
   name = "Guides"
+  identifier = "guides"
   url = "/docs/guides/how-to-update/"
   weight = 10
 
 
 [[main]]
   name = "Api Reference"
+  identifier = "api"
   url = "/docs/api/introduction/"
   weight = 20
 
 [[main]]
   name = "FAQs"
+  identifier = "faqs"
   url = "/docs/faq/"
   weight = 30
 

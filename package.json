@@ -1,6 +1,6 @@
 {
-  "name": "@hyas/doks",
-  "description": "Doks theme",
+  "name": "@ukt/docui",
+  "description": "DocUI theme",
   "version": "0.2.3",
   "hugo-bin": {
     "buildTags": "extended"

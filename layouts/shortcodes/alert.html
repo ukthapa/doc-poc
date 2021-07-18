@@ -1,12 +1,7 @@
-<div class="alert alert-warning d-flex" role="alert">
-  <div class="flex-shrink-1 alert-icon">{{ with .Get "icon" }}{{.}} {{ end }}</div>
-  {{ with .Get "text"}}
-    <div class="w-100">{{ . | safeHTML }} </div>
-  {{ else }}
-    {{ with .Inner}}
-      <div class="w-100"> {{ . | markdownify}}</div>
-    {{ else }}
-      {{ errorf "No valid text variable or Inner content given"}}
-    {{ end }}
-  {{ end}}
+{{- $msg := .Get 0 -}}
+{{- $type := default "info" (.Get 1) -}}
+{{- $icons := dict "info" "info-circle" "success" "check-circle" "warning" "exclamation-triangle" "danger" "skull-crossbones"}}
+{{- $icon := default "info-circle" (index $icons $type) -}}
+<div class="alert alert-{{ $type }}" role="alert">
+  <i class="fas fa-fw fa-{{ $icon }}"></i>{{ $msg }}
 </div>
