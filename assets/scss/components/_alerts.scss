@@ -25,19 +25,22 @@
   color: $black;
 }
 
-.alert-warning {
-  background: $beige;
-  color: $primary;
-}
 
 .alert-white {
   background-color: rgba(255, 255, 255, 0.95);
 }
 
+.alert-danger {
+  background: $red;
+  color: $white;
+}
+
+
 .alert-primary {
   color: $white;
   background-color: $primary;
 }
+
 
 .alert-primary .alert-link {
   color: $white;
@@ -47,17 +50,7 @@
 .alert .alert-link:focus {
   text-decoration: none;
 }
-
-
-.alert-success {
-  color: #000000;
-  background-color: #d1e7dd;
-  border-color: #badbcc;
-}
-
-
-.alert-danger {
-  color: #893120;
-  background-color: #fadcd7;
-  border-color: #f7cbc2;
+.alert-primary {
+  color: $white;
+  background-color: $primary;
 }

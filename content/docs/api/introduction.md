@@ -18,7 +18,7 @@ toc: true
 There are two main ways to get started with Doks:
 
 ### Tutorial
-{{< alert "The Quick Start is intended for intermediate to advanced users." success >}}
+{{< alert "The Quick Start is intended for intermediate to advanced users." primary >}}
 
 ### Quick Start
 
