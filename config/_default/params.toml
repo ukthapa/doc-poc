@@ -54,5 +54,5 @@ editPage = false
   darkMode = false
   bootStrapJs = true
   breadCrumb = false
-  highLight = true
+  highLight = false
   kaTex = false

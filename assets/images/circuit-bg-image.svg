@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="234" height="316" viewBox="0 0 234 316">
+  <g fill="none" fill-rule="evenodd">
+    <circle cx="118.472" cy="144" r="1.5" stroke="#C4C8DF"/>
+    <circle cx="133.472" cy="144" r="1.5" stroke="#C4C8DF"/>
+    <circle cx="102.472" cy="159" r="1.5" stroke="#C4C8DF"/>
+    <circle cx="62.472" cy="162" r="1.5" stroke="#C4C8DF"/>
+    <circle cx="133.472" cy="172" r="1.5" stroke="#C4C8DF"/>
+    <circle cx="151.472" cy="172" r="1.5" stroke="#C4C8DF"/>
+    <circle cx="190.472" cy="248" r="1.5" stroke="#C4C8DF"/>
+    <circle cx="119.472" cy="182" r="1.5" stroke="#C4C8DF"/>
+    <circle cx="95.472" cy="237" r="1.5" stroke="#C4C8DF"/>
+    <circle cx="95.472" cy="247" r="1.5" stroke="#C4C8DF"/>
+    <circle cx="39.472" cy="269" r="1.5" stroke="#C4C8DF"/>
+    <circle cx="154.472" cy="259" r="1.5" stroke="#C4C8DF"/>
+    <circle cx="160.472" cy="314" r="1.5" stroke="#C4C8DF"/>
+    <circle cx="181.472" cy="308" r="1.5" stroke="#C4C8DF"/>
+    <polyline stroke="#C5C9E0" stroke-width="1.3" points="233.472 18.911 198.99 18.911 183.419 2.968"/>
+    <polyline stroke="#C5C9E0" stroke-width="1.3" points="233.472 87.911 211.805 87.911 200.472 99"/>
+    <polyline stroke="#C5C9E0" stroke-width="1.3" points="221.342 101.286 210.805 111.34 178.472 111.34"/>
+    <polyline stroke="#C5C9E0" stroke-width="1.3" points="233.805 141.34 168.441 141.34 154.941 128 133.472 128 119.444 142"/>
+    <polyline stroke="#C5C9E0" stroke-width="1.3" points="233.805 228.34 188.441 228.34 141.525 182.197 120.472 182.197"/>
+    <polyline stroke="#C5C9E0" stroke-width="1.3" points="190.058 247.167 138.771 195.654 28.76 195.654 9.518 176.843"/>
+    <polyline stroke="#C5C9E0" stroke-width="1.3" points="233.472 34.911 200.322 34.911 140.141 95.34 103.411 95.34"/>
+    <polyline stroke="#C5C9E0" stroke-width="1.3" points="233.472 48.911 205.322 48.911 143.141 111.34 76.411 111.34"/>
+    <polyline stroke="#C5C9E0" stroke-width="1.3" points="104.472 159 118.472 159 132.772 144.801"/>
+    <polyline stroke="#C5C9E0" stroke-width="1.3" points="63.063 162.661 72.284 171.778 131.772 171.778"/>
+    <circle cx="182.472" cy="2" r="1.5" stroke="#C4C8DF"/>
+    <circle cx="102.472" cy="95" r="1.5" stroke="#C4C8DF"/>
+    <circle cx="74.472" cy="112" r="1.5" stroke="#C4C8DF"/>
+    <circle cx="176.472" cy="111" r="1.5" stroke="#C4C8DF"/>
+    <circle cx="199.472" cy="100" r="1.5" stroke="#C4C8DF"/>
+    <polyline stroke="#C5C9E0" stroke-width="1.3" points="233.472 154.911 209.805 154.911 188.613 175.889"/>
+    <polyline stroke="#C5C9E0" stroke-width="1.3" points="233.472 165.911 215.823 165.911 194.342 187.752 166.908 187.752 152.437 172.853"/>
+    <circle cx="187.472" cy="177" r="1.5" stroke="#C4C8DF"/>
+    <polyline stroke="#C5C9E0" stroke-width="1.3" points="233.805 266.581 192.954 266.581 163.531 236.726 96.116 236.726"/>
+    <polyline stroke="#C5C9E0" stroke-width="1.3" points="233.472 277.542 190.058 277.542 159.353 247.167 96.116 247.167"/>
+    <polyline stroke="#C5C9E0" stroke-width="1.3" points="0 250 20.896 250 38.995 268.384"/>
+    <polyline stroke="#C5C9E0" stroke-width="1.3" points="6.978 263.921 19.498 263.921 34.706 279.741 73.098 279.741 93.648 259.192 153.472 259.192"/>
+    <polyline stroke="#C5C9E0" stroke-width="1.3" points="233.805 288.48 183.964 288.48 161.217 312.98"/>
+    <polyline stroke="#C5C9E0" stroke-width="1.3" points="233.472 300.73 188.613 300.73 182.206 307.584"/>
+  </g>
+</svg>
