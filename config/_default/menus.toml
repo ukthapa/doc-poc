@@ -7,14 +7,14 @@
 
 [[docs]]
   name = "Api Reference"
-  weight = 10
+  weight = 20
   identifier = "api"
   pre= "fa-info-circle"
   url = "/docs/api/"
 
 [[docs]]
   name = "Guides"
-  weight = 60
+  weight = 10
   identifier = "guides"
   url = "/docs/guides/"
 
