@@ -5,11 +5,7 @@
 [build.environment]
   NODE_VERSION = "15.5.1"
   NPM_VERSION = "7.3.0"
-  HUGO_VERSION = "0.75.0"
-  HUGO_ENABLEGITINFO = "true"
-
-[context.production.environment]
-  HUGO_ENV = "production"
+  HUGO_VERSION = "0.84.4"
 
 [context.production]
   command = "npx hugo --gc --minify && npx netlify-lambda build assets/lambda"
