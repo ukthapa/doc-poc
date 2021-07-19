@@ -8,8 +8,7 @@
   HUGO_VERSION = "0.84.4"
 
 [context.production]
-  command = "npx hugo --gc --minify && npx netlify-lambda build assets/lambda"
-
+  command = "npx hugo --gc --minify "
 [context.deploy-preview]
   command = "npx hugo --gc --minify -b $DEPLOY_PRIME_URL"
 
@@ -17,7 +16,7 @@
   command = "npx hugo --gc --minify -b $DEPLOY_PRIME_URL"
 
 [context.next]
-  command = "npx hugo --gc --minify && npx netlify-lambda build assets/lambda"
+  command = "npx hugo --gc --minify"
 
 [context.next.environment]
   HUGO_ENV = "next"
