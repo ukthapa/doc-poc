@@ -22,7 +22,7 @@
 [[main]]
   name = "Guides"
   identifier = "guides"
-  url = "/docs/guides/how-to-update/"
+  url = "/docs/guides/introduction/"
   weight = 10
 
 
