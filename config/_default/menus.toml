@@ -1,11 +1,4 @@
 [[docs]]
-  name = "Home"
-  weight = 1
-  identifier = "home"
-  pre= "fa-info-circle"
-  url = "/docs/"
-
-[[docs]]
   name = "Api Reference"
   weight = 20
   identifier = "api"
