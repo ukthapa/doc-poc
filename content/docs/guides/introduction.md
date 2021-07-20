@@ -13,8 +13,9 @@ weight: 610
 toc: true
 ---
 
-## Introduction
+{{< alert icon="💡" text="Learn more about <a href=\"https://docs.npmjs.com/about-semantic-versioning\">semantic versioning</a> and <a href=\"https://docs.npmjs.com/cli/v6/using-npm/semver#advanced-range-syntax\">advanced range syntax</a>." >}}
 
+## Overview
 
 The System also provides the flexibility to the enterprise for self-configuring and customizing the solution based on their need, e.g. language, currency, UI appearance, invoice templates, payment methods, custom fields and forms etc.
 
