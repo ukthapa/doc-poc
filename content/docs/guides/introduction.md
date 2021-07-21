@@ -29,15 +29,14 @@ Now that we have the basic idea of what the System does, let us start learning e
 
 Once you open the **cSmart** solution in the web browser, the following screen appears:
 
-![Alt text](assets/images/LogIn.png "Login Screen")
+![Alt text](../images/screenshot.png "Login Screen")
 
 In the above screen:
-<ul>
-<li>Enter the Username in the textbox.</li>
-<li>Enter the Password in the textbox.</li>
-<li>Click Sign in and log in.</li>
-<li>Click Forgot Password to reset the password. Enter the username and Email address. Click Submit to receive the email with password reset link.</li>
-</ul>
+
+* Enter the **Username** in the textbox.
+* Enter the **Password** in the textbox.
+* Click **Sign in** and log in.
+* Click **Forgot Password** to reset the password. Enter the username and Email address. Click Submit to receive the email with password reset link.
 
 Refer to the image below:
 
