@@ -41,8 +41,8 @@ In the above screen:
 
 Refer to the image below:
 
-![Alt text](../../../assets/images/LogIn_1.png "Enter Detail")
+![Alt text](../../../../assets/images/LogIn_1.png "Enter Detail")
 
-•	If the admin enabled Two factor authorization, then after entering the user ID and password, the system will send an OTP on your mobile/email. Enter the OTP to login as shown below:
+* If the admin enabled Two factor authorization, then after entering the user ID and password, the system will send an OTP on your mobile/email. Enter the OTP to login as shown below:
 
 ![Alt text](../../../assets/images/LogIn_2.png "Admin OTP")
