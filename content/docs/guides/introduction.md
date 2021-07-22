@@ -29,7 +29,7 @@ Now that we have the basic idea of what the System does, let us start learning e
 
 Once you open the **cSmart** solution in the web browser, the following screen appears:
 
-![Alt text](/images/LogIn.png align="center" "Login Screen")
+![Alt text](/images/LogIn.png "Login Screen")
 
 In the above screen:
 
