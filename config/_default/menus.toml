@@ -2,13 +2,14 @@
   name = "Api Reference"
   weight = 20
   identifier = "api"
-  pre= "fa-info-circle"
+  pre= "icon-monitor"
   url = "/docs/api/"
 
 [[docs]]
   name = "Guides"
   weight = 10
   identifier = "guides"
+  pre = "icon-tiles"
   url = "/docs/guides/"
 
 
