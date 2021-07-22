@@ -2,7 +2,7 @@
   name = "Api Reference"
   weight = 20
   identifier = "api"
-  pre= "icon-monitor"
+  pre = "icon-stack"
   url = "/docs/api/"
 
 [[docs]]
