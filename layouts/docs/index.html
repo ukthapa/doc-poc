@@ -15,7 +15,7 @@
   {{ if .Params.toc -}}
   <main class="docs-content col-lg-11 col-xl-9">
   {{ else -}}
-  <main class="docs-content col-lg-12">
+  <main class="docs-content col">
   {{ end -}}
 
     {{ if .Site.Params.options.breadCrumb -}}
@@ -28,87 +28,91 @@
       </nav>
     {{ end }}
 
-    <section class="section section-sm hero-section">
-        <div class="row">
-          <div class="col col-lg-6">
-            <h1>{{ .Title }}</h1>
-            <p class="lead">{{ .Params.lead | safeHTML }}</p>
-            {{ partial "main/headline-hash.html" .Content }}
-            <p>Get a full overview of the basic settings that will take your search to the next level.</p>
-            <p><a href="" class="btn btn-primary">Try interactive tutorial</a> <a href="" class="btn btn-secondary">Live Demo</a></p>
-          </div>
-          <div class="col col-lg-6">
-            <div class="card-wrapper card-stacked">
-              <div class="card-group">
-              <a href="" class="card">
-                <div class="card-body">
-                  <img src="" alt="">
-                </div>
-                <div class="card-footer">
-                  Sending and Managing Data
-                </div>
-              </a>
-              <a href="" class="card">
-                <div class="card-body">
-                  <img src="" alt="">
-                </div>
-                <div class="card-footer">
-                  Managing Results
-                </div>
-              </a>
+      <section class="section hero-section ">
+        <div class="grey-gradient-bg">
+          <div class="row">
+            <div class="col col-lg-8">
+              <h1>{{ .Title }}</h1>
+              <p class="lead">{{ .Params.lead | safeHTML }}</p>
+              {{ partial "main/headline-hash.html" .Content }}
+              <p>Get a full overview of the basic settings that will take your search to the next level.</p>
+              <p class="mt-2"><a href="" class="btn btn-primary btn-icon mr-2"><svg class="icon" width="10px" height="18px" viewBox="0 0 10 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <title>9E20B019-BD9F-4EDE-B92C-1E43324F95D2</title> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Home" transform="translate(-446.000000, -337.000000)" fill="#FFFFFF"> <g id="Group-13" transform="translate(420.000000, 325.000000)"> <g id="Group-9" transform="translate(26.000000, 11.000000)"> <polygon id="getting-started-fill" points="2.53214897 18.442398 3.51959831 11.5951281 0 10.6632643 6.82106094 1 5.12455383 8.18670275 9.19065912 8.99392234"></polygon> </g> </g> </g> </g> </svg>Try interactive tutorial</a>
+              <a href="" class="btn btn-secondary btn-icon"><svg class="icon" width="9px" height="9px" viewBox="0 0 9 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <title>27E65F9A-5BDA-419A-AF14-D4F1DD63A3E1</title> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Home" transform="translate(-667.000000, -341.000000)" fill="#20243D"> <g id="Group-13" transform="translate(420.000000, 325.000000)"> <g id="Group-12" transform="translate(213.000000, 0.000000)"> <g id="Group-5" transform="translate(34.000000, 11.000000)"> <polygon id="play" points="-3.4537038e-14 5 -3.4537038e-14 13.814772 8.40762115 9.407386"></polygon> </g> </g> </g> </g> </g> </svg>Live Demo</a></p>
             </div>
-            <div class="card-group">
-              <a href="" class="card">
-                <div class="card-body">
-                  <img src="" alt="">
-                </div>
-                <div class="card-footer">
-                  Building Search UI
-                </div>
-              </a>
-              <a href="" class="card">
-                <div class="card-body">
-                  <img src="" alt="">
-                </div>
-                <div class="card-footer">
-                  Getting Insights and Analytics
-                </div>
-              </a>
+            <div class="col col-lg-8">
+              <div class="card-wrapper card-stacked">
+                <div class="card-group">
+                <a href="" class="card">
+                  <div class="card-body text-center">
+                    <img src="/images/homepage/sending-and-managing-data.png" alt="">
+                  </div>
+                  <div class="card-footer">
+                    Sending and Managing Data
+                  </div>
+                </a>
+                <a href="" class="card">
+                  <div class="card-body text-center">
+                    <img src="/images/homepage/managing-result.png" alt="">
+                  </div>
+                  <div class="card-footer">
+                    Managing Results
+                  </div>
+                </a>
+              </div>
+              <div class="card-group">
+                <a href="" class="card">
+                  <div class="card-body text-center">
+                    <img src="/images/homepage/building-search-ui.png" alt="">
+                  </div>
+                  <div class="card-footer">
+                    Building Search UI
+                  </div>
+                </a>
+                <a href="" class="card">
+                  <div class="card-body text-center">
+                    <img src="/images/homepage/getting-insights-and-analytics.png" alt="">
+                  </div>
+                  <div class="card-footer">
+                    Getting Insights and Analytics
+                  </div>
+                </a>
+              </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="section section-sm">
+      <section class="section section-md">
         <div class="row">
           <div class="col">
             <h2>Neque porro</h2>
             <div class="row">
-              <div class="col col-lg-6">
-                <div class="">
-                  <i class="icon"></i>
+              <div class="col col-lg-8">
+                <div class="block-card">
+                  <i class="icon icon-globe icon-box"></i>
                   <div>
-                    <h3>Getting stated</h3>
+                    <h3 class="block-header">Getting stated</h3>
                     <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
                   </div>
                 </div>
               </div>
-              <div class="col col-lg-6">
+              <div class="col col-lg-8">
                 <ul>
                   <li>What is logoipsum ?</li>
                   <li>Ecosystem overview</li>
                   <li>Implementation process</li>
                 </ul>
               </div>
-              <div class="col col-lg-6">
-                <div class="">
-                  <i class="icon"></i>
+              <div class="col col-lg-8">
+                <div class="block-card">
+                  <i class="icon icon-tiles icon-box"></i>
                   <div>
-                    <h3>Sending and Managing data</h3>
+                    <h3 class="block-header">Sending and Managing data</h3>
                     <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
                   </div>
                 </div>
               </div>
-              <div class="col col-lg-6">
+              <div class="col col-lg-8">
                 <ul>
                   <li>What is logoipsum ?</li>
                   <li>Ecosystem overview</li>
