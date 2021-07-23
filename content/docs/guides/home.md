@@ -17,4 +17,4 @@ toc: true
 
 The Dashboard is the default page that appears when you login to the **cSMART** CRM application. You can see Open Tickets, Tickets by CSR (Tickets), History, Asset Status (Assets), Sales chart by CSR (Sales Orders), Key Metrics, and Tag Cloud details. The dashboard will look like as shown below:
 
-![Alt text](/images/dashboard "Dashboard")
+![Alt text](/images/dashboard.png "Dashboard")
