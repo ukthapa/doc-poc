@@ -1,0 +1,37 @@
+
+.collapsible-sidebar {
+  .btn {
+    padding: 6px 0;
+    border: none;
+    text-transform: uppercase;
+    color: $gray-500;
+    &:active, &:hover, &:visited, &:focus {
+      border: none;
+      outline: 0;
+      box-shadow: none;
+    }
+    &:hover {
+      color: $gray-600;
+    }
+    &-toggle{
+      &.collapsed {
+        color: $gray-500;
+      }
+    }
+    span.icon {
+      margin-right: 5px;
+    }
+  }
+
+  ul {
+    li {
+      a {
+        display: block;
+        &.active {
+          background: $white;
+          box-shadow: 0px 1px 3px $gray-400;
+        }
+      }
+    }
+  }
+}

@@ -1,28 +1,22 @@
 [[docs]]
-  name = "Home"
-  weight = 1
-  identifier = "home"
-  pre= "fa-info-circle"
-  url = "/docs/"
-
-[[docs]]
   name = "Api Reference"
   weight = 20
   identifier = "api"
-  pre= "fa-info-circle"
+  pre = "icon-stack"
   url = "/docs/api/"
 
 [[docs]]
   name = "Guides"
   weight = 10
   identifier = "guides"
+  pre = "icon-tiles"
   url = "/docs/guides/"
 
 
 [[main]]
   name = "Guides"
   identifier = "guides"
-  url = "/docs/guides/how-to-update/"
+  url = "/docs/guides/introduction/"
   weight = 10
 
 
