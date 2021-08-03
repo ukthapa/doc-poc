@@ -19,6 +19,7 @@ The Dashboard is the default page that appears when you login to the **cSMART** 
 
 ![Alt text](/images/dashboard.png "Dashboard")
 
+
 ## Add a New Dashboard
 You can also opt to add a new dashboard or rearrange the widgets in the dashboard. To do so click the **More** drop-down as shown below:
 

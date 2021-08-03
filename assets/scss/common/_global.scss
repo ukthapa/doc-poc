@@ -9,6 +9,10 @@
   // padding-bottom: 3rem;
 }
 
+body {
+  font-size: 15px !important;
+}
+
 h1,
 h2,
 h3,
@@ -23,6 +27,20 @@ h6,
 .h6 {
   margin: 2rem 0 1rem;
 }
+
+h1,
+h2 {
+  color: $gray-900;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  color: $gray-800;
+}
+
+
 
 @include media-breakpoint-up(md) {
   body {
@@ -92,6 +110,8 @@ a.btn:focus {
 .docs-sidebar {
   order: 2;
   background: $themeBg;
+  padding-right: calc(var(--bs-gutter-x) / 1);
+    padding-left: calc(var(--bs-gutter-x) / 1);
 }
 
 @include media-breakpoint-up(lg) {
@@ -166,7 +186,7 @@ a.btn:focus {
 }
 
 .docs-content {
-  padding-top: 5rem;
+  padding-top: 3.6rem;
   padding-bottom: 3rem;
   order: 1;
 }
