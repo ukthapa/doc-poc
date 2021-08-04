@@ -30,6 +30,7 @@ To add a campaign, click the ![Alt text](/images/campaign3.png "Dashboard") butt
 ![Alt text](/images/campaign6.png "Dashboard")
 
 In the above screen, you can do the following:
+
 1.	**Campaign Name** – Enter the name of the Campaign.
 2.	**Campaign Type** – Click the Campaign Type drop-down to select the campaign type.
 3.	**Campaign Status** – Click the Campaign Status drop-down to select the status of the campaign.
@@ -56,14 +57,16 @@ In the above screen, you can do the following:
 ![Alt text](/images/campaign7.png "Dashboard")
 
 In the above screen you can:
-    a. **Promotion Content** - Search and select the campaign using the name of the promotion.
-    b. **Start Date** - Search and select the campaign using the start date of the promotion.
-    c. **End Date** - Search and select the campaign using the end date of the promotion.
-    d. **Active** - Search and select the campaign using the status of the promotion.
-    e. **Promotion Source** - Search and select the campaign using the source of the promotion.
+<ol>
+    <li>a. **Promotion Content** - Search and select the campaign using the name of the promotion.</li>
+    <li>b. **Start Date** - Search and select the campaign using the start date of the promotion.</li>
+    <li>c. **End Date** - Search and select the campaign using the end date of the promotion.</li>
+    <li>d. **Active** - Search and select the campaign using the status of the promotion.</li>
+    <li>e. **Promotion Source** - Search and select the campaign using the source of the promotion.</li>
+</ol>
 23. **Save** – Click the Save button to create new campaign.
 25.	**Cancel** – Click the Cancel button to re-enter details.
 
-Once the campaign is saved it will look like aas shown below:
+Once the campaign is saved it will look like as shown below:
 
 ![Alt text](/images/campaign8.png "Dashboard")
