@@ -57,15 +57,15 @@ In the above screen, you can do the following:
 ![Alt text](/images/campaign7.png "Dashboard")
 
 In the above screen you can:
-<ol>
-    <li>a. **Promotion Content** - Search and select the campaign using the name of the promotion.</li>
-    <li>b. **Start Date** - Search and select the campaign using the start date of the promotion.</li>
-    <li>c. **End Date** - Search and select the campaign using the end date of the promotion.</li>
-    <li>d. **Active** - Search and select the campaign using the status of the promotion.</li>
-    <li>e. **Promotion Source** - Search and select the campaign using the source of the promotion.</li>
-</ol>
+<ul>
+    <li> **Promotion Content** - Search and select the campaign using the name of the promotion.</li>
+    <li> **Start Date** - Search and select the campaign using the start date of the promotion.</li>
+    <li> **End Date** - Search and select the campaign using the end date of the promotion.</li>
+    <li> **Active** - Search and select the campaign using the status of the promotion.</li>
+    <li> **Promotion Source** - Search and select the campaign using the source of the promotion.</li>
+</ul>
 23. **Save** – Click the Save button to create new campaign.
-25.	**Cancel** – Click the Cancel button to re-enter details.
+24.	**Cancel** – Click the Cancel button to re-enter details.
 
 Once the campaign is saved it will look like as shown below:
 
