@@ -6,26 +6,26 @@ date:
 lastmod:
 draft: false
 images: []
+weight: 120
 menu:
   docs:
-    parent: "guides"
-weight: 313
+    parent: "marketing"
 toc: true
 ---
 
 To create Campaigns, click the Marketing drop-down and select Campaigns as shown below:
 
-![Alt text](/images/campaign1.png "Dashboard")
+{{< img-simple src="/images/campaign1.png"  alt="Dashboard" class="">}}
 
 The Campaigns screen appears as shown below:
 
-![Alt text](/images/campaign2.png "Dashboard")
+{{< img-simple src="/images/campaign2.png"  alt="Dashboard" class="" width="987" height="367">}}
 
-To add a campaign, click the ![Alt text](/images/campaign3.png "Dashboard") button. The Create New Campaign screen appears as shown below:
+To add a campaign, click the {{< img-simple src="/images/campaign3.png"  alt="Dashboard" class="border-0" width= "150" height= "100">}} button. The Create New Campaign screen appears as shown below:
 
-![Alt text](/images/campaign4.png "Dashboard")
-![Alt text](/images/campaign5.png "Dashboard")
-![Alt text](/images/campaign6.png "Dashboard")
+{{< img-simple src="/images/campaign4.png"  alt="Dashboard" class="">}}
+{{< img-simple src="/images/campaign5.png"  alt="Dashboard" class="">}}
+{{< img-simple src="/images/campaign6.png"  alt="Dashboard" class="">}}
 
 In the above screen, you can do the following:
 
@@ -55,13 +55,11 @@ In the above screen, you can do the following:
 ![Alt text](/images/campaign7.png "Dashboard")
 
 In the above screen you can:
-<ul>
-    <li> **Promotion Content** - Search and select the campaign using the name of the promotion.</li>
-    <li> **Start Date** - Search and select the campaign using the start date of the promotion.</li>
-    <li> **End Date** - Search and select the campaign using the end date of the promotion.</li>
-    <li> **Active** - Search and select the campaign using the status of the promotion.</li>
-    <li> **Promotion Source** - Search and select the campaign using the source of the promotion.</li>
-</ul>
+* **Promotion Content** - Search and select the campaign using the name of the promotion.
+* **Start Date** - Search and select the campaign using the start date of the promotion.
+* **End Date** - Search and select the campaign using the end date of the promotion.
+* **Active** - Search and select the campaign using the status of the promotion.
+* **Promotion Source** - Search and select the campaign using the source of the promotion.
 23. **Save** – Click the Save button to create new campaign.
 24.	**Cancel** – Click the Cancel button to re-enter details.
 

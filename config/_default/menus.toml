@@ -1,4 +1,11 @@
 [[docs]]
+  name = "Guides"
+  weight = 10
+  identifier = "guides"
+  pre = "icon-tiles"
+  url = "/docs/guides/"
+
+[[docs]]
   name = "Api Reference"
   weight = 20
   identifier = "api"
@@ -6,12 +13,12 @@
   url = "/docs/api/"
 
 [[docs]]
-  name = "Guides"
-  weight = 10
-  identifier = "guides"
-  pre = "icon-tiles"
-  url = "/docs/guides/"
-
+  name = "Marketing"
+  weight = 103
+  identifier = "marketing"
+  pre = "icon-pie"
+  url = "/docs/guides/marketing/campaign"
+  parent = "guides"
 
 [[main]]
   name = "Guides"

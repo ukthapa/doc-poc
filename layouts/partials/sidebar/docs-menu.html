@@ -8,29 +8,53 @@
       {{- $active = or $active (eq $currentPage.Section .Identifier) -}}
       <li>
         <i class='fa {{ .Pre }}'></i>
-         <a class="docs-link{{ if $active }} active{{ end }}" href="{{ .URL | relURL }}"> {{ .Name }}</a></li>
+         <a class="docs-link{{ if $active }} active{{ end }}" href="{{ .URL | relURL }}"> {{ .Name }}</a>
+        </li>
     {{ end -}}
   </ul>
   {{ end -}}
 {{ end -}} -->
 
+
 {{ if .Site.Params.options.collapsibleSidebar -}}
-  <ul class="list-unstyled collapsible-sidebar">
+<ul class="list-unstyled collapsible-sidebar">
   {{ $currentPage := . -}}
   {{ range $index, $element := .Site.Menus.docs -}}
   {{- $active := or ($currentPage.IsMenuCurrent "docs" .) ($currentPage.HasMenuCurrent "docs" .) -}}
   {{- $active = or $active (eq $currentPage.Section .Identifier) -}}
     <li class="mb-1">
+      {{ if .HasChildren -}}
       <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#section-{{ .Identifier }}" aria-expanded="{{ if $active }}true{{ else }}false{{ end }}">
         <span class="icon {{ .Pre }}"></span><span>{{ .Name }}</span>
       </button>
-      {{ if .HasChildren -}}
       <div class="collapse{{ if $active }} show{{ end }}" id="section-{{ .Identifier }}">
         <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
         {{ range .Children -}}
           {{- $active := or ($currentPage.IsMenuCurrent "docs" .) ($currentPage.HasMenuCurrent "docs" .) -}}
           {{- $active = or $active (eq $currentPage.Section .Identifier) -}}
-          <li><a class="docs-link rounded{{ if $active }} active{{ end }}" href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+
+            {{ if .HasChildren -}}
+            <li class="submenu">
+            <button class="btn btn-toggle align-items-left rounded collapsed" data-bs-toggle="collapse" data-bs-target="#section-{{ .Identifier }}" aria-expanded="{{ if $active }}true{{ else }}false{{ end }}">
+              {{ if .Pre -}}<span class="icon {{ .Pre }}"></span>{{ end -}}<span>{{ .Name }}</span>{{ if .Post -}}<span class="icon {{ .Post }}"></span>{{ end -}}
+            </button>
+            <div class="collapse{{ if $active }} show{{ end }}" id="section-{{ .Identifier }}">
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              {{ range .Children -}}
+                {{- $active := or ($currentPage.IsMenuCurrent "docs" .) ($currentPage.HasMenuCurrent "docs" .) -}}
+                {{- $active = or $active (eq $currentPage.Section .Identifier) -}}
+                <li><a class="docs-link rounded{{ if $active }} active{{ end }}" href="{{ .URL | relURL }}">{{ .Name }}</a>
+                </li>
+              {{ end -}}
+              </ul>
+            </div>
+            </li>
+            {{ else -}}
+            <li>
+            <a class="docs-link rounded{{ if $active }} active{{ end }}" href="{{ .URL | relURL }}">{{ .Name }}</a>
+            </li>
+            {{ end -}}
+          </li>
         {{ end -}}
         </ul>
       </div>
@@ -53,6 +77,3 @@
     {{ end -}}
   {{ end -}}
 {{ end -}}
-
-
-
