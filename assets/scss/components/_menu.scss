@@ -17,8 +17,14 @@
       &.collapsed {
         color: $gray-500;
       }
+      display: flex;
     }
     span.icon {
+      margin-right: 5px;
+    }
+
+    img {
+      width: 15px !important;
       margin-right: 5px;
     }
   }
@@ -39,7 +45,7 @@
           width: 100%;
           text-align: left;
           padding: 0.6rem .7rem;
-
+          text-transform: capitalize;
           &.collapsed {
             background: transparent;
             box-shadow: none;

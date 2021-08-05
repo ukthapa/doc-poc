@@ -2,21 +2,21 @@
   name = "Guides"
   weight = 10
   identifier = "guides"
-  pre = "<span class='icon icon-tiles'></span>"
+  pre = '<img src="/svg-icons/tiles.svg" alt="">'
   url = "/docs/guides/"
 
 [[docs]]
   name = "Api Reference"
   weight = 20
   identifier = "api"
-  pre = "<span class='icon icon-stack'></span>"
+  pre = '<img src="/svg-icons/pie.svg" alt="">'
   url = "/docs/api/"
 
 [[docs]]
   name = "Marketing"
   weight = 103
   identifier = "marketing"
-  pre = "<span class='icon icon-pie'></span>"
+  pre = '<img src="/svg-icons/stack.svg" alt="">'
   url = "/docs/guides/marketing/campaign"
   parent = "guides"
 

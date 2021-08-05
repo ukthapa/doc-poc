@@ -25,7 +25,7 @@
     <li class="mb-1">
       {{ if .HasChildren -}}
       <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#section-{{ .Identifier }}" aria-expanded="{{ if $active }}true{{ else }}false{{ end }}">
-        <span class="icon {{ .Pre }}"></span><span>{{ .Name }}</span>
+        {{ if .Pre -}}{{ .Pre }}{{ end -}} <span>{{ .Name }}</span> {{ if .Post -}}{{ .Post }}{{ end -}}
       </button>
       <div class="collapse{{ if $active }} show{{ end }}" id="section-{{ .Identifier }}">
         <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
@@ -36,7 +36,7 @@
             {{ if .HasChildren -}}
             <li class="submenu">
             <button class="btn btn-toggle align-items-left rounded collapsed" data-bs-toggle="collapse" data-bs-target="#section-{{ .Identifier }}" aria-expanded="{{ if $active }}true{{ else }}false{{ end }}">
-              {{ if .Pre -}}{{ .Pre }}{{ end -}}<span>{{ .Name }}</span>{{ if .Post -}}{{ .Post }}{{ end -}}
+              {{ if .Pre -}}{{ .Pre }}{{ end -}} <span>{{ .Name }}</span> {{ if .Post -}}{{ .Post }}{{ end -}}
             </button>
             <div class="collapse{{ if $active }} show{{ end }}" id="section-{{ .Identifier }}">
               <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
