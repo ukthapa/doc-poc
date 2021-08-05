@@ -13,8 +13,6 @@ weight: 311
 toc: true
 ---
 
-## Campaigns
-
 To create Campaigns, click the Marketing drop-down and select Campaigns as shown below:
 
 ![Alt text](/images/campaign1.png "Dashboard")
@@ -25,7 +23,7 @@ The Campaigns screen appears as shown below:
 
 To add a campaign, click the ![Alt text](/images/campaign3.png "Dashboard") button. The Create New Campaign screen appears as shown below:
 
-{{< img src="/images/campaign4.png" alt="" class="border-0" >}}
+![Alt text](/images/campaign4.png "Dashboard")
 ![Alt text](/images/campaign5.png "Dashboard")
 ![Alt text](/images/campaign6.png "Dashboard")
 
@@ -54,7 +52,7 @@ In the above screen, you can do the following:
 21. **Description** – Enter the additional information’s related to the campaign.
 22. **Promotion Offers** - Click on the search button to select the Promotion offer of the campaign. The following screen appear:
 
-{{< img src="/images/campaign7.png" alt="" class="border-0" >}}
+![Alt text](/images/campaign7.png "Dashboard")
 
 In the above screen you can:
 <ul>
@@ -70,3 +68,64 @@ In the above screen you can:
 Once the campaign is saved it will look like as shown below:
 
 ![Alt text](/images/campaign8.png "Dashboard")
+
+After saving the campaign you can view the details of the campaign. We will now see how to view the details.
+
+### Updates
+
+To view the updates of the campaign click the **Updates** tab as shown below:
+
+![Alt text](/images/campaign9.png)
+
+The updates for that particular campaign will be shown.
+
+### Comments
+
+To view any comments of the campaign click the Comments tab as shown below:
+
+![Alt text](/images/campaign10.png)
+
+### Contacts
+
+To view the contacts associated with the campaign click the ![Alt text](/images/campaign11.png) icon as shown below:
+
+![Alt text](/images/campaign12.png)
+
+In the above screen you can:
+
+* Click the **Select Contact** button to select an existing contact to add and associate with the campaign.
+* Click the **Add Contact** button to add a new contact and associate with the campaign.
+* Select from an existing list to load in the campaign.
+* Click the **Import Contacts** button to import contacts.
+* Search an existing contact using the details.
+
+### Activities
+
+To add an activity to the campaign click the ![Alt text](/images/campaign13.png) icon as shown below:
+
+![Alt text](/images/campaign14.png)
+
+In the above image, click the **Add Event** button to add an event. The Quick Create Event pop-up appears as shown below:
+
+![Alt text](/images/campaign15.png)
+
+In the above screen you can:
+
+* Enter the subject of the event.
+* Enter the start date and end date of the event.
+* Enter the start time and end time of the event.
+* Select the user whom you want to assign the event.
+* Select the status of the event. The options are, planned, held and not held.
+* Select the type of activity of the event. The options are, call, meeting, mobile task and task.
+
+You can also opt to add a task. Click the **Add Task** to add a task. The Quick Create Task pop-up appears as shown below:
+
+![Alt text](/images/campaign16.png)
+
+In the above screen you can do the following:
+
+* Enter the subject of the task.
+* Enter the start date and end date of the task.
+* Enter the start time and end time of the task.
+* Select the user whom you want to assign the task.
+* Select the status of the event. The options are, not started, in progress, completed,  pending input, deferred and planned.
