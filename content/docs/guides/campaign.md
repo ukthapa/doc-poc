@@ -9,7 +9,7 @@ images: []
 menu:
   docs:
     parent: "guides"
-weight: 310
+weight: 311
 toc: true
 ---
 
@@ -25,7 +25,7 @@ The Campaigns screen appears as shown below:
 
 To add a campaign, click the ![Alt text](/images/campaign3.png "Dashboard") button. The Create New Campaign screen appears as shown below:
 
-![Alt text](/images/campaign4.png "Dashboard")
+{{< img src="/images/campaign4.png" alt="" class="border-0" >}}
 ![Alt text](/images/campaign5.png "Dashboard")
 ![Alt text](/images/campaign6.png "Dashboard")
 
@@ -54,7 +54,7 @@ In the above screen, you can do the following:
 21. **Description** – Enter the additional information’s related to the campaign.
 22. **Promotion Offers** - Click on the search button to select the Promotion offer of the campaign. The following screen appear:
 
-![Alt text](/images/campaign7.png "Dashboard")
+{{< img src="/images/campaign7.png" alt="" class="border-0" >}}
 
 In the above screen you can:
 <ul>
