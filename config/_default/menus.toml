@@ -1,17 +1,24 @@
 [[docs]]
-  name = "Api Reference"
-  weight = 20
-  identifier = "api"
-  pre = "icon-stack"
-  url = "/docs/api/"
-
-[[docs]]
   name = "Guides"
   weight = 10
   identifier = "guides"
-  pre = "icon-tiles"
+  pre = '<img src="/svg-icons/tiles.svg" alt="">'
   url = "/docs/guides/"
 
+[[docs]]
+  name = "Api Reference"
+  weight = 20
+  identifier = "api"
+  pre = '<img src="/svg-icons/pie.svg" alt="">'
+  url = "/docs/api/"
+
+[[docs]]
+  name = "Marketing"
+  weight = 103
+  identifier = "marketing"
+  pre = '<img src="/svg-icons/stack.svg" alt="">'
+  url = "/docs/guides/marketing/campaign"
+  parent = "guides"
 
 [[main]]
   name = "Guides"

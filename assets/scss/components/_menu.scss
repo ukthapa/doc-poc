@@ -17,8 +17,14 @@
       &.collapsed {
         color: $gray-500;
       }
+      display: flex;
     }
     span.icon {
+      margin-right: 5px;
+    }
+
+    img {
+      width: 15px !important;
       margin-right: 5px;
     }
   }
@@ -31,6 +37,34 @@
           background: $white;
           box-shadow: 0px 1px 3px $gray-400;
         }
+      }
+
+      &.submenu {
+        margin-left: 10px;
+        .btn-toggle {
+          width: 100%;
+          text-align: left;
+          padding: 0.6rem .7rem;
+          text-transform: capitalize;
+          &.collapsed {
+            background: transparent;
+            box-shadow: none;
+            color: #5E6494;
+          }
+        }
+        .collapse {
+          margin-left: 10px;
+        }
+        // li {
+        //   border-top: 1px solid #ECE9FB;
+        //   &:first-child {
+        //     border-top: 0;
+        //   }
+        //   a {
+        //     background: transparent;
+        //     box-shadow: none;
+        //   }
+        // }
       }
     }
   }

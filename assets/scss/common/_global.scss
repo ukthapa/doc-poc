@@ -212,8 +212,8 @@ a.btn:focus {
   }
 
   .docs-content {
-    padding-right: calc(var(--bs-gutter-x) / 1.5);
-    padding-left: calc(var(--bs-gutter-x) / 1.5);
+    padding-right: calc(var(--bs-gutter-x) / .8);
+    padding-left: calc(var(--bs-gutter-x) / .8);
   }
 }
 

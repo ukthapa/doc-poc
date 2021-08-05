@@ -3,10 +3,10 @@
 }
 
 .hero-section {
-  margin-right: calc(var(--bs-gutter-x) / -1.5);
-  margin-left: calc(var(--bs-gutter-x) / -1.5);
-  padding-right: calc(var(--bs-gutter-x) / 1.5);
-  padding-left: calc(var(--bs-gutter-x) / 1.5);
+  margin-right: calc(var(--bs-gutter-x) / -.8);
+  margin-left: calc(var(--bs-gutter-x) / -.8);
+  padding-right: calc(var(--bs-gutter-x) / .8);
+  padding-left: calc(var(--bs-gutter-x) / .8);
   background: linear-gradient(180deg, #FFFFFF 0%, #F6F5FB 100%);
 }
 
@@ -15,10 +15,10 @@
 }
 
 .grey-gradient-bg {
-  margin-right: calc(var(--bs-gutter-x) / -1.5);
-  margin-left: calc(var(--bs-gutter-x) / -1.5);
-  padding-right: calc(var(--bs-gutter-x) / 1.5);
-  padding-left: calc(var(--bs-gutter-x) / 1.5);
+  margin-right: calc(var(--bs-gutter-x) / -.8);
+  margin-left: calc(var(--bs-gutter-x) / -.8);
+  padding-right: calc(var(--bs-gutter-x) / .8);
+  padding-left: calc(var(--bs-gutter-x) / .8);
   background: url(/images/homepage/circuitbg.png) no-repeat right bottom;
   background-size: contain;
 }
@@ -81,6 +81,8 @@
     margin-top: 7px;
   }
 }
+
+
 
 
 // helper
