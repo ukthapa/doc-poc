@@ -9,7 +9,7 @@ images: []
 menu:
   docs:
     parent: "guides"
-weight: 620
+weight: 311
 toc: true
 ---
 
@@ -18,7 +18,6 @@ toc: true
 The Dashboard is the default page that appears when you login to the **cSMART** CRM application. You can see Open Tickets, Tickets by CSR (Tickets), History, Asset Status (Assets), Sales chart by CSR (Sales Orders), Key Metrics, and Tag Cloud details. The dashboard will look like as shown below:
 
 ![Alt text](/images/dashboard.png "Dashboard")
-
 
 ## Add a New Dashboard
 You can also opt to add a new dashboard or rearrange the widgets in the dashboard. To do so click the **More** drop-down as shown below:

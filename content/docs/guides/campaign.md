@@ -9,7 +9,7 @@ images: []
 menu:
   docs:
     parent: "guides"
-weight: 311
+weight: 313
 toc: true
 ---
 
@@ -129,3 +129,17 @@ In the above screen you can do the following:
 * Enter the start time and end time of the task.
 * Select the user whom you want to assign the task.
 * Select the status of the event. The options are, not started, in progress, completed,  pending input, deferred and planned.
+
+### Accounts
+
+To add an account click the ![Alt text](/images/campaign17.png) icon as shown below:
+
+![Alt text](/images/campaign18.png)
+
+In the above screen you can:
+
+* Click the **Select Account** button to select an existing account to add and associate with the campaign.
+* Click the **Add Account** button to add a new account and associate with the campaign.
+* Select from an existing list to load in the campaign.
+* Click the **Import Account** button to import account.
+* Search an existing account using the details.
