@@ -52,7 +52,7 @@ In the above screen, you can do the following:
 21. **Description** – Enter the additional information’s related to the campaign.
 22. **Promotion Offers** - Click on the search button to select the Promotion offer of the campaign. The following screen appear:
 
-![Alt text](/images/campaign7.png "Dashboard")
+{{< img-simple src="/images/campaign7.png"  alt="Dashboard" class="">}}
 
 In the above screen you can:
 * **Promotion Content** - Search and select the campaign using the name of the promotion.
@@ -65,7 +65,7 @@ In the above screen you can:
 
 Once the campaign is saved it will look like as shown below:
 
-![Alt text](/images/campaign8.png "Dashboard")
+{{< img-simple src="/images/campaign8.png"  alt="Dashboard" class="">}}
 
 After saving the campaign you can view the details of the campaign. We will now see how to view the details.
 
@@ -73,7 +73,7 @@ After saving the campaign you can view the details of the campaign. We will now 
 
 To view the updates of the campaign click the **Updates** tab as shown below:
 
-![Alt text](/images/campaign9.png)
+{{< img-simple src="/images/campaign9.png"  alt="Dashboard" class="">}}
 
 The updates for that particular campaign will be shown.
 
@@ -81,13 +81,13 @@ The updates for that particular campaign will be shown.
 
 To view any comments of the campaign click the Comments tab as shown below:
 
-![Alt text](/images/campaign10.png)
+{{< img-simple src="/images/campaign10.png"  alt="Dashboard" class="">}}
 
 ### Contacts
 
-To view the contacts associated with the campaign click the ![Alt text](/images/campaign11.png) icon as shown below:
+To view the contacts associated with the campaign click the {{< img-simple src="/images/campaign11.png"  alt="Dashboard" class="">}} icon as shown below:
 
-![Alt text](/images/campaign12.png)
+{{< img-simple src="/images/campaign12.png"  alt="Dashboard" class="">}}
 
 In the above screen you can:
 
@@ -99,13 +99,13 @@ In the above screen you can:
 
 ### Activities
 
-To add an activity to the campaign click the ![Alt text](/images/campaign13.png) icon as shown below:
+To add an activity to the campaign click the {{< img-simple src="/images/campaign13.png"  alt="Dashboard" class="">}} icon as shown below:
 
-![Alt text](/images/campaign14.png)
+{{< img-simple src="/images/campaign14.png"  alt="Dashboard" class="">}}
 
 In the above image, click the **Add Event** button to add an event. The Quick Create Event pop-up appears as shown below:
 
-![Alt text](/images/campaign15.png)
+{{< img-simple src="/images/campaign15.png"  alt="Dashboard" class="">}}
 
 In the above screen you can:
 
@@ -118,7 +118,7 @@ In the above screen you can:
 
 You can also opt to add a task. Click the **Add Task** to add a task. The Quick Create Task pop-up appears as shown below:
 
-![Alt text](/images/campaign16.png)
+{{< img-simple src="/images/campaign16.png"  alt="Dashboard" class="">}}
 
 In the above screen you can do the following:
 
@@ -130,9 +130,9 @@ In the above screen you can do the following:
 
 ### Accounts
 
-To add an account click the ![Alt text](/images/campaign17.png) icon as shown below:
+To add an account click the {{< img-simple src="/images/campaign17.png"  alt="Dashboard" class="">}} icon as shown below:
 
-![Alt text](/images/campaign18.png)
+{{< img-simple src="/images/campaign18.png"  alt="Dashboard" class="">}}
 
 In the above screen you can:
 
