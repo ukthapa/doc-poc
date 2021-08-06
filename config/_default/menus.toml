@@ -14,7 +14,7 @@
 
 [[docs]]
   name = "Marketing"
-  weight = 103
+  weight = 102
   identifier = "marketing"
   pre = '<img src="/svg-icons/stack.svg" alt="">'
   url = "/docs/guides/marketing/campaign"
