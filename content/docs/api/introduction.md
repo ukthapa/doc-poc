@@ -11,6 +11,6 @@ menu:
     parent: "api"
     identifier: api_intro
 weight: 1
-toc: true
+toc: false
 ---
 
