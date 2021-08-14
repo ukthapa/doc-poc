@@ -1,6 +1,6 @@
-.docs-content {
-  overflow: hidden;
-}
+// .docs-content {
+//   overflow: hidden;
+// }
 
 .hero-section {
   margin-right: calc(var(--bs-gutter-x) / -.8);
@@ -106,4 +106,44 @@
 
 
 
+.doc-tabs{
+  table {
+    &.lntable {
+      margin: 0 !important;
+      td {
+        &.lntd{
+          padding: 0 !important;
+          border-radius: 0 !important;
+          pre {
+            margin: 0 !important;
+            border-radius: 0 !important;
+          }
+          &:first-child {
+            width: 70px !important;
+          }
+        }
+      }
+    }
+  }
+  .highlight-wrapper {
+    position: relative;
+    .copy-code-button {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      border: none;
+    }
+  }
+}
 
+
+main section {
+  position: relative;
+  .doc-tabs {
+    position: absolute;
+    left: calc(100% + 50px);
+    width: calc(40vw - 190px);
+    top: 30px;
+  }
+
+}

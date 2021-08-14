@@ -10,67 +10,79 @@ menu:
   docs:
     parent: "api"
 weight: 2
-toc: true
+toc: false
 ---
 
+
 ### TABs
-
-Tabs let you organize content by context, for example installation instructions for each supported platform.
-
-```tpl
-{{</* tabs "uniqueid" */>}}
-{{</* tab "macOS" */>}} # macOS Content {{</* /tab */>}}
-{{</* tab "Linux" */>}} # Linux Content {{</* /tab */>}}
-{{</* tab "Windows" */>}} # Windows Content {{</* /tab */>}}
-{{</* /tabs */>}}
-```
-
 ## Example
+<section>
+## Error
+All successful responses are returned with HTTP Status code 200. In case of failure, Razorpay API returns a JSON error response with the parameters that detail the reason for the failure.
+
+### Response Parameters
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
 
 {{< tabs "uniqueid" >}}
 {{< tab "HTML" >}}
-
-## HTML
-{{< btn-copy text="git clone https://github.com/h-enk/doks-child-theme.git my-doks-site" >}}
-```bash
-<!DOCTYPE html>
-<title>Title</title>
-
-<style>body {width: 500px;}</style>
-
-<script type="application/javascript">
-  function $init() {return true;}
-</script>
-
-<body>
-  <p checked class="title" id='title'>Title</p>
-  <!-- here goes the rest of the page -->
-</body>
-```
+{{< highlight html "linenos=table,hl_lines=8 15-17" >}}
+  <!DOCTYPE html>
+  <title>Title</title>
+  <style>body {width: 500px;}</style>
+  <script type="application/javascript">
+    function $init() {return true;}
+  </script>
+  <body>
+    <p checked class="title" id='title'>Title</p>
+    <!-- here goes the rest of the page -->
+  </body>
+{{< / highlight >}}
 {{< /tab >}}
 
 {{< tab "Java" >}}
-
-## Java
-
-This is tab **Java** content.
-
-Dolor sit, sumo unique argument um no. Gracie nominal id xiv. Romanesque acclimates
-investiture. Ornateness bland it ex enc, est yeti am bongo detract re. Pro ad
-prompts feud gait, quid exercise emeritus bis e. In pro quints consequent, denim
-fastidious copious quo ad. Stet probates in duo.
+{{< highlight java "linenos=table,hl_lines=8 15-17" >}}
+    public String manipulate(Mode mode) {
+        switch(mode) {
+        case FOO:
+            String result = foo();
+            tweak(result);
+            return result;
+        case BAR:
+            String result = bar();  // Compiler error
+            twiddle(result);
+            return result;
+        case BAZ:
+            String rsult = bar();   // Whoops, typo!
+            twang(result);  // No compiler error
+            return result;
+        }
+    }
+{{< / highlight >}}
 {{< /tab >}}
 
 {{< tab "Windows" >}}
-
-## Windows
-
-This is tab **Windows** content.
-
-{{< btn-copy text="git clone https://github.com/h-enk/doks-child-theme.git my-doks-site" >}}
-
-```bash
-git clone https://github.com/h-enk/doks-child-theme.git my-doks-site
-```
+{{< highlight html "linenos=table,hl_lines=8 15-17" >}}
+  <main>
+      <article>
+          <header>
+              <h1>{{.Title}}</h1>
+              {{with .Params.subtitle}}
+              <span>{{.}}</span>
+          </header>
+          <div>
+              {{.Content}}
+          </div>
+          <aside>
+              {{.TableOfContents}}
+          </aside>
+      </article>
+  </main>
+{{< / highlight >}}
 {{< /tab >}}
 {{< /tabs >}}
+</section>
