@@ -9,7 +9,7 @@
    color: #e36209;
  }
 
- // .c1 /* constant, entity.name.constant, variable.other.constant, variable.language, support, meta.property-name, support.constant, support.variable, meta.module-reference, markup.raw, meta.diff.header, meta.output */,
+.c1 /* constant, entity.name.constant, variable.other.constant, variable.language, support, meta.property-name, support.constant, support.variable, meta.module-reference, markup.raw, meta.diff.header, meta.output */,
  .s .v /* string variable */ {
    color: #005cc5;
  }
@@ -123,3 +123,8 @@
    text-decoration: underline;
    color: #032f62;
  }
+
+
+.highlight > .chroma {
+   overflow: auto;
+}
