@@ -146,6 +146,7 @@
   text-transform: uppercase;
   letter-spacing: .02rem;
   color: #A4ACB9 !important;
+  padding: 0.5rem !important;
 }
 
 .doc-tabs__control:checked + .doc-tabs__label {
@@ -153,15 +154,24 @@
   color: #fff !important;
 }
 
-
 main section {
   position: relative;
   .doc-tabs {
-    position: absolute;
-    left: calc(100% + 135px);
-    width: calc(33vw - 40px);
-    top: 90px;
+    position: relative;
     background-color: #3C4257;
+  }
+}
+
+
+@media only screen and (min-width: 1024px) {
+  main section {
+    position: relative;
+    .doc-tabs {
+      position: absolute;
+      left: calc(100% + 45px);
+      width: calc(39.5vw - 40px);
+      top: 90px;
+    }
   }
 }
 
