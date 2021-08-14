@@ -97,36 +97,35 @@
 
 .doc-tabs{
   border-radius: 5px;
-  // table {
-  //   &.lntable {
-  //     margin: 0 !important;
-  //     td {
-  //       &.lntd{
-  //         padding: 0 !important;
-  //         border-radius: 0 !important;
-  //         pre {
-  //           margin: 0 !important;
-  //           border-radius: 0 !important;
-  //           .hljs {
-  //             background-color: #4F566B;
-  //             border-radius: 0;
-  //           }
-  //         }
-  //         &:first-child {
-  //           width: 70px !important;
-  //           .hljs {
-  //             color: #6C809F !important;
-  //           }
-  //         }
-  //       }
-  //     }
-  //   }
-  // }
-  .highlight-wrapper {
-    position: relative;
-    .copy-code-button {
+  table {
+    margin: 0 !important;
+      margin: 0 !important;
+      td {
+          padding: 0 !important;
+          border-radius: 0 !important;
+          pre {
+            margin: 0 !important;
+            border-radius: 0 !important;
+            // .hljs {
+            //   background-color: #4F566B;
+            //   border-radius: 0;
+            // }
+          }
+          &:first-child {
+            width: 70px !important;
+            // .hljs {
+            //   color: #6C809F !important;
+            // }
+          }
+      }
+  }
+    // .highlight > .chroma {
+    //   overflow: auto;
+    // }
+
+    button {
       position: absolute;
-      top: -30px;
+      top: 4px;
       right: 4px;
       border: none;
       background: #4f566b;
@@ -137,11 +136,9 @@
       padding: 5px 8px;
       border-radius: 5px;
     }
-    .highlight > .chroma {
-      overflow: auto;
-    }
-  }
+
 }
+
 
 .doc-tabs__label {
   font-size: 11px;
