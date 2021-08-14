@@ -29,59 +29,46 @@ All successful responses are returned with HTTP Status code 200. In case of fail
 
 
 {{< tabs "uniqueid" >}}
-{{< tab "HTML" >}}
-{{< highlight html "linenos=table,hl_lines=8 15-17" >}}
-  <!DOCTYPE html>
-  <title>Title</title>
-  <style>body {width: 500px;}</style>
-  <script type="application/javascript">
-    function $init() {return true;}
-  </script>
-  <body>
-    <p checked class="title" id='title'>Title</p>
-    <!-- here goes the rest of the page -->
-  </body>
+{{< tab "Request Header" >}}
+{{< highlight java "linenos=table" >}}
+URL url = new URL("http://example.com");
+HttpURLConnection con = (HttpURLConnection) url.openConnection();
+con.setRequestMethod("GET");
 {{< / highlight >}}
 {{< /tab >}}
 
-{{< tab "Java" >}}
-{{< highlight java "linenos=table,hl_lines=8 15-17" >}}
-    public String manipulate(Mode mode) {
-        switch(mode) {
-        case FOO:
-            String result = foo();
-            tweak(result);
-            return result;
-        case BAR:
-            String result = bar();  // Compiler error
-            twiddle(result);
-            return result;
-        case BAZ:
-            String rsult = bar();   // Whoops, typo!
-            twang(result);  // No compiler error
-            return result;
+{{< tab "Request Body" >}}
+{{< highlight java "linenos=table" >}}
+public class ParameterStringBuilder {
+    public static String getParamsString(Map<String, String> params)
+      throws UnsupportedEncodingException{
+        StringBuilder result = new StringBuilder();
+        for (Map.Entry<String, String> entry : params.entrySet()) {
+          result.append(URLEncoder.encode(entry.getKey(), "UTF-8"));
+          result.append("=");
+          result.append(URLEncoder.encode(entry.getValue(), "UTF-8"));
+          result.append("&");
         }
+        String resultString = result.toString();
+        return resultString.length() > 0
+          ? resultString.substring(0, resultString.length() - 1)
+          : resultString;
     }
+}
+
 {{< / highlight >}}
 {{< /tab >}}
 
-{{< tab "Windows" >}}
-{{< highlight html "linenos=table,hl_lines=8 15-17" >}}
-  <main>
-      <article>
-          <header>
-              <h1>{{.Title}}</h1>
-              {{with .Params.subtitle}}
-              <span>{{.}}</span>
-          </header>
-          <div>
-              {{.Content}}
-          </div>
-          <aside>
-              {{.TableOfContents}}
-          </aside>
-      </article>
-  </main>
+{{< tab "Response Header" >}}
+{{< highlight java "linenos=table" >}}
+BufferedReader in = new BufferedReader(
+  new InputStreamReader(con.getInputStream()));
+  String inputLine;
+  StringBuffer content = new StringBuffer();
+  while ((inputLine = in.readLine()) != null) {
+      content.append(inputLine);
+  }
+in.close();
 {{< / highlight >}}
 {{< /tab >}}
 {{< /tabs >}}
