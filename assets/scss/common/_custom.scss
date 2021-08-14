@@ -119,11 +119,10 @@
           }
       }
   }
-  .highlight-wrapper {
-    position: relative;
+
     .copy-code-button {
       position: absolute;
-      top: -30px;
+      top: 4px;
       right: 4px;
       border: none;
       background: #4f566b;
@@ -137,7 +136,6 @@
     // .highlight > .chroma {
     //   overflow: auto;
     // }
-  }
 }
 
 .doc-tabs__label {
