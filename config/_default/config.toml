@@ -89,3 +89,13 @@ rel  = "sitemap"
   [[module.mounts]]
     source = "node_modules/katex"
     target = "assets/js/vendor/katex"
+
+[params.csp]
+  childsrc = ["'self'"]
+  fontsrc = ["'self'"]
+  formaction = ["'self'"]
+  framesrc = ["'self'"]
+  imgsrc = ["'self'"]
+  objectsrc = ["'none'"]
+  stylesrc = ["'self'"]
+  scriptsrc = ["'self'"]
