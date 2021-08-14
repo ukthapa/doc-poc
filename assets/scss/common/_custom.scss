@@ -83,13 +83,6 @@
 }
 
 
-
-
-// helper
-.hidden {
-  display: none;
-}
-
 .icon-box {
   height: 32px;
   width: 32px;
@@ -140,15 +133,15 @@
       top: -30px;
       right: 4px;
       border: none;
-      background: #4f566b;
-      color: #b7bdca;
+      // background: #4f566b;
+      // color: #b7bdca;
       font-size: 11px;
       font-weight: 600;
       text-transform: uppercase;
       padding: 5px 8px;
       border-radius: 5px;
     }
-    .highlight > .chroma{
+    .highlight > .chroma {
       overflow: auto;
     }
   }
@@ -159,14 +152,13 @@
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: .02rem;
-  color: #A4ACB9 !important;
+  // color: #A4ACB9 !important;
 }
 
 .doc-tabs__control:checked + .doc-tabs__label {
   border-bottom: 1.5px solid #fff !important;
-  color: #fff !important;
+  // color: #fff !important;
 }
-
 
 
 main section {
@@ -178,4 +170,11 @@ main section {
     top: 90px;
     background-color: #3C4257;
   }
+}
+
+
+
+// helper
+.hidden {
+  display: none;
 }
