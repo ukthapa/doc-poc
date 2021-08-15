@@ -1,7 +1,5 @@
-{{- $bordercolor := (.Get "bordercolor") -}}
 {{- $bgcolor:= (.Get "bgcolor") -}}
 {{- $callmethod:= (.Get "callmethod") -}}
-{{- $bgcolorlight:= (.Get "bgcolorlight") -}}
-<div class="method-block method-block-{{ $bgcolor }}  border border-{{ $bordercolor }}">
-  <span class="bg-{{ $bgcolor }} text-white">{{ $callmethod }}</span><span class="bg-{{ $bgcolorlight }}" >{{.Inner}}</span>
+<div class="method-block method-block-{{ $bgcolor }}">
+  <span class="text-white">{{ $callmethod }}</span><span>{{.Inner}}</span>
 </div>
