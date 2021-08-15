@@ -50,7 +50,6 @@ srDate:11-09-2021
 }
 {{< / highlight >}}
 {{< /tab >}}
-{{< /tabs >}}
 {{< tab "Error" >}}
 {{< highlight java "linenos=table" >}}
 ### Downstream error
