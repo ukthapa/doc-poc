@@ -76,7 +76,7 @@ This service requires correlationId, source, srdate, operation and destination a
 | Operation | string (header)      |    Provide the operation as the value. For example - emailExists |
 | destination | string (header)      |    Provide the destination as the value. |
 
-{{< tabs "uniqueid" >}}
+{{< tabs "uniqueid1" >}}
 {{< tab "Request Header" >}}
 {{< highlight java "linenos=table" >}}
 correlationId:SO-101
