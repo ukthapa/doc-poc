@@ -165,7 +165,12 @@ main section {
 .method-block {
   margin: 15px 0 20px;
   display: inline-block;
-  // border-color: var(--bs-primary) !important;
+  &-primary {
+    border-color: var(--bs-primary) !important;
+  }
+  &-success {
+    border-color: var(--bs-teal) !important;
+  }
   span {
     font-family: var(--bs-font-monospace);
     display: inline-block;
@@ -174,7 +179,17 @@ main section {
   }
   span:first-child {
     font-weight: 600;
-    // background-color: var(--bs-primary) !important;
+    background-color: var(--bs-primary) !important;
+  }
+  &-primary {
+    span:first-child {
+      background-color: var(--bs-primary) !important;
+    }
+  }
+  &-success {
+    span:first-child {
+      background-color: var(--bs-teal) !important;
+    }
   }
 }
 
