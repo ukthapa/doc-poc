@@ -190,13 +190,14 @@ main section {
 }
 
 // ultilities
+.method-block{
+  .bg-primary{
+    background-color: var(--bs-primary) !important;
+  }
 
-.bg-primary{
-  background-color: var(--bs-primary) !important;
-}
-
-.border-primary {
-  border-color: var(--bs-primary) !important;
+  &.border-primary {
+    border-color: var(--bs-primary) !important;
+  }
 }
 
 // helper
