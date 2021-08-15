@@ -13,7 +13,7 @@ weight: 201
 toc: false
 ---
 
-{{% method-block bgcolor="success" callmethod="GET" %}}
+{{% method-block bgcolor="success" type="bg-green" callmethod="GET" %}}
   /crm/v1/auth/email
 {{% /method-block %}}
 
@@ -63,7 +63,7 @@ srDate:11-09-2021
 {{< /tabs >}}
 </section>
 
-{{% method-block bgcolor="primary" callmethod="POST" %}}
+{{% method-block bgcolor="primary" type="bg-blue" callmethod="POST" %}}
   /crm/v1/auth/otp
 {{% /method-block %}}
 
