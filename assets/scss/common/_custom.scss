@@ -177,19 +177,19 @@ main section {
   }
 }
 
-.method-block-primary {
+.bg-blue {
   border: 1px solid var(--bs-blue) !important;
 }
 
-.method-block-primary  span:first-child {
+.bg-blue  span:first-child {
   background: var(--bs-blue) !important;
 }
 
-.method-block-success {
+.bg-green  {
   border: 1px solid var(--bs-teal) !important;
 }
 
-.method-block-success span:first-child {
+.bg-green  span:first-child {
   background: var(--bs-teal) !important;
 }
 
