@@ -13,7 +13,7 @@ weight: 201
 toc: false
 ---
 
-{{% method-block bordercolor="primary" bgcolor="primary" callmethod="GET" %}}
+{{% method-block bordercolor="success" bgcolor="success" callmethod="GET" %}}
   /crm/v1/auth/email
 {{% /method-block %}}
 

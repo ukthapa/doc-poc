@@ -165,7 +165,7 @@ main section {
 .method-block {
   margin: 15px 0 20px;
   display: inline-block;
-  border-color: var(--bs-primary) !important;
+  // border-color: var(--bs-primary) !important;
   span {
     font-family: var(--bs-font-monospace);
     display: inline-block;
@@ -174,7 +174,7 @@ main section {
   }
   span:first-child {
     font-weight: 600;
-    background-color: var(--bs-primary) !important;
+    // background-color: var(--bs-primary) !important;
   }
 }
 

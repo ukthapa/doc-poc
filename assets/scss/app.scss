@@ -33,6 +33,9 @@
 @import "layouts/posts";
 @import "layouts/sidebar";
 
+/** Import Bootstrap */
+@import "bootstrap/scss/bootstrap-utilities";
+
 // scss-docs-end import-stack
 
 @import "components/menu";
