@@ -24,6 +24,8 @@ module.exports = {
           './assets/scss/components/_search.scss',
           './assets/scss/common/_dark.scss',
           './node_modules/katex/dist/katex.css',
+          './node_modules/bootstrap/scss/bootstrap/utilities/api',
+          './node_modules/bootstrap/scss/bootstrap/helpers',
         ]),
       ],
     }),
