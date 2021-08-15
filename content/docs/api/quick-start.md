@@ -13,17 +13,15 @@ weight: 2
 toc: false
 ---
 
-
-### TABs
-## Example
+## GET </crm/v1/auth/email>
 <section>
-## Error
-All successful responses are returned with HTTP Status code 200. In case of failure, Razorpay API returns a JSON error response with the parameters that detail the reason for the failure.
+
+The service requires email,correlationId,source,srdate,operation and destination as a input parameters. On success the system will check if the email ID provided while the sign up already exist in the system and on failure the appropriate error code will be returned.
 
 ### Response Parameters
-| Tables        | Are           | Cool  |
+| NAME        | TYPE           | DESCRIPTION  |
 | ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
+| email      | string (header) | Provide email ID as the value. |
 | col 2 is      | centered      |   $12 |
 | zebra stripes | are neat      |    $1 |
 
@@ -31,44 +29,56 @@ All successful responses are returned with HTTP Status code 200. In case of fail
 {{< tabs "uniqueid" >}}
 {{< tab "Request Header" >}}
 {{< highlight java "linenos=table" >}}
-URL url = new URL("http://example.com");
-HttpURLConnection con = (HttpURLConnection) url.openConnection();
-con.setRequestMethod("GET");
-{{< / highlight >}}
-{{< /tab >}}
-
-{{< tab "Request Body" >}}
-{{< highlight java "linenos=table" >}}
-public class ParameterStringBuilder {
-    public static String getParamsString(Map<String, String> params)
-      throws UnsupportedEncodingException{
-        StringBuilder result = new StringBuilder();
-        for (Map.Entry<String, String> entry : params.entrySet()) {
-          result.append(URLEncoder.encode(entry.getKey(), "UTF-8"));
-          result.append("=");
-          result.append(URLEncoder.encode(entry.getValue(), "UTF-8"));
-          result.append("&");
-        }
-        String resultString = result.toString();
-        return resultString.length() > 0
-          ? resultString.substring(0, resultString.length() - 1)
-          : resultString;
-    }
+### Bad Request
+{
+  "response": {
+    "result": {
+      "arguments": {
+        "statusCode": "400",
+        "errorCode": "400 BAD_REQUEST",
+        "errorMessage": "Header 'source' not present in the request."
+      }
+    },
+    "success": "false"
+  }
 }
 
 {{< / highlight >}}
 {{< /tab >}}
 
+{{< tab "Error" >}}
+{{< highlight java "linenos=table" >}}
+
+### Downstream error
+
+{
+  "response": {
+    "success": "false",
+    "result": {
+      "arguments": {
+        "statusCode": "500",
+        "errorCode": "Downstream error",
+        "errorMessage": "- Not Able to connect with CRM."
+      }
+    }
+  }
+}
+{{< / highlight >}}
+{{< /tab >}}
+
+
 {{< tab "Response Header" >}}
 {{< highlight java "linenos=table" >}}
-BufferedReader in = new BufferedReader(
-  new InputStreamReader(con.getInputStream()));
-  String inputLine;
-  StringBuffer content = new StringBuffer();
-  while ((inputLine = in.readLine()) != null) {
-      content.append(inputLine);
+
+### SUCCESS
+{
+  "response": {
+    "success": "true",
+    "result": {
+      "response": "Email already exists."
+    }
   }
-in.close();
+}
 {{< / highlight >}}
 {{< /tab >}}
 {{< /tabs >}}
