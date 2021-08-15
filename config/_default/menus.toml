@@ -12,6 +12,14 @@
   pre = '<img src="/svg-icons/pie.svg" alt="">'
   url = "/docs/api/"
 
+  [[docs]]
+    name = "CRM Services"
+    weight = 200
+    identifier = "CRM"
+    pre = '<img src="/svg-icons/stack.svg" alt="">'
+    url = "/docs/api/crm-services"
+    parent = "api"
+
 [[docs]]
   name = "Marketing"
   weight = 102

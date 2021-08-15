@@ -1,16 +1,16 @@
 ---
-title: "Quick Start"
-description: "One page summary of how to start a new  project."
-lead: "One page summary of how to start a new  project."
+title: "Authentication Services"
+description: ""
+lead: ""
 date: 2020-11-16T13:59:39+01:00
 lastmod: 2020-11-16T13:59:39+01:00
 draft: false
 images: []
 menu:
   docs:
-    parent: "api"
-weight: 2
-toc: false
+    parent: "CRM"
+weight: 201
+toc: true
 ---
 
 ## GET </crm/v1/auth/email>
@@ -45,12 +45,9 @@ The service requires email,correlationId,source,srdate,operation and destination
 
 {{< / highlight >}}
 {{< /tab >}}
-
 {{< tab "Error" >}}
 {{< highlight java "linenos=table" >}}
-
 ### Downstream error
-
 {
   "response": {
     "success": "false",
@@ -65,8 +62,6 @@ The service requires email,correlationId,source,srdate,operation and destination
 }
 {{< / highlight >}}
 {{< /tab >}}
-
-
 {{< tab "Response Header" >}}
 {{< highlight java "linenos=table" >}}
 
