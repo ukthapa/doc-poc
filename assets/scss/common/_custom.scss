@@ -177,20 +177,22 @@ main section {
   }
 }
 
-
 .method-block-primary {
-  border: 1px solid var(--bs-primary) !important;
-  span:first-child {
-    background: var(--bs-primary) !important;
-  }
+  border: 1px solid var(--bs-blue) !important;
+}
+
+.method-block-primary  span:first-child {
+  background: var(--bs-blue) !important;
 }
 
 .method-block-success {
   border: 1px solid var(--bs-teal) !important;
-  span:first-child {
-    background: var(--bs-teal) !important;
-  }
 }
+
+.method-block-success span:first-child {
+  background: var(--bs-teal) !important;
+}
+
 
 
 @media only screen and (min-width: 1024px) {
