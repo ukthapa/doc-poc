@@ -1,5 +1,5 @@
 ---
-title: "Authentication Services"
+title: "Customer Engagement Services"
 description: ""
 lead: ""
 date: 2020-11-16T13:59:39+01:00
@@ -9,93 +9,17 @@ images: []
 menu:
   docs:
     parent: "CRM"
-weight: 201
+weight: 202
 toc: false
 ---
 
-{{% method-block bgcolor="success" type="bg-blue" callmethod="GET" %}}
-  /crm/v1/auth/email
-{{% /method-block %}}
-
-This service allows you to verify the customer's email ID. It requires input parameters like, email, correlationId, source, srdate, operation and destination. On successful verification the system will validate the email ID while signing up already exists in the system or not. If not the appropriate error code will be returned.
-
-<section>
-
-#### *Request Parameters*
-| NAME        | TYPE          | DESCRIPTION  |
-| ------------- |:-------------:| ----- |
-| **email** (mandatory)    | ``string`` (header) | Provide the customer's email ID as the value. For example - adarsha_cds1@yopmail.com |
-| **correlationId** (mandatory)    | ``string`` (header)      |   Provide the correlationId as the value. For example - SO-100 |
-| **Source** (mandatory) | ``string`` (header)      |    Provide the source as the value. For example - Selfcare |
-| **srdate** (mandatory) | ``string`` (header)      |    Provide the date as the value. For example - 11-09-2021 |
-| **Operation** (mandatory) | ``string`` (header)      |    Provide the operation as the value. For example - emailExists |
-| **destination** (mandatory) | ``string`` (header)      |    Provide the destination as the value. |
-
-{{< tabs "uniqueid" >}}
-{{< tab "Request Header" >}}
-{{< highlight java "linenos=table" >}}
-correlationId:SO-100
-email:adarsha_cds1@yopmail.com
-operation:emailExists
-destination:CRM
-source:Selfcare
-srDate:11-09-2021
-{{< / highlight >}}
-{{< /tab >}}
-{{< tab "Response" >}}
-{{< highlight java "linenos=table" >}}
-{
-  "response": {
-    "success": "true",
-    "result": {
-      "response": "Email already exists."
-    }
-  }
-}
-{{< / highlight >}}
-{{< /tab >}}
-{{< tab "Client Error" >}}
-{{< highlight java "linenos=table" >}}
-{
-  "response": {
-    "result": {
-      "arguments": {
-        "statusCode": "400",
-        "errorCode": "400 BAD_REQUEST",
-        "errorMessage": "Header 'source' not present in the request."
-      }
-    },
-    "success": "false"
-  }
-}
-{{< / highlight >}}
-{{< /tab >}}
-{{< tab "Server Error" >}}
-{{< highlight java "linenos=table" >}}
-{
-  "response": {
-    "success": "false",
-    "result": {
-      "arguments": {
-        "statusCode": "500",
-        "errorCode": "Downstream error",
-        "errorMessage": "- Not Able to connect with CRM."
-      }
-    }
-  }
-}
-{{< / highlight >}}
-{{< /tab >}}
-{{< /tabs >}}
-</section>
-
 {{% method-block bgcolor="primary" type="bg-green" callmethod="POST" %}}
-  /crm/v1/auth/otp
+  /crm/v1/login
 {{% /method-block %}}
 
-This service is a validation service used when the customer wants to create a new password or has forgotten the password. It verifies the OTP to received for password generation.
+This service is an authentication service for the user to login to the application.
 
-This service requires correlationId, source, srdate, operation and destination along with the email ID, OTP and encrypted data in the API body. If the valid OTP is provided by the customer it will verify and allow to proceed with password creation successfully. If the OTP provided is wrong the appropriate error code will be returned.
+It requires correlationid, srdate, source, operation and destination as input parameters along with email, password and source in the API body to allow the customer to login into the system. If incorrect credentials are provided the appropriate error code will be returned.
 
 <section>
 
@@ -107,6 +31,7 @@ This service requires correlationId, source, srdate, operation and destination a
 | **srdate** (mandatory) | ``string`` (header)      |    Provide the date as the value. For example - 11-09-2021 |
 | **Operation** (mandatory) | ``string`` (header)      |    Provide the operation as the value. For example - emailExists |
 | **destination** (mandatory) | ``string`` (header)      |    Provide the destination as the value. |
+| **type** (mandatory) | ``string`` (header)      |    Provide the type of OTP. |
 
 ### *Request Body Parameters*
 | NAME        | TYPE           | DESCRIPTION  |
@@ -116,6 +41,7 @@ This service requires correlationId, source, srdate, operation and destination a
 | **srdate** (mandatory) | ``string`` (body)      |    Provide the date as the value. For example - 11-09-2021 |
 | **Operation** (mandatory) | ``string`` (body)      |    Provide the operation as the value. For example - emailExists |
 | **destination** (mandatory) | ``string`` (body)      |    Provide the destination as the value. |
+| **type** (mandatory) | ``string`` (body)      |    Provide the type of OTP. |
 
 {{< tabs "uniqueid1" >}}
 {{< tab "Request Header" >}}
@@ -125,14 +51,17 @@ srDate:11-09-2021
 source:Selfcare
 destination:CRM
 operation:verifyOTP
+type:numbers
 {{< / highlight >}}
 {{< /tab >}}
 {{< tab "Request Body" >}}
 {{< highlight java "linenos=table" >}}
 {
-    "email":"adarsha_cds3@yopmail.com",
-    "encryptedOtp":"e1aa84d4a0a00d21f960b8938a23cb890e35609b080174b74753839587cbce42",
-    "otp" : "115695"
+  "email": "string",
+  "password": "string",
+  "source": "Selfcare",
+  "fireBaseMessagingToken": "string",
+  "deviceId": "string"
 }
 {{< / highlight >}}
 {{< /tab >}}
@@ -142,7 +71,22 @@ operation:verifyOTP
   "response": {
     "success": "true",
     "result": {
-      "message": "successfully verified OTP"
+      "success": "true",
+      "accessToken": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hAeW9wbWFpbC5jb20iLCJqdGkiOiJzYW50aG9zaCIsImlhdCI6MTU4Njc3MDg5MiwiZXhwIjoxNTg5MzQzMDkyfQ.jzLUoZP5HWkk6bxvohFhUYSpEETpTSJyUTA109ekuMw",
+      "response": "User logged in correctly",
+      "firstName": "Ravi",
+      "lastName": "emos",
+      "segment": "Individual",
+      "platform": "Postpaid",
+      "accountNumber": "ACC10533",
+      "email": "venkatesh@yopmail.com",
+      "mobile": "918 290 9949",
+      "contactId": "11937",
+      "pushNotifications": false,
+      "doNotDisturb": false,
+      "roaming": false,
+      "accountId": "11936",
+      "profileImage": "http://crm.covalensedigital.net:1212/storage/2020/February/week4/96140_download.png"
     }
   }
 }
@@ -155,68 +99,8 @@ operation:verifyOTP
     "result": {
       "arguments": {
         "statusCode": "400",
-        "errorCode": "400 BAD_REQUEST",
-        "errorMessage": "Header 'source' not present in the request."
-      }
-    },
-    "success": "false"
-  }
-}
-{{< / highlight >}}
-{{< /tab >}}
-{{< /tabs >}}
-</section>
-
-{{% method-block bgcolor="success" type="bg-blue" callmethod="GET" %}}
-  /crm/v1/auth/captcha
-{{% /method-block %}}
-
-This service is used to retrieve the captcha of the customer from the system for the purpose of authentication. It requires correlationId, source, srdate, operation and destination as input parameters. If the captcha clicked by the customer matches the captcha saved in the system the it will be successfully verified. If not appropriate error code will be returned.
-
-<section>
-
-#### *Request Parameters*
-| NAME        | TYPE          | DESCRIPTION  |
-| ------------- |:-------------:| ----- |
-| **correlationId** (mandatory)    | ``string`` (header)      |   Provide the correlationId as the value. For example - SO-100 |
-| **Source** (mandatory) | ``string`` (header)      |    Provide the source as the value. For example - Selfcare |
-| **srdate** (mandatory) | ``string`` (header)      |    Provide the date as the value. For example - 11-09-2021 |
-| **Operation** (mandatory) | ``string`` (header)      |    Provide the operation as the value. For example - emailExists |
-| **destination** (mandatory) | ``string`` (header)      |    Provide the destination as the value. |
-
-{{< tabs "uniqueid2" >}}
-{{< tab "Request Header" >}}
-{{< highlight java "linenos=table" >}}
-correlationId:SO-100
-operation:emailExists
-destination:CRM
-source:Selfcare
-srDate:11-09-2021
-{{< / highlight >}}
-{{< /tab >}}
-{{< tab "Response" >}}
-{{< highlight java "linenos=table" >}}
-{
-  "response": {
-    "success": "true",
-    "result": {
-      "capthaImage": "http://localhost:31074/resources/captchaImages/fbcb0bbf8c79751facf4785d178607f8b5f7619b.jpg",
-      "captchaHash": "c9891a983ba95d5a94bbeb6d05cd7fa39791384de05f2a1e464953b5265dcc49",
-      "capthaAdImage": ""
-    }
-  }
-}
-{{< / highlight >}}
-{{< /tab >}}
-{{< tab "Client Error" >}}
-{{< highlight java "linenos=table" >}}
-{
-  "response": {
-    "result": {
-      "arguments": {
-        "statusCode": "400",
-        "errorCode": "400 BAD_REQUEST",
-        "errorMessage": "Header 'source' not present in the request."
+        "errorCode": "BAD_REQUEST",
+        "errorMessage": "Invalid username/password"
       }
     },
     "success": "false"
@@ -244,12 +128,12 @@ srDate:11-09-2021
 </section>
 
 {{% method-block bgcolor="primary" type="bg-green" callmethod="POST" %}}
-  /crm/v1/auth/captcha
+  /crm/v1/signup
 {{% /method-block %}}
 
-This service enables the user to provide a captcha for verification.
+This service is a registration service which enables to onboard the customer.
 
-It requires correlationId, source, srdate, operation and destination as input parameters. If successful the captcha provided will be saved for a customer. If failed the appropriate error code will be returned.
+It requires correlationId, srdate, source, operation and destination along with the customer's details required to create the account in the API body. If successful the customers will be on boarded. If failed the appropriate error code will be returned.
 
 <section>
 
@@ -284,8 +168,74 @@ operation:verifyOTP
 {{< tab "Request Body" >}}
 {{< highlight java "linenos=table" >}}
 {
-  "userCaptchaText": "string",
-  "captchaHash": "string"
+  "acctInfo": {
+    "title": "string",
+    "firstName": "string",
+    "middleName": "string",
+    "lastName": "string",
+    "phone": "string",
+    "mobilePhone": "string",
+    "gender": "string",
+    "companyName": "string",
+    "department": "string",
+    "designation": "string",
+    "emailAddress": "string",
+    "docIdNumberMsgId": "string",
+    "docIdTypeEquipType": "string",
+    "accountId": "string",
+    "assignedUserId": "string",
+    "platform": "string",
+    "Type": "string",
+    "ServiceType": "string"
+  },
+  "addressInfo": {
+    "streetAddress": "string",
+    "city": "string",
+    "postalCode": "string",
+    "state": "string",
+    "country": "string"
+  },
+  "paymentDetail": {
+    "gateway": "string",
+    "firstName": "string",
+    "lastName": "string",
+    "email": "string",
+    "cardNo": "string",
+    "expiryMonth": "string",
+    "expiryYear": "string",
+    "cvv": "string"
+  },
+  "lineItems": [
+    {
+      "packageId": "string",
+      "productGroupId": "string",
+      "productId": "string",
+      "price": "string",
+      "qty": "string",
+      "isInventory": "string",
+      "inventoryAttributes": {
+        "msisdn": "string",
+        "icicid": "string",
+        "imsi": "string",
+        "sim": "string"
+      }
+    }
+  ],
+  "paymentInfo": {
+    "amount": "string",
+    "description": "string",
+    "reasonCode": "string",
+    "paymentType": "string",
+    "transId": "string",
+    "effectiveT": "string"
+  },
+  "orderType": "string",
+  "orderId": "string",
+  "password": "string",
+  "element1": "string",
+  "element2": "string",
+  "element3": "string",
+  "element4": "string"
 }
 {{< / highlight >}}
 {{< /tab >}}
@@ -295,7 +245,9 @@ operation:verifyOTP
   "response": {
     "success": "true",
     "result": {
-      "message": "Captcha matched"
+      "salesOrder": {
+        "salesorder_no": "SO2542"
+      }
     }
   }
 }
@@ -308,8 +260,8 @@ operation:verifyOTP
     "result": {
       "arguments": {
         "statusCode": "400",
-        "errorCode": "400 BAD_REQUEST",
-        "errorMessage": "Header 'source' not present in the request."
+        "errorCode": "BAD_REQUEST",
+        "errorMessage": "Attribute 'Platform' not found in request."
       }
     },
     "success": "false"
@@ -317,21 +269,38 @@ operation:verifyOTP
 }
 {{< / highlight >}}
 {{< /tab >}}
+{{< tab "Server Error" >}}
+{{< highlight java "linenos=table" >}}
+{
+  "response": {
+    "success": "false",
+    "result": {
+      "arguments": {
+        "statusCode": "500",
+        "errorCode": "Downstream error",
+        "errorMessage": "- Not Able to connect with CRM."
+      }
+    }
+  }
+}
+{{< / highlight >}}
+{{< /tab >}}
 {{< /tabs >}}
 
 {{% method-block bgcolor="primary" type="bg-green" callmethod="POST" %}}
-  /crm/v1/otp
+  /crm/v1/signup/kyc
 {{% /method-block %}}
 
-This service enables the user to generate an OTP for resetting the password.
+This service is a registration service which enables to on-board the customer.
 
-It requires correlationId, source, srdate, operation and destination as input parameters. If successful the OTP will be generated in the system for resetting the password. If failed the appropriate error code will be returned.
+It requires correlationId, srdate, source, operation and destination along with the customer's details required to create account in the API body. If successful the customers will be on-boarded. If failed the appropriate error code will be returned.
 
 <section>
 
 ### *Request Parameters*
 | NAME        | TYPE           | DESCRIPTION  |
 | ------------- |:-------------:| ----- |
+| **Data** (mandatory)    | ``string`` (header)      |   Provide the registration data of the customer. |
 | **correlationId** (mandatory)    | ``string`` (header)      |   Provide the correlationId as the value. For example - SO-100 |
 | **Source** (mandatory) | ``string`` (header)      |    Provide the source as the value. For example - Selfcare |
 | **srdate** (mandatory) | ``string`` (header)      |    Provide the date as the value. For example - 11-09-2021 |
@@ -342,16 +311,18 @@ It requires correlationId, source, srdate, operation and destination as input pa
 ### *Request Body Parameters*
 | NAME        | TYPE           | DESCRIPTION  |
 | ------------- |:-------------:| ----- |
+| **Data** (mandatory)    | ``string`` (body)      |   Provide the registration data of the customer. |
 | **correlationId** (mandatory)    | ``string`` (body)      |   Provide the correlationId as the value. For example - SO-100 |
 | **Source** (mandatory) | ``string`` (body)      |    Provide the source as the value. For example - Selfcare |
 | **srdate** (mandatory) | ``string`` (body)      |    Provide the date as the value. For example - 11-09-2021 |
 | **Operation** (mandatory) | ``string`` (body)      |    Provide the operation as the value. For example - emailExists |
 | **destination** (mandatory) | ``string`` (body)      |    Provide the destination as the value. |
-| **type** (mandatory) | ``string`` (body)      |    Provide the type of OTP. |
+| **type** (mandatory) | ``string`` (header)      |    Provide the type of OTP. |
 
 {{< tabs "uniqueid4" >}}
 {{< tab "Request Header" >}}
 {{< highlight java "linenos=table" >}}
+Data:string
 correlationId:SO-101
 srDate:11-09-2021
 source:Selfcare
@@ -360,25 +331,15 @@ operation:verifyOTP
 type:numbers
 {{< / highlight >}}
 {{< /tab >}}
-{{< tab "Request Body" >}}
-{{< highlight java "linenos=table" >}}
-{
-  "email": "string",
-  "userId": "string",
-  "type": "string",
-  "otp": "string",
-  "encryptedOtp": "string",
-  "accountId": "string"
-}
-{{< / highlight >}}
-{{< /tab >}}
 {{< tab "Response" >}}
 {{< highlight java "linenos=table" >}}
 {
   "response": {
     "success": "true",
     "result": {
-      "encryptedOtp": "57a70a39036974caa7e6392b9919846ab533829928b0c9ef06f1d4fbe7ea871f"
+      "salesOrder": {
+        "salesorder_no": "SO2542"
+      }
     }
   }
 }
@@ -391,8 +352,8 @@ type:numbers
     "result": {
       "arguments": {
         "statusCode": "400",
-        "errorCode": "400 BAD_REQUEST",
-        "errorMessage": "Header 'source' not present in the request."
+        "errorCode": "BAD_REQUEST",
+        "errorMessage": "Attribute 'Platform' not found in request."
       }
     },
     "success": "false"
