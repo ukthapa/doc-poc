@@ -394,6 +394,8 @@ operation:verifyOTP
     "success": "false"
   }
 }
+{{< / highlight >}}
+{{< /tab >}}
 {{< tab "Server Error" >}}
 {{< highlight java "linenos=table" >}}
 {
