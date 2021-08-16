@@ -32,7 +32,7 @@ This service allows you to fetch the complete list of inventories available in t
 | **Operation** (mandatory) | ``string`` (header)      |    Provide the operation as the value. For example - Inventory |
 | **destination** (mandatory) | ``string`` (header)      |    Provide the destination as the value. |
 
-{{< tabs "uniqueid" >}}
+{{< tabs "uniqueid9" >}}
 {{< tab "Request Header" >}}
 {{< highlight java "linenos=table" >}}
 correlationId:SO-100
