@@ -99,6 +99,15 @@ This service requires correlationId, source, srdate, operation and destination a
 
 <section>
 
+### *Request Parameters*
+| NAME        | TYPE           | DESCRIPTION  |
+| ------------- |:-------------:| ----- |
+| **correlationId** (mandatory)    | ``string`` (header)      |   Provide the correlationId as the value. For example - SO-100 |
+| **Source** (mandatory) | ``string`` (header)      |    Provide the source as the value. For example - Selfcare |
+| **srdate** (mandatory) | ``string`` (header)      |    Provide the date as the value. For example - 11-09-2021 |
+| **Operation** (mandatory) | ``string`` (header)      |    Provide the operation as the value. For example - emailExists |
+| **destination** (mandatory) | ``string`` (header)      |    Provide the destination as the value. |
+
 ### *Request Body Parameters*
 | NAME        | TYPE           | DESCRIPTION  |
 | ------------- |:-------------:| ----- |
