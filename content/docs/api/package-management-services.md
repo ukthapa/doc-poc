@@ -609,6 +609,8 @@ It requires token, serviceProvider, source, srdate, operation, correlationId and
 | **destination** (mandatory) | ``string`` (header)      |    Provide the destination as the value. |
 
 ### *Request Body Parameters*
+| NAME        | TYPE           | DESCRIPTION  |
+| ------------- |:-------------:| ----- |
 | **token** (mandatory)    | ``string`` (body)      |   Provide the bolton token as the value. |
 | **serviceProvider** (mandatory)    | ``string`` (body)      |   Provide the serviceProvider as the value. |
 | **correlationId** (mandatory)    | ``string`` (body)      |   Provide the correlationId as the value. For example - SO-100 |
