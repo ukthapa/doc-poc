@@ -13,7 +13,7 @@ weight: 203
 toc: false
 ---
 
-{{% method-block bgcolor="primary" type="bg-green" callmethod="PUT" %}}
+{{% method-block bgcolor="warning" type="bg-orange" callmethod="PUT" %}}
   /crm/v1/firebase/ticket
 {{% /method-block %}}
 
