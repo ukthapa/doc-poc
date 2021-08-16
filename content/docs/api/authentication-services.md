@@ -117,7 +117,7 @@ This service requires correlationId, source, srdate, operation and destination a
 | **Operation** (mandatory) | ``string`` (body)      |    Provide the operation as the value. For example - emailExists |
 | **destination** (mandatory) | ``string`` (body)      |    Provide the destination as the value. |
 
-{{< tabs "uniqueid2" >}}
+{{< tabs "uniqueid1" >}}
 {{< tab "Request Header" >}}
 {{< highlight java "linenos=table" >}}
 correlationId:SO-101
@@ -184,7 +184,7 @@ This service is used to retrieve the captcha of the customer from the system for
 | **Operation** (mandatory) | ``string`` (header)      |    Provide the operation as the value. For example - emailExists |
 | **destination** (mandatory) | ``string`` (header)      |    Provide the destination as the value. |
 
-{{< tabs "uniqueid" >}}
+{{< tabs "uniqueid2" >}}
 {{< tab "Request Header" >}}
 {{< highlight java "linenos=table" >}}
 correlationId:SO-100
@@ -349,7 +349,7 @@ It requires correlationId, source, srdate, operation and destination as input pa
 | **destination** (mandatory) | ``string`` (body)      |    Provide the destination as the value. |
 | **type** (mandatory) | ``string`` (header)      |    Provide the type of OTP. |
 
-{{< tabs "uniqueid1" >}}
+{{< tabs "uniqueid4" >}}
 {{< tab "Request Header" >}}
 {{< highlight java "linenos=table" >}}
 correlationId:SO-101
