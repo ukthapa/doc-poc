@@ -13,12 +13,15 @@ weight: 201
 toc: false
 ---
 
-## GET </crm/v1/auth/email>
-<section>
+{{% method-block bgcolor="success" type="bg-blue" callmethod="GET" %}}
+  /crm/v1/auth/email
+{{% /method-block %}}
 
 This service allows you to verify the customer's email ID. It requires input parameters like, email, correlationId, source, srdate, operation and destination. On successful verification the system will validate the email ID while signing up already exists in the system or not. If not the appropriate error code will be returned.
 
-### Request Parameters
+<section>
+
+#### *Request Parameters*
 | NAME        | TYPE           | DESCRIPTION  |
 | ------------- |:-------------:| -----:|
 | email (mandatory)    | string (header) | Provide the customer's email ID as the value. For example - adarsha_cds1@yopmail.com |
@@ -86,14 +89,17 @@ srDate:11-09-2021
 {{< /tabs >}}
 </section>
 
-## POST </crm/v1/auth/otp>
-<section>
+{{% method-block bgcolor="primary" type="bg-green" callmethod="POST" %}}
+  /crm/v1/auth/otp
+{{% /method-block %}}
 
 This service is a validation service used when the customer wants to create a new password or has forgotten the password. It verifies the OTP to received for password generation.
 
 This service requires correlationId, source, srdate, operation and destination along with the email ID, OTP and encrypted data in the API body. If the valid OTP is provided by the customer it will verify and allow to proceed with password creation successfully. If the OTP provided is wrong the appropriate error code will be returned.
 
-### Request Parameters
+<section>
+
+### *Request Parameters*
 | NAME        | TYPE           | DESCRIPTION  |
 | ------------- |:-------------:| -----:|
 | correlationId (mandatory)    | string (body)      |   Provide the correlationId as the value. For example - SO-100 |

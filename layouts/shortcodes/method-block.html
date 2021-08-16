@@ -1,0 +1,6 @@
+{{- $bgcolor:= (.Get "bgcolor") -}}
+{{- $type:= (.Get "type") -}}
+{{- $callmethod:= (.Get "callmethod") -}}
+<div class="method-block method-block-{{ $bgcolor }} {{$type}}">
+  <span class="text-white">{{ $callmethod }}</span><span>{{.Inner}}</span>
+</div>
