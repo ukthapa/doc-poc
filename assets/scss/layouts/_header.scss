@@ -118,7 +118,7 @@
     margin-right: 0;
   }
   .navbar {
-    left: 346px;
+    left: 297px;
     margin-top: 0;
   }
 }
@@ -126,6 +126,10 @@
 @include media-breakpoint-up(xl) {
   .navbar-form {
     margin-left: 25rem;
+  }
+  .navbar {
+    left: 255px;
+    margin-top: 0;
   }
 }
 

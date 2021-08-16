@@ -127,7 +127,7 @@ operation:verifyOTP
 }
 {{< / highlight >}}
 {{< /tab >}}
-{{< tab "Success Response" >}}
+{{< tab "Response" >}}
 {{< highlight java "linenos=table" >}}
 {
   "response": {
