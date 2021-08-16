@@ -42,7 +42,7 @@ source:Selfcare
 srDate:11-09-2021
 {{< / highlight >}}
 {{< /tab >}}
-{{< tab "Success Response" >}}
+{{< tab "Response" >}}
 {{< highlight java "linenos=table" >}}
 {
   "response": {
