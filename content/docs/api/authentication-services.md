@@ -117,7 +117,7 @@ This service requires correlationId, source, srdate, operation and destination a
 | **Operation** (mandatory) | ``string`` (body)      |    Provide the operation as the value. For example - emailExists |
 | **destination** (mandatory) | ``string`` (body)      |    Provide the destination as the value. |
 
-{{< tabs "uniqueid1" >}}
+{{< tabs "uniqueid2" >}}
 {{< tab "Request Header" >}}
 {{< highlight java "linenos=table" >}}
 correlationId:SO-101
@@ -271,7 +271,7 @@ It requires correlationId, source, srdate, operation and destination as input pa
 | **Operation** (mandatory) | ``string`` (body)      |    Provide the operation as the value. For example - emailExists |
 | **destination** (mandatory) | ``string`` (body)      |    Provide the destination as the value. |
 
-{{< tabs "uniqueid1" >}}
+{{< tabs "uniqueid3" >}}
 {{< tab "Request Header" >}}
 {{< highlight java "linenos=table" >}}
 correlationId:SO-101
