@@ -147,6 +147,7 @@ a.btn:focus {
   @supports ((position: -webkit-sticky) or (position: sticky)) {
     .docs-links {
       max-height: calc(100vh - 4rem);
+      overflow: auto;
       // overflow-y: scroll;
     }
   }
