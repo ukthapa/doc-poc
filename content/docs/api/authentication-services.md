@@ -99,7 +99,7 @@ This service requires correlationId, source, srdate, operation and destination a
 
 <section>
 
-### *Request Parameters*
+### *Request Body Parameters*
 | NAME        | TYPE           | DESCRIPTION  |
 | ------------- |:-------------:| ----- |
 | **correlationId** (mandatory)    | ``string`` (body)      |   Provide the correlationId as the value. For example - SO-100 |
