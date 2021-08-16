@@ -29,7 +29,7 @@ This service allows you to fetch the complete list of inventories available in t
 | **correlationId** (mandatory)    | ``string`` (header)      |   Provide the correlationId as the value. For example - SO-100 |
 | **Source** (mandatory) | ``string`` (header)      |    Provide the source as the value. For example - Selfcare |
 | **srdate** (mandatory) | ``string`` (header)      |    Provide the date as the value. For example - 11-09-2021 |
-| **Operation** (mandatory) | ``string`` (header)      |    Provide the operation as the value. For example - emailExists |
+| **Operation** (mandatory) | ``string`` (header)      |    Provide the operation as the value. For example - Inventory |
 | **destination** (mandatory) | ``string`` (header)      |    Provide the destination as the value. |
 
 {{< tabs "uniqueid" >}}
@@ -37,8 +37,8 @@ This service allows you to fetch the complete list of inventories available in t
 {{< highlight java "linenos=table" >}}
 correlationId:SO-100
 email:adarsha_cds1@yopmail.com
-irStatus:active
-limit:100
+irStatus:reserved
+limit:5
 operation:emailExists
 destination:CRM
 source:Selfcare
