@@ -1,3 +1,9 @@
+
+main li, main p, main ul, main ol {
+  line-height: 24px;
+  font-size: 14px;
+}
+
 .hero-section {
   margin-right: calc(var(--bs-gutter-x) / -.8);
   margin-left: calc(var(--bs-gutter-x) / -.8);
@@ -106,20 +112,13 @@
           pre {
             margin: 0 !important;
             border-radius: 0 !important;
-            // .hljs {
-            //   background-color: #4F566B;
-            //   border-radius: 0;
-            // }
           }
           &:first-child {
             width: 70px !important;
-            // .hljs {
-            //   color: #6C809F !important;
-            // }
           }
       }
   }
-    .highlight > .chroma {
+    div.chroma {
       overflow: auto;
     }
 
@@ -173,7 +172,7 @@ main section {
     line-height: 1.5;
   }
   span:first-child {
-    font-weight: 600;
+    font-weight: 500;
   }
 }
 
@@ -201,8 +200,8 @@ main section {
     .doc-tabs {
       position: absolute;
       left: calc(100% + 45px);
-      width: calc(39.5vw - 40px);
-      top: 90px;
+      width: calc(33.7vw - 40px);
+      top: 64px;
     }
   }
 }

@@ -13,7 +13,7 @@ weight: 201
 toc: false
 ---
 
-{{% method-block bgcolor="success" type="bg-green" callmethod="GET" %}}
+{{% method-block bgcolor="success" type="bg-blue" callmethod="GET" %}}
   /crm/v1/auth/email
 {{% /method-block %}}
 
@@ -21,15 +21,15 @@ This service allows you to verify the customer's email ID. It requires input par
 
 <section>
 
-### Request Parameters
+#### *Request Parameters*
 | NAME        | TYPE           | DESCRIPTION  |
-| ------------- |:-------------:| -----:|
-| email     | string (header) | Provide the customer's email ID as the value. For example - adarsha_cds1@yopmail.com |
-| correlationId     | string (header)      |   Provide the correlationId as the value. For example - SO-100 |
-| Source | string (header)      |    Provide the source as the value. For example - Selfcare |
-| srdate | string (header)      |    Provide the date as the value. For example - 11-09-2021 |
-| Operation | string (header)      |    Provide the operation as the value. For example - emailExists |
-| destination | string (header)      |    Provide the destination as the value. |
+| ------------- |:-------------:| ----- |
+| **email**    | ``string`` (header) | Provide the customer's email ID as the value. For example - adarsha_cds1@yopmail.com |
+| **correlationId**     | ``string`` (header)      |   Provide the correlationId as the value. For example - SO-100 |
+| **Source** | ``string`` (header)      |    Provide the source as the value. For example - Selfcare |
+| **srdate** | ``string`` (header)      |    Provide the date as the value. For example - 11-09-2021 |
+| **Operation** | ``string`` (header)      |    Provide the operation as the value. For example - emailExists |
+| **destination** | ``string`` (header)      |    Provide the destination as the value. |
 
 {{< tabs "uniqueid" >}}
 {{< tab "Request Header" >}}
@@ -63,7 +63,7 @@ srDate:11-09-2021
 {{< /tabs >}}
 </section>
 
-{{% method-block bgcolor="primary" type="bg-blue" callmethod="POST" %}}
+{{% method-block bgcolor="primary" type="bg-green" callmethod="POST" %}}
   /crm/v1/auth/otp
 {{% /method-block %}}
 
@@ -73,14 +73,14 @@ This service requires correlationId, source, srdate, operation and destination a
 
 <section>
 
-### Request Parameters
+### *Request Parameters*
 | NAME        | TYPE           | DESCRIPTION  |
-| ------------- |:-------------:| -----:|
-| correlationId     | string (header)      |   Provide the correlationId as the value. For example - SO-100 |
-| Source | string (header)      |    Provide the source as the value. For example - Selfcare |
-| srdate | string (header)      |    Provide the date as the value. For example - 11-09-2021 |
-| Operation | string (header)      |    Provide the operation as the value. For example - emailExists |
-| destination | string (header)      |    Provide the destination as the value. |
+| ------------- |:-------------:| ----- |
+| **correlationId**     | ``string`` (header)      |   Provide the correlationId as the value. For example - SO-100 |
+| **Source** | ``string`` (header)      |    Provide the source as the value. For example - Selfcare |
+| **srdate** | ``string`` (header)      |    Provide the date as the value. For example - 11-09-2021 |
+| **Operation** | ``string`` (header)      |    Provide the operation as the value. For example - emailExists |
+| **destination** | ``string`` (header)      |    Provide the destination as the value. |
 
 {{< tabs "uniqueid1" >}}
 {{< tab "Request Header" >}}
