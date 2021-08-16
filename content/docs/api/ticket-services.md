@@ -189,7 +189,7 @@ srDate:11-09-2021
 </section>
 
 {{% method-block bgcolor="primary" type="bg-green" callmethod="POST" %}}
-  /crm/v1/social/ticket
+/crm/v1/social/ticket
 {{% /method-block %}}
 
 This service is used to create new social media ticket for the customer. It requires correlationId, srdate, source, operation and destination as input parameters.
@@ -302,6 +302,8 @@ operation:verifyOTP
     "success": "false"
   }
 }
+{{< / highlight >}}
+{{< /tab >}}
 {{< tab "Server Error" >}}
 {{< highlight java "linenos=table" >}}
 {
@@ -322,7 +324,7 @@ operation:verifyOTP
 </section>
 
 {{% method-block bgcolor="primary" type="bg-green" callmethod="POST" %}}
-  /crm/v1/ticket/comment
+/crm/v1/ticket/comment
 {{% /method-block %}}
 
 This service is allows the user to update comments for a particular ticket. It requires, token, data, correlationId, srdate, source, operation and destination as input parameters. If successful for the given ticket the comment will be added. If failed the appropriate error code will be returned.
@@ -416,7 +418,7 @@ operation:verifyOTP
 </section>
 
 {{% method-block bgcolor="primary" type="bg-green" callmethod="POST" %}}
-  /crm/v1/ticket
+/crm/v1/ticket
 {{% /method-block %}}
 
 This service is allows the user to create a new ticket.
@@ -547,6 +549,8 @@ operation:verifyOTP
     "success": "false"
   }
 }
+{{< / highlight >}}
+{{< /tab >}}
 {{< tab "Server Error" >}}
 {{< highlight java "linenos=table" >}}
 {
