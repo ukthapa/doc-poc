@@ -211,6 +211,7 @@ main section {
       left: calc(100% + 45px);
       width: calc(42.7vw - 40px);
       top: 64px;
+      z-index: 2;
     }
   }
 }
