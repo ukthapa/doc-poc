@@ -22,7 +22,7 @@ This service allows you to verify the customer's email ID. It requires input par
 <section>
 
 #### *Request Parameters*
-| NAME        | TYPE           | DESCRIPTION  |
+| NAME        | TYPE          | DESCRIPTION  |
 | ------------- |:-------------:| ----- |
 | **email** (mandatory)    | ``string`` (header) | Provide the customer's email ID as the value. For example - adarsha_cds1@yopmail.com |
 | **correlationId** (mandatory)    | ``string`` (header)      |   Provide the correlationId as the value. For example - SO-100 |
