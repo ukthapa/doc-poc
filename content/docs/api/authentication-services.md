@@ -21,12 +21,12 @@ This service allows you to verify the customer's email ID. It requires input par
 ### Request Parameters
 | NAME        | TYPE           | DESCRIPTION  |
 | ------------- |:-------------:| -----:|
-| email     | string (header) | Provide the customer's email ID as the value. For example - adarsha_cds1@yopmail.com |
-| correlationId     | string (header)      |   Provide the correlationId as the value. For example - SO-100 |
-| Source | string (header)      |    Provide the source as the value. For example - Selfcare |
-| srdate | string (header)      |    Provide the date as the value. For example - 11-09-2021 |
-| Operation | string (header)      |    Provide the operation as the value. For example - emailExists |
-| destination | string (header)      |    Provide the destination as the value. |
+| email (mandatory)    | string (header) | Provide the customer's email ID as the value. For example - adarsha_cds1@yopmail.com |
+| correlationId (mandatory)    | string (header)      |   Provide the correlationId as the value. For example - SO-100 |
+| Source (mandatory) | string (header)      |    Provide the source as the value. For example - Selfcare |
+| srdate (mandatory) | string (header)      |    Provide the date as the value. For example - 11-09-2021 |
+| Operation (mandatory) | string (header)      |    Provide the operation as the value. For example - emailExists |
+| destination (mandatory) | string (header)      |    Provide the destination as the value. |
 
 {{< tabs "uniqueid" >}}
 {{< tab "Request Header" >}}
@@ -37,12 +37,38 @@ operation:emailExists
 destination:CRM
 source:Selfcare
 srDate:11-09-2021
-
 {{< / highlight >}}
 {{< /tab >}}
-{{< tab "Error" >}}
+{{< tab "Success Response" >}}
 {{< highlight java "linenos=table" >}}
-### Downstream error
+{
+  "response": {
+    "success": "true",
+    "result": {
+      "response": "Email already exists."
+    }
+  }
+}
+{{< / highlight >}}
+{{< /tab >}}
+{{< tab "Client Error" >}}
+{{< highlight java "linenos=table" >}}
+{
+  "response": {
+    "result": {
+      "arguments": {
+        "statusCode": "400",
+        "errorCode": "400 BAD_REQUEST",
+        "errorMessage": "Header 'source' not present in the request."
+      }
+    },
+    "success": "false"
+  }
+}
+{{< / highlight >}}
+{{< /tab >}}
+{{< tab "Server Error" >}}
+{{< highlight java "linenos=table" >}}
 {
   "response": {
     "success": "false",
@@ -50,7 +76,7 @@ srDate:11-09-2021
       "arguments": {
         "statusCode": "500",
         "errorCode": "Downstream error",
-        "errorMessage": "Not Able to connect with CRM."
+        "errorMessage": "- Not Able to connect with CRM."
       }
     }
   }
@@ -70,11 +96,11 @@ This service requires correlationId, source, srdate, operation and destination a
 ### Request Parameters
 | NAME        | TYPE           | DESCRIPTION  |
 | ------------- |:-------------:| -----:|
-| correlationId     | string (header)      |   Provide the correlationId as the value. For example - SO-100 |
-| Source | string (header)      |    Provide the source as the value. For example - Selfcare |
-| srdate | string (header)      |    Provide the date as the value. For example - 11-09-2021 |
-| Operation | string (header)      |    Provide the operation as the value. For example - emailExists |
-| destination | string (header)      |    Provide the destination as the value. |
+| correlationId (mandatory)    | string (body)      |   Provide the correlationId as the value. For example - SO-100 |
+| Source (mandatory) | string (body)      |    Provide the source as the value. For example - Selfcare |
+| srdate (mandatory) | string (body)      |    Provide the date as the value. For example - 11-09-2021 |
+| Operation (mandatory) | string (body)      |    Provide the operation as the value. For example - emailExists |
+| destination (mandatory) | string (body)      |    Provide the destination as the value. |
 
 {{< tabs "uniqueid1" >}}
 {{< tab "Request Header" >}}
@@ -92,6 +118,34 @@ operation:verifyOTP
     "email":"adarsha_cds3@yopmail.com",
     "encryptedOtp":"e1aa84d4a0a00d21f960b8938a23cb890e35609b080174b74753839587cbce42",
     "otp" : "115695"
+}
+{{< / highlight >}}
+{{< /tab >}}
+{{< tab "Success Response" >}}
+{{< highlight java "linenos=table" >}}
+{
+  "response": {
+    "success": "true",
+    "result": {
+      "message": "successfully verified OTP"
+    }
+  }
+}
+{{< / highlight >}}
+{{< /tab >}}
+{{< tab "Client Error" >}}
+{{< highlight java "linenos=table" >}}
+{
+  "response": {
+    "result": {
+      "arguments": {
+        "statusCode": "400",
+        "errorCode": "400 BAD_REQUEST",
+        "errorMessage": "Header 'source' not present in the request."
+      }
+    },
+    "success": "false"
+  }
 }
 {{< / highlight >}}
 {{< /tab >}}
