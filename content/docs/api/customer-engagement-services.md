@@ -300,7 +300,7 @@ It requires correlationId, srdate, source, operation and destination along with 
 ### *Request Parameters*
 | NAME        | TYPE           | DESCRIPTION  |
 | ------------- |:-------------:| ----- |
-| **Data** (mandatory)    | ``string`` (header)      |   Provide the registration data of the customer. |
+| **Data** (mandatory)    | ``string`` (query)      |   Provide the registration data of the customer. |
 | **correlationId** (mandatory)    | ``string`` (header)      |   Provide the correlationId as the value. For example - SO-100 |
 | **Source** (mandatory) | ``string`` (header)      |    Provide the source as the value. For example - Selfcare |
 | **srdate** (mandatory) | ``string`` (header)      |    Provide the date as the value. For example - 11-09-2021 |
@@ -311,7 +311,7 @@ It requires correlationId, srdate, source, operation and destination along with 
 ### *Request Body Parameters*
 | NAME        | TYPE           | DESCRIPTION  |
 | ------------- |:-------------:| ----- |
-| **Data** (mandatory)    | ``string`` (body)      |   Provide the registration data of the customer. |
+| **Data** (mandatory)    | ``string`` (query)      |   Provide the registration data of the customer. |
 | **correlationId** (mandatory)    | ``string`` (body)      |   Provide the correlationId as the value. For example - SO-100 |
 | **Source** (mandatory) | ``string`` (body)      |    Provide the source as the value. For example - Selfcare |
 | **srdate** (mandatory) | ``string`` (body)      |    Provide the date as the value. For example - 11-09-2021 |
@@ -322,7 +322,7 @@ It requires correlationId, srdate, source, operation and destination along with 
 {{< tabs "uniqueid4" >}}
 {{< tab "Request Header" >}}
 {{< highlight java "linenos=table" >}}
-Data:string
+Data:query
 correlationId:SO-101
 srDate:11-09-2021
 source:Selfcare
