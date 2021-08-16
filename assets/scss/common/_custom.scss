@@ -118,13 +118,9 @@ main li, main p, main ul, main ol {
           }
       }
   }
-    div.chroma {
-      overflow: auto;
-    }
-
     button {
       position: absolute;
-      top: 4px;
+      top: 39px;
       right: 4px;
       border: none;
       background: #4f566b;
@@ -136,6 +132,11 @@ main li, main p, main ul, main ol {
       border-radius: 5px;
     }
 
+}
+
+
+.copy-code-button +  div {
+  overflow: auto !important;
 }
 
 
@@ -194,13 +195,13 @@ main section {
 
 
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1200px) {
   main section {
     position: relative;
     .doc-tabs {
       position: absolute;
       left: calc(100% + 45px);
-      width: calc(33.7vw - 40px);
+      width: calc(42.7vw - 40px);
       top: 64px;
     }
   }
