@@ -166,3 +166,254 @@ operation:verifyOTP
 {{< /tab >}}
 {{< /tabs >}}
 </section>
+
+{{% method-block bgcolor="success" type="bg-blue" callmethod="GET" %}}
+  /crm/v1/auth/captcha
+{{% /method-block %}}
+
+This service is used to retrieve the captcha of the customer from the system for the purpose of authentication. It requires correlationId, source, srdate, operation and destination as input parameters. If the captcha clicked by the customer matches the captcha saved in the system the it will be successfully verified. If not appropriate error code will be returned.
+
+<section>
+
+#### *Request Parameters*
+| NAME        | TYPE          | DESCRIPTION  |
+| ------------- |:-------------:| ----- |
+| **correlationId** (mandatory)    | ``string`` (header)      |   Provide the correlationId as the value. For example - SO-100 |
+| **Source** (mandatory) | ``string`` (header)      |    Provide the source as the value. For example - Selfcare |
+| **srdate** (mandatory) | ``string`` (header)      |    Provide the date as the value. For example - 11-09-2021 |
+| **Operation** (mandatory) | ``string`` (header)      |    Provide the operation as the value. For example - emailExists |
+| **destination** (mandatory) | ``string`` (header)      |    Provide the destination as the value. |
+
+{{< tabs "uniqueid" >}}
+{{< tab "Request Header" >}}
+{{< highlight java "linenos=table" >}}
+correlationId:SO-100
+operation:emailExists
+destination:CRM
+source:Selfcare
+srDate:11-09-2021
+{{< / highlight >}}
+{{< /tab >}}
+{{< tab "Response" >}}
+{{< highlight java "linenos=table" >}}
+{
+  "response": {
+    "success": "true",
+    "result": {
+      "capthaImage": "http://localhost:31074/resources/captchaImages/fbcb0bbf8c79751facf4785d178607f8b5f7619b.jpg",
+      "captchaHash": "c9891a983ba95d5a94bbeb6d05cd7fa39791384de05f2a1e464953b5265dcc49",
+      "capthaAdImage": ""
+    }
+  }
+}
+{{< / highlight >}}
+{{< /tab >}}
+{{< tab "Client Error" >}}
+{{< highlight java "linenos=table" >}}
+{
+  "response": {
+    "result": {
+      "arguments": {
+        "statusCode": "400",
+        "errorCode": "400 BAD_REQUEST",
+        "errorMessage": "Header 'source' not present in the request."
+      }
+    },
+    "success": "false"
+  }
+}
+{{< / highlight >}}
+{{< /tab >}}
+{{< tab "Server Error" >}}
+{{< highlight java "linenos=table" >}}
+{
+  "response": {
+    "success": "false",
+    "result": {
+      "arguments": {
+        "statusCode": "500",
+        "errorCode": "Downstream error",
+        "errorMessage": "- Not Able to connect with CRM."
+      }
+    }
+  }
+}
+{{< / highlight >}}
+{{< /tab >}}
+{{< /tabs >}}
+</section>
+
+{{% method-block bgcolor="primary" type="bg-green" callmethod="POST" %}}
+  /crm/v1/auth/captcha
+{{% /method-block %}}
+
+This service enables the user to provide a captcha for verification.
+
+It requires correlationId, source, srdate, operation and destination as input parameters. If successful the captcha provided will be saved for a customer. If failed the appropriate error code will be returned.
+
+<section>
+
+### *Request Parameters*
+| NAME        | TYPE           | DESCRIPTION  |
+| ------------- |:-------------:| ----- |
+| **correlationId** (mandatory)    | ``string`` (header)      |   Provide the correlationId as the value. For example - SO-100 |
+| **Source** (mandatory) | ``string`` (header)      |    Provide the source as the value. For example - Selfcare |
+| **srdate** (mandatory) | ``string`` (header)      |    Provide the date as the value. For example - 11-09-2021 |
+| **Operation** (mandatory) | ``string`` (header)      |    Provide the operation as the value. For example - emailExists |
+| **destination** (mandatory) | ``string`` (header)      |    Provide the destination as the value. |
+
+### *Request Body Parameters*
+| NAME        | TYPE           | DESCRIPTION  |
+| ------------- |:-------------:| ----- |
+| **correlationId** (mandatory)    | ``string`` (body)      |   Provide the correlationId as the value. For example - SO-100 |
+| **Source** (mandatory) | ``string`` (body)      |    Provide the source as the value. For example - Selfcare |
+| **srdate** (mandatory) | ``string`` (body)      |    Provide the date as the value. For example - 11-09-2021 |
+| **Operation** (mandatory) | ``string`` (body)      |    Provide the operation as the value. For example - emailExists |
+| **destination** (mandatory) | ``string`` (body)      |    Provide the destination as the value. |
+
+{{< tabs "uniqueid1" >}}
+{{< tab "Request Header" >}}
+{{< highlight java "linenos=table" >}}
+correlationId:SO-101
+srDate:11-09-2021
+source:Selfcare
+destination:CRM
+operation:verifyOTP
+{{< / highlight >}}
+{{< /tab >}}
+{{< tab "Request Body" >}}
+{{< highlight java "linenos=table" >}}
+{
+  "userCaptchaText": "string",
+  "captchaHash": "string"
+}
+{{< / highlight >}}
+{{< /tab >}}
+{{< tab "Response" >}}
+{{< highlight java "linenos=table" >}}
+{
+  "response": {
+    "success": "true",
+    "result": {
+      "message": "Captcha matched"
+    }
+  }
+}
+{{< / highlight >}}
+{{< /tab >}}
+{{< tab "Client Error" >}}
+{{< highlight java "linenos=table" >}}
+{
+  "response": {
+    "result": {
+      "arguments": {
+        "statusCode": "400",
+        "errorCode": "400 BAD_REQUEST",
+        "errorMessage": "Header 'source' not present in the request."
+      }
+    },
+    "success": "false"
+  }
+}
+{{< / highlight >}}
+{{< /tab >}}
+{{< /tabs >}}
+
+{{% method-block bgcolor="primary" type="bg-green" callmethod="POST" %}}
+  /crm/v1/otp
+{{% /method-block %}}
+
+This service enables the user to generate an OTP for resetting the password.
+
+It requires correlationId, source, srdate, operation and destination as input parameters. If successful the OTP will be generated in the system for resetting the password. If failed the appropriate error code will be returned.
+
+<section>
+
+### *Request Parameters*
+| NAME        | TYPE           | DESCRIPTION  |
+| ------------- |:-------------:| ----- |
+| **correlationId** (mandatory)    | ``string`` (header)      |   Provide the correlationId as the value. For example - SO-100 |
+| **Source** (mandatory) | ``string`` (header)      |    Provide the source as the value. For example - Selfcare |
+| **srdate** (mandatory) | ``string`` (header)      |    Provide the date as the value. For example - 11-09-2021 |
+| **Operation** (mandatory) | ``string`` (header)      |    Provide the operation as the value. For example - emailExists |
+| **destination** (mandatory) | ``string`` (header)      |    Provide the destination as the value. |
+| **type** (mandatory) | ``string`` (header)      |    Provide the type of OTP. |
+
+### *Request Body Parameters*
+| NAME        | TYPE           | DESCRIPTION  |
+| ------------- |:-------------:| ----- |
+| **correlationId** (mandatory)    | ``string`` (body)      |   Provide the correlationId as the value. For example - SO-100 |
+| **Source** (mandatory) | ``string`` (body)      |    Provide the source as the value. For example - Selfcare |
+| **srdate** (mandatory) | ``string`` (body)      |    Provide the date as the value. For example - 11-09-2021 |
+| **Operation** (mandatory) | ``string`` (body)      |    Provide the operation as the value. For example - emailExists |
+| **destination** (mandatory) | ``string`` (body)      |    Provide the destination as the value. |
+| **type** (mandatory) | ``string`` (header)      |    Provide the type of OTP. |
+
+{{< tabs "uniqueid1" >}}
+{{< tab "Request Header" >}}
+{{< highlight java "linenos=table" >}}
+correlationId:SO-101
+srDate:11-09-2021
+source:Selfcare
+destination:CRM
+operation:verifyOTP
+type:numbers
+{{< / highlight >}}
+{{< /tab >}}
+{{< tab "Request Body" >}}
+{{< highlight java "linenos=table" >}}
+{
+  "email": "string",
+  "userId": "string",
+  "type": "string",
+  "otp": "string",
+  "encryptedOtp": "string",
+  "accountId": "string"
+}
+{{< / highlight >}}
+{{< /tab >}}
+{{< tab "Response" >}}
+{{< highlight java "linenos=table" >}}
+{
+  "response": {
+    "success": "true",
+    "result": {
+      "encryptedOtp": "57a70a39036974caa7e6392b9919846ab533829928b0c9ef06f1d4fbe7ea871f"
+    }
+  }
+}
+{{< / highlight >}}
+{{< /tab >}}
+{{< tab "Server Error" >}}
+{{< highlight java "linenos=table" >}}
+{
+  "response": {
+    "success": "false",
+    "result": {
+      "arguments": {
+        "statusCode": "500",
+        "errorCode": "Downstream error",
+        "errorMessage": "- Not Able to connect with CRM."
+      }
+    }
+  }
+}
+{{< / highlight >}}
+{{< /tab >}}
+{{< tab "Client Error" >}}
+{{< highlight java "linenos=table" >}}
+{
+  "response": {
+    "result": {
+      "arguments": {
+        "statusCode": "400",
+        "errorCode": "400 BAD_REQUEST",
+        "errorMessage": "Header 'source' not present in the request."
+      }
+    },
+    "success": "false"
+  }
+}
+{{< /tabs >}}
+
+</section>
