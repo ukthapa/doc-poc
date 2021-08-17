@@ -37,7 +37,7 @@
         parent = "api"
 
         [[docs]]
-          name = "Notification Services"
+          name = "Live Services"
           weight = 500
           identifier = "LS"
           pre = '<img src="/svg-icons/stack.svg" alt="">'
