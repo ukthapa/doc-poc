@@ -154,7 +154,7 @@ This service allows you to fetch the account information of a particular account
 | **accountNo** (mandatory)    | ``string`` (query) | Provide the account number of which you want to view the balance details. |
 | **deviceId** (mandatory)    | ``string`` (query)      |   Provide the device ID. |
 
-{{< tabs "uniqueid9" >}}
+{{< tabs "uniqueid7" >}}
 {{< tab "Request Header" >}}
 {{< highlight java "linenos=table" >}}
 accountNo:string
@@ -333,7 +333,7 @@ This service allows you to fetch the plan switch History information of a given 
 | **start** (optional)    | ``string`` (query)      |   Provide the start date. |
 | **end** (optional)    | ``string`` (query)      |   Provide the end date. |
 
-{{< tabs "uniqueid9" >}}
+{{< tabs "uniqueid8" >}}
 {{< tab "Request Header" >}}
 {{< highlight java "linenos=table" >}}
 accountNo:string
