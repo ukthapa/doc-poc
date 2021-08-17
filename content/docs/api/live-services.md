@@ -8,7 +8,7 @@ draft: false
 images: []
 menu:
   docs:
-    parent: "CRM"
+    parent: "LS"
 weight: 501
 toc: false
 ---
