@@ -36,7 +36,7 @@ It requires Token, Correlation ID, SEdated, Operation, Destination, Source as in
 {{< tabs "uniqueid5" >}}
 {{< tab "Request Header" >}}
 {{< highlight java "linenos=table" >}}
-token: string
+token:string
 correlationId:SO-100
 operation:emailExists
 destination:CRM
