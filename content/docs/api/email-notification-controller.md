@@ -169,3 +169,105 @@ operation:verifyOTP
 {{< /tab >}}
 {{< /tabs >}}
 </section>
+
+{{% method-block bgcolor="primary" type="bg-green" callmethod="POST" %}}
+/notification/v1/vl/email
+{{% /method-block %}}
+
+This service is used to send simple email to the partner.
+
+<section>
+
+{{< tabs "uniqueid3" >}}
+{{< tab "Request Body" >}}
+{{< highlight java "linenos=table" >}}
+{
+  "header": {
+    "correlationId": "string",
+    "operation": "string",
+    "requestorChannel": "string",
+    "srDate": "string",
+    "serviceProvider": "string",
+    "backendChannel": "string"
+  },
+  "message": {
+    "subject": "string",
+    "templateType": "string",
+    "data": {
+      "firstName": "string",
+      "lastName": "string",
+      "email": "string",
+      "cc": "string",
+      "bcc": "string",
+      "salutation": "string",
+      "middleName": "string",
+      "accountNumber": "string",
+      "mobNumber": "string",
+      "imsi": "string",
+      "imei": "string",
+      "plan": "string",
+      "userId": "string",
+      "password": "string",
+      "createDate": "string",
+      "paymentMethod": "string",
+      "paymentReceiver": "string",
+      "total": "string",
+      "balance": "string",
+      "treceipt": "string",
+      "userExpiryDate": "string",
+      "autoRegAccountName": "string",
+      "userPaymentBalance": "string",
+      "billIndex": "string",
+      "invoiceNumber": "string",
+      "partnerId": "string",
+      "environment": "string",
+      "comment": "string",
+      "supportEmail": "string",
+      "partnerContactNumber": "string",
+      "partnerEmail": "string",
+      "partnerStatus": "string",
+      "loginUrl": "string"
+    }
+  }
+}
+{{< / highlight >}}
+{{< /tab >}}
+{{< tab "Response" >}}
+{{< highlight java "linenos=table" >}}
+{
+  "response": {
+    "result": {
+      "email": "support@xyz.com",
+      "message": "Email has been sent"
+    },
+    "success": "SUCCESS"
+  }
+}
+{{< / highlight >}}
+{{< /tab >}}
+{{< tab "Client Error" >}}
+{{< highlight java "linenos=table" >}}
+{
+  "response": {
+    "result": {
+      "message": "Missing request header 'srDate' for method parameter of type String"
+    },
+    "success": "FAILED"
+  }
+}
+{{< / highlight >}}
+{{< /tab >}}
+{{< tab "Server Error" >}}
+{{< highlight java "linenos=table" >}}
+{
+  "response": {
+    "result": {
+      "message": "Subject must not be null"
+    },
+    "success": "FAILED"
+  }
+}
+{{< / highlight >}}
+{{< /tab >}}
+{{< /tabs >}}
+</section>
