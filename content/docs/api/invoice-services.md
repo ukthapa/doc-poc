@@ -151,7 +151,7 @@ It requires billNo, correlationid, srdate, source, operation and destination as 
 | **Operation** (mandatory) | ``string`` (header)      |    Provide the operation as the value. For example - Inventory |
 | **destination** (mandatory) | ``string`` (header)      |    Provide the destination as the value. |
 
-{{< tabs "uniqueid9" >}}
+{{< tabs "uniqueid10" >}}
 {{< tab "Request Header" >}}
 {{< highlight java "linenos=table" >}}
 billNo:string
@@ -705,7 +705,7 @@ It requires accountNo, number of bill, start date, end date, correlationid, srda
 | **Operation** (mandatory) | ``string`` (header)      |    Provide the operation as the value. For example - Inventory |
 | **destination** (mandatory) | ``string`` (header)      |    Provide the destination as the value. |
 
-{{< tabs "uniqueid9" >}}
+{{< tabs "uniqueid11" >}}
 {{< tab "Request Header" >}}
 {{< highlight java "linenos=table" >}}
 accountNo:string
@@ -920,7 +920,7 @@ It requires accountNo, account name, start date, end date, correlationid, srdate
 | **Operation** (mandatory) | ``string`` (header)      |    Provide the operation as the value. For example - Inventory |
 | **destination** (mandatory) | ``string`` (header)      |    Provide the destination as the value. |
 
-{{< tabs "uniqueid9" >}}
+{{< tabs "uniqueid12" >}}
 {{< tab "Request Header" >}}
 {{< highlight java "linenos=table" >}}
 accountNo:string
