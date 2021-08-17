@@ -20,6 +20,14 @@
     url = "/docs/api/crm-services"
     parent = "api"
 
+    [[docs]]
+      name = "BRM Services"
+      weight = 300
+      identifier = "BRM"
+      pre = '<img src="/svg-icons/stack.svg" alt="">'
+      url = "/docs/api/brm-services"
+      parent = "api"
+
 [[docs]]
   name = "Marketing"
   weight = 102
