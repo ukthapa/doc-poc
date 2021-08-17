@@ -28,6 +28,14 @@
       url = "/docs/api/brm-services"
       parent = "api"
 
+      [[docs]]
+        name = "Notification Services"
+        weight = 400
+        identifier = "NS"
+        pre = '<img src="/svg-icons/stack.svg" alt="">'
+        url = "/docs/api/brm-services"
+        parent = "api"
+
 [[docs]]
   name = "Marketing"
   weight = 102
