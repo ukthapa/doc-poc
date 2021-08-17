@@ -319,7 +319,7 @@ deviceId:string
 </section>
 
 {{% method-block bgcolor="success" type="bg-blue" callmethod="GET" %}}
-  /brm/v1/billing/planSwitchHistory/{accountNo}
+/brm/v1/billing/planSwitchHistory/{accountNo}
 {{% /method-block %}}
 
 This service allows you to fetch the plan switch History information of a given account number within a given start and end date from BRM.

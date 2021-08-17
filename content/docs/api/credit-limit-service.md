@@ -190,3 +190,134 @@ operation:verifyOTP
 {{< /tab >}}
 {{< /tabs >}}
 </section>
+
+{{% method-block bgcolor="warning" type="bg-orange" callmethod="PUT" %}}
+  /brm/v1/service/modification
+{{% /method-block %}}
+
+This service is used to modify the status of the customer in BRM.
+
+<section>
+
+{{< tabs "uniqueid1" >}}
+{{< tab "Request Body" >}}
+{{< highlight java "linenos=table" >}}
+{
+  "header": {
+    "operation": "string",
+    "serviceRequestId": "string",
+    "requestorChannel": "string",
+    "srDate": "string",
+    "backendChannel": "string",
+    "correlationId": "string",
+    "subOperation": "string"
+  },
+  "message": {
+    "accounts": [
+      {
+        "poid": "string",
+        "accountNo": "string",
+        "programName": "string",
+        "nameInfo": [
+          {
+            "elem": "string",
+            "address": "string",
+            "city": "string",
+            "company": "string",
+            "contactType": "string",
+            "country": "string",
+            "emailAddr": "string",
+            "firstName": "string",
+            "lastName": "string",
+            "middleName": "string",
+            "salutation": "string",
+            "state": "string",
+            "zip": "string",
+            "phones": [
+              {
+                "elem": "string",
+                "phone": "string",
+                "type": "string"
+              }
+            ]
+          }
+        ],
+        "profiles": [
+          {
+            "elem": "string",
+            "deviceId": "string",
+            "autoRenewFlags": "string",
+            "subscriberPreferences": [
+              {
+                "elem": "string",
+                "value": "string",
+                "name": "string",
+                "subscriberPreferenceId": "string"
+              }
+            ]
+          }
+        ],
+        "billInfo": [
+          {
+            "elem": "string",
+            "actgFutureDom": "string"
+          }
+        ]
+      }
+    ]
+  }
+}
+{{< / highlight >}}
+{{< /tab >}}
+{{< tab "Response" >}}
+{{< highlight java "linenos=table" >}}
+{
+  "response": {
+    "success": "true",
+    "result": {
+      "arguments": {
+        "RESULTS": [
+          {
+            "DESCR": "Account modified Successfully",
+            "ERROR_NUM": 0,
+            "POID": "0.0.0.1 /profile/csmart 19483041 25"
+          }
+        ]
+      }
+    }
+  }
+}
+{{< / highlight >}}
+{{< /tab >}}
+{{< tab "Client Error" >}}
+{{< highlight java "linenos=table" >}}
+{
+  "response": {
+    "result": {
+      "success": "false",
+      "arguments": {
+        "errorCode": "6000003",
+        "errorMessage": "BRM Error -Invalid account number"
+      }
+    }
+  }
+}
+{{< / highlight >}}
+{{< /tab >}}
+{{< tab "Server Error" >}}
+{{< highlight java "linenos=table" >}}
+{
+  "response": {
+    "success": "false",
+    "result": {
+      "arguments": {
+        "errorCode": "6000003",
+        "errorMessage": "BRM Error -ERR_NAP_CONNECT_FAILED"
+      }
+    }
+  }
+}
+{{< / highlight >}}
+{{< /tab >}}
+{{< /tabs >}}
+</section>
