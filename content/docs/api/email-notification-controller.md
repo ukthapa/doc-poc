@@ -1,5 +1,5 @@
 ---
-title: "Email Notfication Controller"
+title: "Email Notification Controller"
 description: ""
 lead: ""
 date: 2020-11-16T13:59:39+01:00
@@ -174,9 +174,14 @@ operation:verifyOTP
 /notification/v1/vl/email
 {{% /method-block %}}
 
-This service is used to send simple email to the partner.
+This service is used to send simple email to the partner. It requires EmailResult object as request body. If successful the system will send the email to the partner.
 
 <section>
+
+### *Request Body Parameters*
+| NAME        | TYPE           | DESCRIPTION  |
+| ------------- |:-------------:| ----- |
+| **EmailResult** (mandatory)    | ``string`` (body)      |   Provide the result of the email as the value. |
 
 {{< tabs "uniqueid3" >}}
 {{< tab "Request Body" >}}
