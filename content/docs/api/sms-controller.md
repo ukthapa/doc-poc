@@ -108,7 +108,7 @@ operation:verifyOTP
 {
   "response": {
     "result": {
-      "message": "Invalid Content Details,Note1: Dont use symbols  # + & in API Url, Note2: instead of variable symbol {#var#} , mention any values in API Url"
+      "message": "Invalid Content Details,Note1: Don't use symbols  # + & in API Url, Note2: instead of variable symbol {#var#} , mention any values in API Url"
     },
     "success": "FAILED"
   }
@@ -213,7 +213,7 @@ operation:verifyOTP
 {
   "response": {
     "result": {
-      "message": "Invalid Content Details,Note1: Dont use symbols  # + & in API Url, Note2: instead of variable symbol {#var#} , mention any values in API Url"
+      "message": "Invalid Content Details,Note1: Don't use symbols  # + & in API Url, Note2: instead of variable symbol {#var#} , mention any values in API Url"
     },
     "success": "FAILED"
   }
@@ -251,7 +251,7 @@ It requires correlationId, srdate, source, operation and destination as input pa
 | **Operation** (mandatory) | ``string`` (body)      |    Provide the operation as the value. For example - emailExists |
 | **destination** (mandatory) | ``string`` (body)      |    Provide the destination as the value. |
 
-{{< tabs "uniqueid2" >}}
+{{< tabs "uniqueid3" >}}
 {{< tab "Request Header" >}}
 {{< highlight java "linenos=table" >}}
 correlationId:SO-101
@@ -300,7 +300,7 @@ operation:verifyOTP
 {
   "response": {
     "result": {
-      "message": "Invalid Content Details,Note1: Dont use symbols  # + & in API Url, Note2: instead of variable symbol {#var#} , mention any values in API Url"
+      "message": "Invalid Content Details,Note1: Don't use symbols  # + & in API Url, Note2: instead of variable symbol {#var#} , mention any values in API Url"
     },
     "success": "FAILED"
   }
