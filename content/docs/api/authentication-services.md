@@ -342,12 +342,7 @@ It requires correlationId, source, srdate, operation and destination as input pa
 ### *Request Body Parameters*
 | NAME        | TYPE           | DESCRIPTION  |
 | ------------- |:-------------:| ----- |
-| **correlationId** (mandatory)    | ``string`` (body)      |   Provide the correlationId as the value. For example - SO-100 |
-| **Source** (mandatory) | ``string`` (body)      |    Provide the source as the value. For example - Selfcare |
-| **srdate** (mandatory) | ``string`` (body)      |    Provide the date as the value. For example - 11-09-2021 |
-| **Operation** (mandatory) | ``string`` (body)      |    Provide the operation as the value. For example - emailExists |
-| **destination** (mandatory) | ``string`` (body)      |    Provide the destination as the value. |
-| **type** (mandatory) | ``string`` (body)      |    Provide the type of OTP. |
+| **userId** (mandatory)    | ``string`` (body)      |   Provide the userId as the value to send the OTP. For example - adarsha_cds3@yopmail.com |
 
 {{< tabs "uniqueid4" >}}
 {{< tab "Request Header" >}}
@@ -363,12 +358,7 @@ type:numbers
 {{< tab "Request Body" >}}
 {{< highlight java "linenos=table" >}}
 {
-  "email": "string",
-  "userId": "string",
-  "type": "string",
-  "otp": "string",
-  "encryptedOtp": "string",
-  "accountId": "string"
+	"userId" : "adarsha_cds3@yopmail.com"
 }
 {{< / highlight >}}
 {{< /tab >}}
