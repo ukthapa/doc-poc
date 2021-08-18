@@ -181,12 +181,21 @@ It requires correlationid, token, operation, source, destination, srDate as inpu
 ### *Request Body Parameters*
 | NAME        | TYPE           | DESCRIPTION  |
 | ------------- |:-------------:| ----- |
-| **token** (mandatory)    | ``string`` (body) | Provide the token as the value. |
-| **correlationId** (mandatory)    | ``string`` (body)      |   Provide the correlationId as the value. For example - SO-100 |
-| **Source** (mandatory) | ``string`` (body)      |    Provide the source as the value. For example - Selfcare |
-| **srdate** (mandatory) | ``string`` (body)      |    Provide the date as the value. For example - 11-09-2021 |
-| **Operation** (mandatory) | ``string`` (body)      |    Provide the operation as the value. For example - emailExists |
-| **destination** (mandatory) | ``string`` (body)      |    Provide the destination as the value. |
+| **title** (mandatory)    | ``string`` (body) | Provide the title as the value. For example - Mr. |
+| **firstname** (mandatory)    | ``string`` (body) | Provide the first name as the value. For example - Yogesh |
+| **middlename** (mandatory)    | ``string`` (body) | Provide the middle name as the value. For example - varma |
+| **lastname** (mandatory)    | ``string`` (body) | Provide the last name as the value. For example - emo |
+| **email** (mandatory)    | ``string`` (body) | Provide the email as the value. For example - ellango@gmail.com |
+| **phone** (mandatory)    | ``string`` (body) | Provide the phone number as the value. For example - 9962544026 |
+| **mobile** (mandatory)    | ``string`` (body) | Provide the mobile phone number as the value. For example - 9962544026 |
+| **gender** (mandatory)    | ``string`` (body) | Provide the phone gender as the value. For example - Male |
+| **mailingstreet** (mandatory)    | ``string`` (body) | Provide the mailing street address as the value. For example - Sarjapur township |
+| **mailingcity** (mandatory)    | ``string`` (body) | Provide the mailing city as the value. For example - Bangalore |
+| **mailingpobox** (mandatory)    | ``string`` (body) | Provide the mailing postal code as the value. For example - 560032 |
+| **Address** (mandatory)    | ``string`` (body) | Provide the full address as the value. |
+| **mailingcountry** (mandatory)    | ``string`` (body) | Provide the mailing country as the value. For example - India |
+| **Source** (mandatory) | ``string`` (body)      |    Provide the source as the value. For example - portal |
+
 
 {{< tabs "uniqueid1" >}}
 {{< tab "Request Header" >}}
@@ -202,61 +211,21 @@ operation:verifyOTP
 {{< tab "Request Body" >}}
 {{< highlight java "linenos=table" >}}
 {
-  "roaming": "string",
-  "firstname": "string",
-  "phone": "string",
-  "lastname": "string",
-  "mobile": "string",
-  "homephone": "string",
-  "leadsource": "string",
-  "otherphone": "string",
-  "title": "string",
-  "fax": "string",
-  "department": "string",
-  "birthday": "string",
-  "email": "string",
-  "assistant": "string",
-  "secondaryemail": "string",
-  "assistantphone": "string",
-  "donotcall": "string",
-  "emailoptout": "string",
-  "reference": "string",
-  "createdtime": "string",
-  "modifiedtime": "string",
-  "modifiedby": "string",
-  "portal": "string",
-  "mailingstreet": "string",
-  "otherstreet": "string",
-  "contactId": "string",
-  "othercity": "string",
-  "mailingstate": "string",
-  "otherstate": "string",
-  "mailingzip": "string",
-  "otherzip": "string",
-  "mailingcountry": "string",
-  "othercountry": "string",
-  "mailingpobox": "string",
-  "otherpobox": "string",
-  "description": "string",
-  "isconvertedfromlead": "string",
-  "middlename": "string",
-  "gender": "string",
-  "designation": "string",
-  "ssn": "string",
-  "source": "string",
-  "starred": "string",
-  "tags": "string",
-  "id": "string",
-  "label": "string",
-  "pushnotifications": "string",
-  "dnd": "string",
-  "contactNo": "string",
-  "accountId": "string",
-  "assignedUserId": "string",
-  "notifyOwner": "string",
-  "supportStartDate": "string",
-  "supportEndDate": "string",
-  "twitterHandle": "string"
+    "title": "Mr.",
+    "firstname": "Yogesh",
+    "middlename": "varma",
+    "lastname": "emo",
+    "email": "elangog@gmail.com",
+    "phone": "9962544026",
+    "mobile": "9962544026",
+    "gender": "Male",
+    "mailingstreet": "Sarjapur township",
+    "mailingcity": "Woodbridge Township",
+    "mailingpobox": "500032",
+    "mailingstate": "NJ",
+    "Address": "",
+    "mailingcountry": "India",
+    "source": "portal"
 }
 {{< / highlight >}}
 {{< /tab >}}
@@ -330,11 +299,9 @@ It requires correlationid, token, operation, source, destination, srDate as inpu
 ### *Request Body Parameters*
 | NAME        | TYPE           | DESCRIPTION  |
 | ------------- |:-------------:| ----- |
-| **correlationId** (mandatory)    | ``string`` (body)      |   Provide the correlationId as the value. For example - SO-100 |
-| **Source** (mandatory) | ``string`` (body)      |    Provide the source as the value. For example - Selfcare |
-| **srdate** (mandatory) | ``string`` (body)      |    Provide the date as the value. For example - 11-09-2021 |
-| **Operation** (mandatory) | ``string`` (body)      |    Provide the operation as the value. For example - emailExists |
-| **destination** (mandatory) | ``string`` (body)      |    Provide the destination as the value. |
+| **email** (mandatory)    | ``string`` (body)      |   Provide the email Id as the value. For example - adarsha_cds6@yopmail.com |
+| **password** (mandatory) | ``string`` (body)      |    Provide the password as the value. For example - ag |
+| **source** (mandatory) | ``string`` (body)      |    Provide the source as the value. For example - app |
 
 {{< tabs "uniqueid3" >}}
 {{< tab "Request Header" >}}
@@ -349,9 +316,9 @@ operation:verifyOTP
 {{< tab "Request Body" >}}
 {{< highlight java "linenos=table" >}}
 {
-  "email": "string",
-  "password": "string",
-  "source": "string"
+    "email": "adarsha_cds6@yopmail.com",
+    "password": "ag",
+    "source": "app"
 }
 {{< / highlight >}}
 {{< /tab >}}
@@ -426,12 +393,8 @@ It requires correlationid, token, operation, source, destination, srDate along w
 ### *Request Body Parameters*
 | NAME        | TYPE           | DESCRIPTION  |
 | ------------- |:-------------:| ----- |
-| **token** (mandatory)    | ``string`` (body) | Provide the token as the value. |
-| **correlationId** (mandatory)    | ``string`` (body)      |   Provide the correlationId as the value. For example - SO-100 |
-| **Source** (mandatory) | ``string`` (body)      |    Provide the source as the value. For example - Selfcare |
-| **srdate** (mandatory) | ``string`` (body)      |    Provide the date as the value. For example - 11-09-2021 |
-| **Operation** (mandatory) | ``string`` (body)      |    Provide the operation as the value. For example - emailExists |
-| **destination** (mandatory) | ``string`` (body)      |    Provide the destination as the value. |
+| **passwordOld** (mandatory)    | ``string`` (body) | Provide the old password as the value. For example - Venky@151994 |
+| **password** (mandatory)    | ``string`` (body)      |   Provide the new password as the value. For example - Test@12 |
 
 {{< tabs "uniqueid4" >}}
 {{< tab "Request Header" >}}
@@ -447,13 +410,8 @@ operation:verifyOTP
 {{< tab "Request Body" >}}
 {{< highlight java "linenos=table" >}}
 {
-  "email": "string",
-  "passwordOld": "string",
-  "password": "string",
-  "securityanswer": "string",
-  "securityquestions": "string",
-  "source": "string",
-  "userName": "string"
+    "passwordOld": "Venky@151994",
+    "password": "Test@12"
 }
 {{< / highlight >}}
 {{< /tab >}}
@@ -528,13 +486,19 @@ It requires correlationid, email, token, operation, source, destination, srDate 
 ### *Request Body Parameters*
 | NAME        | TYPE           | DESCRIPTION  |
 | ------------- |:-------------:| ----- |
-| **token** (mandatory)    | ``string`` (body) | Provide the token as the value. |
-| **email** (mandatory)    | ``string`` (body) | Provide the email as the value. |
-| **correlationId** (mandatory)    | ``string`` (body)      |   Provide the correlationId as the value. For example - SO-100 |
-| **Source** (mandatory) | ``string`` (body)      |    Provide the source as the value. For example - Selfcare |
-| **srdate** (mandatory) | ``string`` (body)      |    Provide the date as the value. For example - 11-09-2021 |
-| **Operation** (mandatory) | ``string`` (body)      |    Provide the operation as the value. For example - emailExists |
-| **destination** (mandatory) | ``string`` (body)      |    Provide the destination as the value. |
+| **accountname** (mandatory)    | ``string`` (body) | Provide the account name as the value. For example - adarsha_cds6@yopmail.com |
+| **email** (mandatory)    | ``string`` (body) | Provide the email as the value. For example - adarsha_cds6@yopmail.com |
+| **id** (mandatory)    | ``string`` (body)      |   Provide the Id as the value. For example - 790868 |
+| **pushnotifications** (optional) | ``string`` (body)      |    Provide the value as 1 if you want to enable push notifications.  |
+| **dnd** (optional) | ``string`` (body)      |    Provide the value as 1 if you want to enable do not disturb. |
+| **roaming** (optional) | ``string`` (body)      |    Provide the value as 1 if you want to enable roaming. |
+| **livechat** (optional) | ``string`` (body)      |    Provide the value as 1 if you want to enable live chat. |
+| **news** (optional) | ``string`` (body)      |    Provide the value as 1 if you want to enable news service. |
+| **news** (optional) | ``string`` (body)      |    Provide the value as 1 if you want to enable news service. |
+| **usagedetails** (optional) | ``string`` (body)      |    Provide the value as 1 if you want to view the usage details. |
+| **weather** (optional) | ``string`` (body)      |    Provide the value as 1 if you want to enable weather services. |
+| **calendar** (optional) | ``string`` (body)      |    Provide the value as 1 if you want to calendar services. |
+| **finance** (optional) | ``string`` (body)      |    Provide the value as 1 if you want to view the finance details. |
 
 {{< tabs "uniqueid5" >}}
 {{< tab "Request Header" >}}
@@ -551,18 +515,18 @@ operation:verifyOTP
 {{< tab "Request Body" >}}
 {{< highlight java "linenos=table" >}}
 {
-  "email": "string",
-  "id": "string",
-  "usagedetails": "string",
-  "livechat": "string",
-  "weather": "string",
-  "finance": "string",
-  "calendar": "string",
-  "news": "string",
-  "roaming": "string",
-  "accountNo": "string",
-  "pushNotifications": "string",
-  "doNotDisturb": "string"
+    "email": "adarsha_cds6@yopmail.com",
+    "accountname":"adarsha_cds6@yopmail.com",
+    "id": "790868",
+    "pushnotifications": "1",
+    "dnd": "1",
+    "roaming": "1",
+    "livechat": "1",
+    "news": "1",
+    "usagedetails": "0",
+    "weather": "1",
+    "calendar": "1",
+    "finance": "1"
 }
 {{< / highlight >}}
 {{< /tab >}}

@@ -36,12 +36,9 @@ It requires correlationid, srdate, source, operation and destination as input pa
 ### *Request Body Parameters*
 | NAME        | TYPE           | DESCRIPTION  |
 | ------------- |:-------------:| ----- |
-| **correlationId** (mandatory)    | ``string`` (body)      |   Provide the correlationId as the value. For example - SO-100 |
-| **Source** (mandatory) | ``string`` (body)      |    Provide the source as the value. For example - Selfcare |
-| **srdate** (mandatory) | ``string`` (body)      |    Provide the date as the value. For example - 11-09-2021 |
-| **Operation** (mandatory) | ``string`` (body)      |    Provide the operation as the value. For example - emailExists |
-| **destination** (mandatory) | ``string`` (body)      |    Provide the destination as the value. |
-| **type** (mandatory) | ``string`` (body)      |    Provide the type of OTP. |
+| **email** (mandatory)    | ``string`` (body)      |   Provide the email Id as the value. For example - ag_cds_p@yopmail.com |
+| **Source** (mandatory) | ``string`` (body)      |    Provide the source as the value. For example - app |
+| **password** (mandatory) | ``string`` (body)      |    Provide the password as the value. For example - ag |
 
 {{< tabs "uniqueid1" >}}
 {{< tab "Request Header" >}}
@@ -57,11 +54,9 @@ type:numbers
 {{< tab "Request Body" >}}
 {{< highlight java "linenos=table" >}}
 {
-  "email": "string",
-  "password": "string",
-  "source": "Selfcare",
-  "fireBaseMessagingToken": "string",
-  "deviceId": "string"
+    "email": "ag_cds_p@yopmail.com",
+    "password": "ag",
+    "source": "app"
 }
 {{< / highlight >}}
 {{< /tab >}}
@@ -168,74 +163,128 @@ operation:verifyOTP
 {{< tab "Request Body" >}}
 {{< highlight java "linenos=table" >}}
 {
-  "acctInfo": {
-    "title": "string",
-    "firstName": "string",
-    "middleName": "string",
-    "lastName": "string",
-    "phone": "string",
-    "mobilePhone": "string",
-    "gender": "string",
-    "companyName": "string",
-    "department": "string",
-    "designation": "string",
-    "emailAddress": "string",
-    "docIdNumberMsgId": "string",
-    "docIdTypeEquipType": "string",
-    "accountId": "string",
-    "assignedUserId": "string",
-    "platform": "string",
-    "Type": "string",
-    "ServiceType": "string"
+  "OrderId": "Portal-5445",
+  "OrderType": "NEW",
+  "AcctInfo": {
+    "CompanyName": "companyName",
+    "FirstName": "FirstName",
+    "LastName": "LastName",
+    "MiddleName": "",
+    "MobilePhone": "19216811479862",
+    "Phone": "",
+    "DocIdTypeEquipType": "SSN",
+    "Title": "Mr.",
+    "Department": "",
+    "Designation": "",
+    "DocIdNumberMsgId": "878-78-7878",
+    "Gender": "Male",
+    "EmailAddress": "adarsha_cds8@yopmail.com",
+    "Platform": "Postpaid",
+    "Type": "Residential",
+    "ServiceType": "VoLTE"
   },
-  "addressInfo": {
-    "streetAddress": "string",
-    "city": "string",
-    "postalCode": "string",
-    "state": "string",
-    "country": "string"
+  "AddressInfo": {
+    "City": "Bengaluru",
+    "Country": "India",
+    "PostalCode": "560034",
+    "State": "Karnataka",
+    "StreetAddress": "Jakkasandra, Teacher's Colony, 1st Block Koramangala, Koramangala, Bengaluru, Bangalore Urban, Karnataka, India"
   },
-  "paymentDetail": {
-    "gateway": "string",
-    "firstName": "string",
-    "lastName": "string",
-    "email": "string",
-    "cardNo": "string",
-    "expiryMonth": "string",
-    "expiryYear": "string",
-    "cvv": "string"
-  },
-  "lineItems": [
+  "PackageListId": "653113",
+  "LineItems": [
     {
-      "packageId": "string",
-      "productGroupId": "string",
-      "productId": "string",
-      "price": "string",
-      "qty": "string",
-      "isInventory": "string",
+      "packageId": "685782",
+      "productGroupId": "685770",
+      "productId": "650390",
+      "price": "10",
+      "qty": "1",
+      "isInventory": "1",
       "inventoryAttributes": {
-        "msisdn": "string",
-        "icicid": "string",
-        "imsi": "string",
-        "sim": "string"
+        "SIM": "116402905"
       }
+    },
+    {
+      "packageId": "685782",
+      "productGroupId": "685770",
+      "productId": "650994",
+      "price": "0",
+      "qty": "1",
+      "isInventory": "0"
+    },
+    {
+      "packageId": "685782",
+      "productGroupId": "685770",
+      "productId": "650996",
+      "price": "0",
+      "qty": "1",
+      "isInventory": "0"
+    },
+    {
+      "packageId": "685782",
+      "productGroupId": "685770",
+      "productId": "650998",
+      "price": "0",
+      "qty": "1",
+      "isInventory": "0"
+    },
+    {
+      "packageId": "685782",
+      "productGroupId": "685770",
+      "productId": "650999",
+      "price": "100",
+      "qty": "1",
+      "isInventory": "0"
+    },
+    {
+      "packageId": "685782",
+      "productGroupId": "685770",
+      "productId": "651000",
+      "price": "0",
+      "qty": "1",
+      "isInventory": "0"
+    },
+    {
+      "packageId": "685782",
+      "productGroupId": "685770",
+      "productId": "651001",
+      "price": "0",
+      "qty": "1",
+      "isInventory": "0"
+    },
+    {
+      "packageId": "685782",
+      "productGroupId": "685770",
+      "productId": "651003",
+      "price": "0",
+      "qty": "1",
+      "isInventory": "0"
+    },
+    {
+      "packageId": "685782",
+      "productGroupId": "651494",
+      "productId": "651494",
+      "price": "0",
+      "qty": "1",
+      "isInventory": "0"
+    },
+    {
+      "packageId": "685782",
+      "productGroupId": "651495",
+      "productId": "651495",
+      "price": "0",
+      "qty": "1",
+      "isInventory": "0"
+    },
+    {
+      "packageId": "685782",
+      "productGroupId": "651496",
+      "productId": "651496",
+      "price": "0",
+      "qty": "1",
+      "isInventory": "0"
     }
   ],
-  "paymentInfo": {
-    "amount": "string",
-    "description": "string",
-    "reasonCode": "string",
-    "paymentType": "string",
-    "transId": "string",
-    "effectiveT": "string"
-  },
-  "orderType": "string",
-  "orderId": "string",
-  "password": "string",
-  "element1": "string",
-  "element2": "string",
-  "element3": "string",
-  "element4": "string"
+  "Password": "ag"
 }
 {{< / highlight >}}
 {{< /tab >}}

@@ -35,11 +35,8 @@ It requires correlationId, operation, destination, source and srDate as input pa
 ### *Request Body Parameters*
 | NAME        | TYPE           | DESCRIPTION  |
 | ------------- |:-------------:| ----- |
-| **correlationId** (mandatory)    | ``string`` (body)      |   Provide the correlationId as the value. For example - SO-100 |
-| **Source** (mandatory) | ``string`` (body)      |    Provide the source as the value. For example - Selfcare |
-| **srdate** (mandatory) | ``string`` (body)      |    Provide the date as the value. For example - 11-09-2021 |
-| **Operation** (mandatory) | ``string`` (body)      |    Provide the operation as the value. For example - emailExists |
-| **destination** (mandatory) | ``string`` (body)      |    Provide the destination as the value. |
+| **fireBaseMessagingToken** (mandatory) | ``string`` (body)      |    Provide the messaging token as the value. For example - APA91bFeu2bGtb8odHajWz7AfEcpMUVRQrQ0yVoWACeaJ4Vp8MhjEkEAePa_hVYn_i3QCz19boaeaHhmzBsBVzb5CYlpO05kVa6SCbixsKRHe87phBSKw6OkceO6ztrfmARwFxmysCy9 |
+| **deviceId** (mandatory) | ``string`` (body)      |    Provide the device ID as the value. For example - device11 |
 
 {{< tabs "uniqueid1" >}}
 {{< tab "Request Header" >}}
@@ -54,8 +51,8 @@ operation:verifyOTP
 {{< tab "Request Body" >}}
 {{< highlight java "linenos=table" >}}
 {
-  "fireBaseMessagingToken": "string",
-  "deviceId": "string"
+    "fireBaseMessagingToken": "dFFVnhmwNQA:APA91bFeu2bGtb8odHajWz7AfEcpMUVRQrQ0yVoWACeaJ4Vp8MhjEkEAePa_hVYn_i3QCz19boaeaHhmzBsBVzb5CYlpO05kVa6SCbixsKRHe87phBSKw6OkceO6ztrfmARwFxmysCy9",
+    "deviceId": "device11"
 }
 {{< / highlight >}}
 {{< /tab >}}
@@ -128,12 +125,15 @@ It requires correlationId, operation, destination, source and srDate as input pa
 ### *Request Body Parameters*
 | NAME        | TYPE           | DESCRIPTION  |
 | ------------- |:-------------:| ----- |
-| **correlationId** (mandatory)    | ``string`` (body)      |   Provide the correlationId as the value. For example - SO-100 |
-| **Source** (mandatory) | ``string`` (body)      |    Provide the source as the value. For example - Selfcare |
-| **srdate** (mandatory) | ``string`` (body)      |    Provide the date as the value. For example - 11-09-2021 |
-| **Operation** (mandatory) | ``string`` (body)      |    Provide the operation as the value. For example - emailExists |
-| **destination** (mandatory) | ``string`` (body)      |    Provide the destination as the value. |
-
+| **model** (mandatory)    | ``string`` (body)      |   Provide the model as the value. For example - iPhone10 |
+| **manufacturer** (mandatory) | ``string`` (body)      |    Provide the manufacturer name as the value. For example - Apple |
+| **osName** (mandatory) | ``string`` (body)      |    Provide the OS name as the value. For example - iphoneOS |
+| **osVersion** (mandatory) | ``string`` (body)      |    Provide the OS version as the value. For example - 7.1 |
+| **osBuild** (mandatory) | ``string`` (body)      |    Provide the OS version as the value. For example - 13E28 |
+| **carrier** (mandatory) | ``string`` (body)      |    Provide the carrier as the value. For example - ATT |
+| **appVersion** (mandatory) | ``string`` (body)      |    Provide the app version as the value. For example - 1.0.0 |
+| **fireBaseMessagingToken** (mandatory) | ``string`` (body)      |    Provide the messaging token as the value. For example - APA91bFeu2bGtb8odHajWz7AfEcpMUVRQrQ0yVoWACeaJ4Vp8MhjEkEAePa_hVYn_i3QCz19boaeaHhmzBsBVzb5CYlpO05kVa6SCbixsKRHe87phBSKw6OkceO6ztrfmARwFxmysCy9 |
+| **deviceId** (mandatory) | ``string`` (body)      |    Provide the device ID as the value. For example - device11 |
 {{< tabs "uniqueid3" >}}
 {{< tab "Request Header" >}}
 {{< highlight java "linenos=table" >}}
@@ -147,15 +147,15 @@ operation:verifyOTP
 {{< tab "Request Body" >}}
 {{< highlight java "linenos=table" >}}
 {
-  "model": "string",
-  "manufacturer": "string",
-  "osName": "string",
-  "osVersion": "string",
-  "osBuild": "string",
-  "carrier": "string",
-  "appVersion": "string",
-  "fireBaseMessagingToken": "string",
-  "deviceId": "string"
+"model": "iPhone10,1",
+"manufacturer": "Apple",
+"osName": "iPhone OS",
+"osVersion": "7.1",
+"osBuild": "13E28",
+"carrier": "ATT",
+"appVersion": "1.0.0",
+"fireBaseMessagingToken": "dFFVnhmwNQA:APA91bFeu2bGtb8odHajWz7AfEcpMUVRQrQ0yVoWACeaJ4Vp8MhjEkEAePa_hVYn_i3QCz19boaeaHhmzBsBVzb5CYlpO05kVa6SCbixsKRHe87phBSKw6OkceO6ztrfmARwFxmysCy9",
+"deviceId": "device11"
 }
 {{< / highlight >}}
 {{< /tab >}}

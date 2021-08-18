@@ -111,11 +111,9 @@ This service requires correlationId, source, srdate, operation and destination a
 ### *Request Body Parameters*
 | NAME        | TYPE           | DESCRIPTION  |
 | ------------- |:-------------:| ----- |
-| **correlationId** (mandatory)    | ``string`` (body)      |   Provide the correlationId as the value. For example - SO-100 |
-| **Source** (mandatory) | ``string`` (body)      |    Provide the source as the value. For example - Selfcare |
-| **srdate** (mandatory) | ``string`` (body)      |    Provide the date as the value. For example - 11-09-2021 |
-| **Operation** (mandatory) | ``string`` (body)      |    Provide the operation as the value. For example - emailExists |
-| **destination** (mandatory) | ``string`` (body)      |    Provide the destination as the value. |
+| **email** (mandatory)    | ``string`` (body)      |   Provide the email Id as the value. For example -adarsha_cds3@yopmail.com |
+| **encryptedOtp** (mandatory) | ``string`` (body)      |    Provide the encryptedOtp as the value. For example - e1aa84d4a0a00d21f960b8938a23cb890e35609b080174b74753839587cbce42 |
+| **otp** (mandatory) | ``string`` (body)      |    Provide the OTP as the value. For example - 115695 |
 
 {{< tabs "uniqueid1" >}}
 {{< tab "Request Header" >}}
@@ -265,11 +263,8 @@ It requires correlationId, source, srdate, operation and destination as input pa
 ### *Request Body Parameters*
 | NAME        | TYPE           | DESCRIPTION  |
 | ------------- |:-------------:| ----- |
-| **correlationId** (mandatory)    | ``string`` (body)      |   Provide the correlationId as the value. For example - SO-100 |
-| **Source** (mandatory) | ``string`` (body)      |    Provide the source as the value. For example - Selfcare |
-| **srdate** (mandatory) | ``string`` (body)      |    Provide the date as the value. For example - 11-09-2021 |
-| **Operation** (mandatory) | ``string`` (body)      |    Provide the operation as the value. For example - emailExists |
-| **destination** (mandatory) | ``string`` (body)      |    Provide the destination as the value. |
+| **userCaptchaText** (mandatory)    | ``string`` (body)      |   Provide the captcha value. For example - PXJZ |
+| **captchaHash** (mandatory) | ``string`` (body)      |    Provide the captchaHash value. For example - 56e1279915ab948fb149336779bbf6fbf692aec1d7d11d5aa988b29e05ce7fea |
 
 {{< tabs "uniqueid3" >}}
 {{< tab "Request Header" >}}
@@ -284,8 +279,8 @@ operation:verifyOTP
 {{< tab "Request Body" >}}
 {{< highlight java "linenos=table" >}}
 {
-  "userCaptchaText": "string",
-  "captchaHash": "string"
+  "userCaptchaText": "PXJZ",
+  "captchaHash": "56e1279915ab948fb149336779bbf6fbf692aec1d7d11d5aa988b29e05ce7fea"
 }
 {{< / highlight >}}
 {{< /tab >}}
