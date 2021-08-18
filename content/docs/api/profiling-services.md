@@ -681,11 +681,6 @@ It requires correlationid, token, operation, source, destination, srDate as inpu
 | NAME        | TYPE           | DESCRIPTION  |
 | ------------- |:-------------:| ----- |
 | **profileImage** (mandatory)    | ``string`` (body) | Provide the image name as the value. For example - image.jpeg |
-| **correlationId** (mandatory)    | ``string`` (body)      |   Provide the correlationId as the value. For example - SO-100 |
-| **Source** (mandatory) | ``string`` (body)      |    Provide the source as the value. For example - Selfcare |
-| **srdate** (mandatory) | ``string`` (body)      |    Provide the date as the value. For example - 11-09-2021 |
-| **Operation** (mandatory) | ``string`` (body)      |    Provide the operation as the value. For example - emailExists |
-| **destination** (mandatory) | ``string`` (body)      |    Provide the destination as the value. |
 
 {{< tabs "uniqueid6" >}}
 {{< tab "Request Header" >}}
