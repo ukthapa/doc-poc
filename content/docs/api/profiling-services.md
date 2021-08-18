@@ -680,7 +680,7 @@ It requires correlationid, token, operation, source, destination, srDate as inpu
 ### *Request Body Parameters*
 | NAME        | TYPE           | DESCRIPTION  |
 | ------------- |:-------------:| ----- |
-| **token** (mandatory)    | ``string`` (body) | Provide the token as the value. |
+| **profileImage** (mandatory)    | ``string`` (body) | Provide the image name as the value. For example - image.jpeg |
 | **correlationId** (mandatory)    | ``string`` (body)      |   Provide the correlationId as the value. For example - SO-100 |
 | **Source** (mandatory) | ``string`` (body)      |    Provide the source as the value. For example - Selfcare |
 | **srdate** (mandatory) | ``string`` (body)      |    Provide the date as the value. For example - 11-09-2021 |
@@ -701,7 +701,7 @@ operation:verifyOTP
 {{< tab "Request Body" >}}
 {{< highlight java "linenos=table" >}}
 {
-  "ProfileImage": "string"
+  "ProfileImage": "image.jpg"
 }
 {{< / highlight >}}
 {{< /tab >}}
