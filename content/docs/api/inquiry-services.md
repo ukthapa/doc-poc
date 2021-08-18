@@ -124,12 +124,13 @@ This service is used to record the review comments by the customers. It requires
 ### *Request Body Parameters*
 | NAME        | TYPE           | DESCRIPTION  |
 | ------------- |:-------------:| ----- |
-| **token** (mandatory)    | ``string`` (body)      |   Provide the token of the review comment. |
-| **correlationId** (mandatory)    | ``string`` (body)      |   Provide the correlationId as the value. For example - SO-100 |
-| **Source** (mandatory) | ``string`` (body)      |    Provide the source as the value. For example - Selfcare |
-| **srdate** (mandatory) | ``string`` (body)      |    Provide the date as the value. For example - 11-09-2021 |
-| **Operation** (mandatory) | ``string`` (body)      |    Provide the operation as the value. For example - emailExists |
-| **destination** (mandatory) | ``string`` (body)      |    Provide the destination as the value. |
+| **id** (mandatory)    | ``string`` (body)      |   Provide the id of the review comment as the value. For example - 242159 |
+| **message** (mandatory)    | ``string`` (body)      |   Provide the message of the review comment as the value. For example - add review testing |
+| **title** (mandatory)    | ``string`` (body)      |   Provide the title of the review comment as the value. For example - title |
+| **accountNumber** (mandatory)    | ``string`` (body)      |   Provide the account number as the value. For example - MVNE204564 |
+| **rating** (mandatory)    | ``string`` (body)      |   Provide the rating of the review as the value. For example - 5 |
+| **screenName** (mandatory)    | ``string`` (body)      |   Provide the screen name as the value. For example - Troubleshoot |
+| **type** (mandatory)    | ``string`` (body)      |   Provide the type of comment as the value. For example - Product |
 
 {{< tabs "uniqueid1" >}}
 {{< tab "Request Header" >}}
@@ -145,13 +146,13 @@ operation:verifyOTP
 {{< tab "Request Body" >}}
 {{< highlight java "linenos=table" >}}
 {
-  "id": "string",
-  "message": "string",
-  "rating": "string",
-  "title": "string",
-  "screenName": "string",
-  "type": "string",
-  "accountNumber": "string"
+    "id": "242159",
+    "message": "add review testing in 71 -2",
+    "title": "title",
+    "accountNumber": "MVNE204564",
+    "rating": "5",
+    "screenName": "Troubleshoot",
+    "type": "Product"
 }
 {{< / highlight >}}
 {{< /tab >}}

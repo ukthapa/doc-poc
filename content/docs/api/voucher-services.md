@@ -36,12 +36,8 @@ It requires token,serviceProvider,correlationId,srdate,source,operation,destinat
 ### *Request Body Parameters*
 | NAME        | TYPE           | DESCRIPTION  |
 | ------------- |:-------------:| ----- |
-| **token** (mandatory)    | ``string`` (body)      |   Provide the token of the voucher as the value. |
-| **correlationId** (mandatory)    | ``string`` (body)      |   Provide the correlationId as the value. For example - SO-100 |
-| **Source** (mandatory) | ``string`` (body)      |    Provide the source as the value. For example - Selfcare |
-| **srdate** (mandatory) | ``string`` (body)      |    Provide the date as the value. For example - 11-09-2021 |
-| **Operation** (mandatory) | ``string`` (body)      |    Provide the operation as the value. For example - emailExists |
-| **destination** (mandatory) | ``string`` (body)      |    Provide the destination as the value. |
+| **voucherCode** (mandatory)    | ``string`` (body)      |   Provide the code of the voucher as the value. For example - June_07JK68 |
+| **voucherPin** (mandatory)    | ``string`` (body)      |   Provide the pin of the voucher as the value. For example - K54- |
 
 {{< tabs "uniqueid1" >}}
 {{< tab "Request Header" >}}
@@ -57,8 +53,8 @@ operation:verifyOTP
 {{< tab "Request Body" >}}
 {{< highlight java "linenos=table" >}}
 {
-  "voucherCode": "string",
-  "voucherPin": "string"
+	"voucherCode": "June_07JK68#_",
+	"voucherPin":"K54-"
 }
 {{< / highlight >}}
 {{< /tab >}}
@@ -133,13 +129,8 @@ It requires token,serviceProvider,correlationId,srdate,source,operation,destinat
 ### *Request Body Parameters*
 | NAME        | TYPE           | DESCRIPTION  |
 | ------------- |:-------------:| ----- |
-| **token** (mandatory)    | ``string`` (body)      |   Provide the token of the voucher as the value. |
-| **serviceProvider** (mandatory)    | ``string`` (body)      |   Provide the name of the service provider. |
-| **correlationId** (mandatory)    | ``string`` (body)      |   Provide the correlationId as the value. For example - SO-100 |
-| **Source** (mandatory) | ``string`` (body)      |    Provide the source as the value. For example - Selfcare |
-| **srdate** (mandatory) | ``string`` (body)      |    Provide the date as the value. For example - 11-09-2021 |
-| **Operation** (mandatory) | ``string`` (body)      |    Provide the operation as the value. For example - emailExists |
-| **destination** (mandatory) | ``string`` (body)      |    Provide the destination as the value. |
+| **voucherCode** (mandatory)    | ``string`` (body)      |   Provide the code of the voucher as the value. For example - June_07JK68 |
+| **voucherPin** (mandatory)    | ``string`` (body)      |   Provide the pin of the voucher as the value. For example - K54- |
 
 {{< tabs "uniqueid2" >}}
 {{< tab "Request Header" >}}
@@ -155,8 +146,8 @@ operation:verifyOTP
 {{< tab "Request Body" >}}
 {{< highlight java "linenos=table" >}}
 {
-  "voucherCode": "string",
-  "voucherPin": "string"
+  "voucherCode": "June_07JK68",
+  "voucherPin": "K54-"
 }
 {{< / highlight >}}
 {{< /tab >}}
