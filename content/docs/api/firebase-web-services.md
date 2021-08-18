@@ -132,7 +132,7 @@ It requires correlationId, operation, destination, source and srDate as input pa
 | **osBuild** (mandatory) | ``string`` (body)      |    Provide the OS version as the value. For example - 13E28 |
 | **carrier** (mandatory) | ``string`` (body)      |    Provide the carrier as the value. For example - ATT |
 | **appVersion** (mandatory) | ``string`` (body)      |    Provide the app version as the value. For example - 1.0.0 |
-| **fireBaseMessagingToken** (mandatory) | ``string`` (body)      |    Provide the messaging token as the value. For example - APA91bFeu2bGtb8odHajWz7AfEcpMUVRQrQ0yVoWACeaJ4Vp8MhjEkEAePa_hVYn_i3QCz19boaeaHhmzBsBVzb5CYlpO05kVa6SCbixsKRHe87phBSKw6OkceO6ztrfmARwFxmysCy9 |
+| **fireBaseMessagingToken** (mandatory) | ``string`` (body)      |    Provide the messaging token as the value.  |
 | **deviceId** (mandatory) | ``string`` (body)      |    Provide the device ID as the value. For example - device11 |
 {{< tabs "uniqueid3" >}}
 {{< tab "Request Header" >}}
