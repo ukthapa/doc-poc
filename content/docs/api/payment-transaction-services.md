@@ -33,11 +33,15 @@ This service is used to save the payment transaction of the bills. It requires c
 ### *Request Body Parameters*
 | NAME        | TYPE           | DESCRIPTION  |
 | ------------- |:-------------:| ----- |
-| **correlationId** (mandatory)    | ``string`` (body)      |   Provide the correlationId as the value. For example - SO-100 |
-| **Source** (mandatory) | ``string`` (body)      |    Provide the source as the value. For example - Selfcare |
-| **srdate** (mandatory) | ``string`` (body)      |    Provide the date as the value. For example - 11-09-2021 |
-| **Operation** (mandatory) | ``string`` (body)      |    Provide the operation as the value. For example - emailExists |
-| **destination** (mandatory) | ``string`` (body)      |    Provide the destination as the value. |
+| **amount** (mandatory)    | ``string`` (body)      |   Provide the amount as the value. For example - 201 |
+| **orderId** (mandatory)    | ``string`` (body)      |   Provide the order Id as the value. For example - S017287 |
+| **processingStatus** (mandatory)    | ``string`` (body)      |   Provide the processing status as the value. For example - Success |
+| **softDescriptor** (mandatory)    | ``string`` (body)      |   Provide the soft descriptor as the value. For example - bolton |
+| **currency** (mandatory)    | ``string`` (body)      |   Provide the currency as the value. For example - US |
+| **amount** (mandatory)    | ``string`` (body)      |   Provide the amount as the value. For example - 201 |
+| **transaction** (mandatory) | ``string`` (body)      |    Provide the transaction number as the value. For example - 8878 |
+| **date** (mandatory)    | ``string`` (body)      |   Provide the transaction date as the value. For example - 2019-08-03T20:00:25Z |
+| **source** (mandatory)    | ``string`` (body)      |   Provide the source date as the value. For example - app |
 
 {{< tabs "uniqueid1" >}}
 {{< tab "Request Header" >}}
@@ -52,16 +56,14 @@ operation:verifyOTP
 {{< tab "Request Body" >}}
 {{< highlight java "linenos=table" >}}
 {
-  "amount": "string",
-  "orderId": "string",
-  "processingStatus": "string",
-  "softDescriptor": "string",
-  "currency": "string",
-  "transactionId": "string",
-  "date": "string",
-  "emailId": "string",
-  "source": "string",
-  "billNo": "string"
+    "amount": "201",
+    "orderId": "SO17287",
+    "processingStatus": "Success",
+    "softDescriptor": "bolton",
+    "currency": "US",
+    "transactionId": "8878",
+    "date": "2019-08-03T20:00:25Z",
+    "source": "app"
 }
 {{< / highlight >}}
 {{< /tab >}}
