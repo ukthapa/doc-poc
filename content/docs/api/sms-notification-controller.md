@@ -54,46 +54,46 @@ operation:verifyOTP
 {{< tab "Request Body" >}}
 {{< highlight java "linenos=table" >}}
 {
-  "activityId": "string",
-  "channel": "string",
-  "from": "string",
-  "message": "string",
-  "shortCode": "string",
-  "messageKey": "string",
-  "notificationType": "string",
+  "activityId": "accountCreation",
+  "channel": "sms",
+  "from": "CRM",
+  "message": "test sms",
+  "shortCode": "12345",
+  "messageKey": "sms123",
+  "notificationType": "User",
   "content": {
-    "message": "string",
-    "from": "string",
+    "message": "",
+    "from": "CRM",
     "data": {
-      "userId": "string",
-      "mobNumber": "string",
-      "accountNumber": "string",
-      "password": "string",
-      "expiryDate": "string",
-      "total": "string",
-      "plan": "string",
-      "email": "string",
-      "msisdn": "string",
-      "segment": "string",
-      "amount": "string",
-      "voucherCode": "string",
-      "addOnName": "string",
-      "ticketNo": "string",
-      "tickekStatus": "string",
-      "accountStatus": "string",
-      "startDate": "string",
-      "updateDate": "string"
+      "userId": "10000190",
+      "mobNumber": "99219703",
+      "accountNumber": "10000190",
+      "password": "uudkzkix",
+      "expiryDate": "15-01-2021 11:23:00",
+      "total": "456",
+      "plan": "F&F Offer 60GB17.5K ACE",
+      "email": "karthikeyantest003@yopmail.com",
+      "msisdn": "234501000389",
+      "segment": "Prepaid",
+      "amount": "$5638",
+      "voucherCode": "12ER4Y",
+      "addOnName": "msisdn",
+      "ticketNo": "987456",
+      "tickekStatus": "active",
+      "accountStatus": "active",
+      "startDate": "15-10-2020 09:30:00",
+      "updateDate": "05-12-2020 12:39:00"
     }
   },
-  "msisdn": "string",
-  "shortMessage": "string",
-  "shortCodeNumber": "string",
+  "msisdn": "234501000389",
+  "shortMessage": "test sms",
+  "shortCodeNumber": "12345",
   "recipients": [
-    "string"
+    "venkatesh@yopmail.com"
   ],
-  "templateType": "string",
-  "EventName": "string",
-  "EventCode": "string"
+  "templateType": "WELCOME",
+  "EventName": "ProductMsisdnListUpdated",
+  "EventCode": "Success"
 }
 {{< / highlight >}}
 {{< /tab >}}
@@ -179,46 +179,46 @@ operation:verifyOTP
 {{< tab "Request Body" >}}
 {{< highlight java "linenos=table" >}}
 {
-  "activityId": "string",
-  "channel": "string",
-  "from": "string",
-  "message": "string",
-  "shortCode": "string",
-  "messageKey": "string",
-  "notificationType": "string",
+  "activityId": "accountCreation",
+  "channel": "sms",
+  "from": "CRM",
+  "message": "test sms",
+  "shortCode": "12345",
+  "messageKey": "sms123",
+  "notificationType": "User",
   "content": {
-    "message": "string",
-    "from": "string",
+    "message": "",
+    "from": "CRM",
     "data": {
-      "userId": "string",
-      "mobNumber": "string",
-      "accountNumber": "string",
-      "password": "string",
-      "expiryDate": "string",
-      "total": "string",
-      "plan": "string",
-      "email": "string",
-      "msisdn": "string",
-      "segment": "string",
-      "amount": "string",
-      "voucherCode": "string",
-      "addOnName": "string",
-      "ticketNo": "string",
-      "tickekStatus": "string",
-      "accountStatus": "string",
-      "startDate": "string",
-      "updateDate": "string"
+      "userId": "10000190",
+      "mobNumber": "99219703",
+      "accountNumber": "10000190",
+      "password": "uudkzkix",
+      "expiryDate": "15-01-2021 11:23:00",
+      "total": "123",
+      "plan": "F&F Offer 60GB17.5K ACE",
+      "email": "karthikeyantest003@yopmail.com",
+      "msisdn": "234501000389",
+      "segment": "Prepaid",
+      "amount": "$2658",
+      "voucherCode": "12ER4Y",
+      "addOnName": "msisdn",
+      "ticketNo": "987456",
+      "tickekStatus": "active",
+      "accountStatus": "active",
+      "startDate": "15-10-2020 09:30:00",
+      "updateDate": "05-12-2020 12:39:00"
     }
   },
-  "msisdn": "string",
-  "shortMessage": "string",
-  "shortCodeNumber": "string",
+  "msisdn": "234501000389",
+  "shortMessage": "test sms",
+  "shortCodeNumber": "12345",
   "recipients": [
-    "string"
+    "venkatesh@yopmail.com"
   ],
-  "templateType": "string",
-  "EventName": "string",
-  "EventCode": "string"
+  "templateType": "WELCOME",
+  "EventName": "ProductMsisdnListUpdated",
+  "EventCode": "Success"
 }
 {{< / highlight >}}
 {{< /tab >}}

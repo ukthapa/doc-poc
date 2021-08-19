@@ -95,7 +95,7 @@ srDate:11-09-2021
 </section>
 
 {{% method-block bgcolor="primary" type="bg-green" callmethod="POST" %}}
-/crm/v1/social/ticket
+/brm/v1/creditlimit
 {{% /method-block %}}
 
 This service is used to update the credit limit of the customer. It requires correlationId, srdate, source, operation and destination as input parameters. If successful it will update the credit limit of the customer. If failed the appropriate error code will be returned.
@@ -115,12 +115,11 @@ This service is used to update the credit limit of the customer. It requires cor
 ### *Request Body Parameters*
 | NAME        | TYPE           | DESCRIPTION  |
 | ------------- |:-------------:| ----- |
-| **token** (optional)    | ``string`` (header) | Provide the token of the ticket. |
-| **correlationId** (mandatory)    | ``string`` (body)      |   Provide the correlationId as the value. For example - SO-100 |
-| **Source** (mandatory) | ``string`` (body)      |    Provide the source as the value. For example - Selfcare |
-| **srdate** (mandatory) | ``string`` (body)      |    Provide the date as the value. For example - 11-09-2021 |
-| **Operation** (mandatory) | ``string`` (body)      |    Provide the operation as the value. For example - emailExists |
-| **destination** (mandatory) | ``string`` (body)      |    Provide the destination as the value. |
+| **poid** (optional)    | ``string`` (header) | Provide the poid number as the value. For example - 0.0.0.1 /account -1 0 |
+| **accountNo** (optional)    | ``string`` (header) | Provide the account number as the value. For example - VKPOSTPAID1020 |
+| **flag** (optional)    | ``string`` (header) | Provide the flag number as the value. For example - 2 |
+| **programName** (optional)    | ``string`` (header) | Provide the program name as the value. For example - CSR-NAME |
+| **creditLimit** (optional)    | ``string`` (header) | Provide the credit limit as the value. For example - 1000.00 |
 
 {{< tabs "uniqueid1" >}}
 {{< tab "Request Header" >}}
@@ -134,13 +133,13 @@ operation:verifyOTP
 {{< /tab >}}
 {{< tab "Request Body" >}}
 {{< highlight java "linenos=table" >}}
-{
-  "poid": "string",
-  "accountNo": "string",
-  "creditLimit": 0,
-  "programName": "string",
-  "flag": "string"
-}
+{​
+    "poid": "0.0.0.1 /account -1 0",
+    "accountNo": "VKPOSTPAID1020",
+    "flag": "2",
+    "programName": "CSR-NAME",
+    "creditLimit": "1000.00"
+}​
 {{< / highlight >}}
 {{< /tab >}}
 {{< tab "Response" >}}

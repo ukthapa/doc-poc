@@ -54,28 +54,26 @@ operation:verifyOTP
 {{< tab "Request Body" >}}
 {{< highlight java "linenos=table" >}}
 {
-  "to": "string",
-  "cc": "string",
-  "bcc": "string",
-  "replyTo": "string",
-  "subject": "string",
-  "content": "string",
+  "to": "9620757121",
+  "cc": "kiran@gmail.com",
+  "bcc": "sai@gmail.com",
+  "replyTo": "venky@gmail.com",
+  "subject": "Custom Subject",
+  "content": "This is custom msg",
   "attachment": "string",
   "type": "ACCOUNT_CREATE",
   "userInfo": {
-    "firstName": "string",
-    "middleName": "string",
-    "lastName": "string",
-    "accountNumber": "string",
-    "mobNumber": "string",
-    "email": "string"
+    "firstName": "Shanthamma",
+    "middleName": "S",
+    "lastName": "Shivanna",
+    "accountNumber": "10000190",
+    "mobNumber": "8789890006",
+    "email": "shnathi@gmail.com"
   },
   "data": {
-    "additionalProp1": "string",
-    "additionalProp2": "string",
-    "additionalProp3": "string"
+    "Address": "v-37 chnnapatna"
   },
-  "requestType": "string"
+  "requestType": "simpleSMS"
 }
 {{< / highlight >}}
 {{< /tab >}}
@@ -159,28 +157,26 @@ operation:verifyOTP
 {{< tab "Request Body" >}}
 {{< highlight java "linenos=table" >}}
 {
-  "to": "string",
-  "cc": "string",
-  "bcc": "string",
-  "replyTo": "string",
-  "subject": "string",
-  "content": "string",
+  "to": "9620757121",
+  "cc": "kiran@gmail.com",
+  "bcc": "sai@gmail.com",
+  "replyTo": "venky@gmail.com",
+  "subject": "Custom Subject",
+  "content": "This is custom msg",
   "attachment": "string",
   "type": "ACCOUNT_CREATE",
   "userInfo": {
-    "firstName": "string",
-    "middleName": "string",
-    "lastName": "string",
-    "accountNumber": "string",
-    "mobNumber": "string",
-    "email": "string"
+    "firstName": "Shanthamma",
+    "middleName": "S",
+    "lastName": "Shivanna",
+    "accountNumber": "10000190",
+    "mobNumber": "8789890006",
+    "email": "shnathi@gmail.com"
   },
   "data": {
-    "additionalProp1": "string",
-    "additionalProp2": "string",
-    "additionalProp3": "string"
+    "Address": "v-37 chnnapatna"
   },
-  "requestType": "string"
+  "requestType": "simpleSMS"
 }
 {{< / highlight >}}
 {{< /tab >}}
@@ -264,10 +260,10 @@ operation:verifyOTP
 {{< tab "Request Body" >}}
 {{< highlight java "linenos=table" >}}
 {
-  "to": "string",
-  "content": "string",
-  "subject": "string",
-  "type": "ACCOUNT_CREATE"
+    "to": "9620757121",
+    "content": "This is custom msg",
+    "subject": "Custom Subject",
+    "requestType": "simpleSMS"
 }
 {{< / highlight >}}
 {{< /tab >}}

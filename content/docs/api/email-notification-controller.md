@@ -57,75 +57,75 @@ operation:verifyOTP
 {{< highlight java "linenos=table" >}}
 {
   "header": {
-    "correlationId": "string",
-    "operation": "string",
-    "requestorChannel": "string",
-    "srDate": "string",
-    "serviceProvider": "string",
-    "backendChannel": "string"
+        "correlationId": "SO643"
+        "operation": "notification",
+        "requestorChannel": "CRM",
+        "srDate": "2020-06-02T15:01:00Z",
+        "serviceProvider": "MOM",
+		"backendChannel": "MOM"    
   },
   "message": {
-    "activityId": "string",
+    "activityId": "accountCreation",
     "channel": "string",
-    "notificationType": "string",
+    "notificationType": "SMS",
     "content": {
-      "message": "string",
-      "from": "string",
+      "message": "Account creation",
+      "from": "CRM",
       "data": {
-        "firstName": "string",
-        "lastName": "string",
-        "email": "string",
-        "cc": "string",
-        "bcc": "string",
-        "salutation": "string",
-        "middleName": "string",
-        "accountNumber": "string",
-        "mobNumber": "string",
-        "imsi": "string",
-        "imei": "string",
-        "plan": "string",
-        "userId": "string",
-        "password": "string",
-        "createDate": "string",
-        "paymentMethod": "string",
-        "paymentReceiver": "string",
-        "total": "string",
-        "balance": "string",
-        "treceipt": "string",
-        "userExpiryDate": "string",
-        "autoRegAccountName": "string",
-        "userPaymentBalance": "string",
-        "billIndex": "string",
-        "invoiceNumber": "string",
-        "partnerId": "string",
-        "environment": "string",
-        "comment": "string",
-        "supportEmail": "string",
-        "partnerContactNumber": "string",
-        "partnerEmail": "string",
-        "partnerStatus": "string",
-        "loginUrl": "string"
+        "firstName": "Shanthamma",
+        "lastName": "shivanna",
+        "email": "shanti@gmail.com",
+        "cc": "kiran@gmail.com",
+        "bcc": "supritha@gmail.com",
+        "salutation": "ms",
+        "middleName": "Kavitha",
+        "accountNumber": "10000190",
+        "mobNumber": "8710890667",
+        "imsi": "Mb234",
+        "imei": "S81233",
+        "plan": "monthlyPlan",
+        "userId": "1234S",
+        "password": "rt#67",
+        "createDate": "15-01-2021 11:23:00",
+        "paymentMethod": "PhonePay",
+        "paymentReceiver": "Shanthi",
+        "total": "100",
+        "balance": "24",
+        "treceipt": "165",
+        "userExpiryDate": "19-01-2022 11:23:00",
+        "autoRegAccountName": "Shanthamma",
+        "userPaymentBalance": "67",
+        "billIndex": "000025",
+        "invoiceNumber": "5678",
+        "partnerId": "PTR_NTR",
+        "environment": "Dev",
+        "comment": "",
+        "supportEmail": "suuport@xyz.com",
+        "partnerContactNumber": "8734567503",
+        "partnerEmail": "shanti@gmail.com",
+        "partnerStatus": "Approved",
+        "loginUrl": "http://localhost:8080/csmart-crmservices/crm/v1/login"
       },
       "attachments": [
         {
-          "fileName": "string",
-          "filePath": "string"
+          "fileName": "details.docx",
+          "filePath": "C:/Users/Documents"
         }
       ]
     },
     "recipients": [
       {
-        "to": "string",
-        "name": "string",
+        "to": "rohan@gmail.com",
+        "name": "Rohan",
         "cc": [
-          "string"
+          "sunil@gmail.com"
         ],
         "bcc": [
-          "string"
+          "kavitha@gmail.com"
         ]
       }
     ],
-    "templateType": "string"
+    "templateType": "WELCOME"
   }
 }
 {{< / highlight >}}
@@ -188,50 +188,50 @@ This service is used to send simple email to the partner. It requires EmailResul
 {{< highlight java "linenos=table" >}}
 {
   "header": {
-    "correlationId": "string",
-    "operation": "string",
-    "requestorChannel": "string",
-    "srDate": "string",
-    "serviceProvider": "string",
-    "backendChannel": "string"
+     "correlationId": "SO643"
+        "operation": "notification",
+        "requestorChannel": "CRM",
+        "srDate": "2020-06-02T15:01:00Z",
+        "serviceProvider": "MOM",
+		"backendChannel": "MOM"
   },
   "message": {
-    "subject": "string",
-    "templateType": "string",
+    "subject": "Account Creation",
+    "templateType": "WELCOME",
     "data": {
-      "firstName": "string",
-      "lastName": "string",
-      "email": "string",
-      "cc": "string",
-      "bcc": "string",
-      "salutation": "string",
-      "middleName": "string",
-      "accountNumber": "string",
-      "mobNumber": "string",
-      "imsi": "string",
-      "imei": "string",
-      "plan": "string",
-      "userId": "string",
-      "password": "string",
-      "createDate": "string",
-      "paymentMethod": "string",
-      "paymentReceiver": "string",
-      "total": "string",
-      "balance": "string",
-      "treceipt": "string",
-      "userExpiryDate": "string",
-      "autoRegAccountName": "string",
-      "userPaymentBalance": "string",
-      "billIndex": "string",
-      "invoiceNumber": "string",
-      "partnerId": "string",
-      "environment": "string",
-      "comment": "string",
-      "supportEmail": "string",
-      "partnerContactNumber": "string",
-      "partnerEmail": "string",
-      "partnerStatus": "string",
-      "loginUrl": "string"
+      "firstName": "Shanthi",
+        "lastName": "shivanna",
+        "email": "shanti@gmail.com",
+        "cc": "kiran@gmail.com",
+        "bcc": "supritha@gmail.com",
+        "salutation": "ms",
+        "middleName": "Kavitha",
+        "accountNumber": "10000190",
+        "mobNumber": "8710890443",
+        "imsi": "Mb234",
+        "imei": "S81233",
+        "plan": "monthlyPlan",
+        "userId": "1234S",
+        "password": "rt#67",
+        "createDate": "15-01-2021 11:23:00",
+        "paymentMethod": "PhonePay",
+        "paymentReceiver": "Sunil",
+        "total": "100",
+        "balance": "24",
+        "treceipt": "165",
+        "userExpiryDate": "19-01-2022 11:23:00",
+        "autoRegAccountName": "Shanthamma",
+        "userPaymentBalance": "67",
+        "billIndex": "000025",
+        "invoiceNumber": "5678",
+        "partnerId": "PTR_NTR",
+        "environment": "Dev",
+        "comment": "",
+        "supportEmail": "suuport@gmail.com",
+        "partnerContactNumber": "8734567503",
+        "partnerEmail": "ptr@gamil.com",
+        "partnerStatus": "Approved",
+        "loginUrl": "http://192.168.1.71:8080/csmart-crmservices/crm/v1/login"
     }
   }
 }
