@@ -22,7 +22,7 @@ The Invoices screen appears as shown below:
 {{< img-simple src="/images/invoice2.png"  alt="Dashboard" class="">}}
 
 ## Add Invoices
-To add an invoice, click the {{< img-simple src="/images/invoice3.png"  alt="Dashboard" class="border-0" ">}} button. The Creating New Invoice screen appears as shown below:
+To add an invoice, click the {{< img-simple src="/images/invoice3.png"  alt="Dashboard" class="border-0">}} button. The Creating New Invoice screen appears as shown below:
 
 {{< img-simple src="/images/invoice4.png"  alt="Dashboard" class="">}}
 {{< img-simple src="/images/invoice5.png"  alt="Dashboard" class="">}}
