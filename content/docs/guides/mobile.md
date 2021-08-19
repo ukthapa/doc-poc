@@ -35,6 +35,8 @@ In the above screen, you can search users by the following:
 10.	**Account** - Enter the name of the account.
 11. **Assigned To** - Enter the name of the user to whom the mobile app user is assigned.
 
+## Export Mobile App Users
+
 You can also opt to export the list of mobile app users. To do so follow the steps given below:
 
 1. Click the **More** drop-down button as shown below:
@@ -44,6 +46,8 @@ You can also opt to export the list of mobile app users. To do so follow the ste
 2. The export records pop-up appears. Select the appropriate option and click **Export Mobile App Users** button. Refer to the image below:
 
 {{< img-simple src="/images/mobile4.png"  alt="Dashboard" class="">}}
+
+## Find Duplicate Records
 
 You can also opt to find the duplicate records. To do so follow the steps given below:
 
