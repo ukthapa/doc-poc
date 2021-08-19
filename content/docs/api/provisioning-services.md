@@ -694,69 +694,70 @@ This service is used to modify the status of the customer in BRM.
 {{< tab "Request Body" >}}
 {{< highlight java "linenos=table" >}}
 {
-  "header": {
-    "operation": "string",
-    "serviceRequestId": "string",
-    "requestorChannel": "string",
-    "srDate": "string",
-    "backendChannel": "string",
-    "correlationId": "string",
-    "subOperation": "string"
-  },
-  "message": {
     "accounts": [
-      {
-        "poid": "string",
-        "accountNo": "string",
-        "programName": "string",
-        "nameInfo": [
-          {
-            "elem": "string",
-            "address": "string",
-            "city": "string",
-            "company": "string",
-            "contactType": "string",
-            "country": "string",
-            "emailAddr": "string",
-            "firstName": "string",
-            "lastName": "string",
-            "middleName": "string",
-            "salutation": "string",
-            "state": "string",
-            "zip": "string",
-            "phones": [
-              {
-                "elem": "string",
-                "phone": "string",
-                "type": "string"
-              }
+        {
+            "poid": "0.0.0.1 /account -1 0",
+            "accountNo": "CRMPREPAID1001",
+            "programName": "CSMART",
+            "nameInfo": [
+                {
+                    "elem": "1",
+                    "address": "BAN",
+                    "city": "bangalore",
+                    "company": "CVL",
+                    "contactType": "Account holder",
+                    "country": "India",
+                    "emailAddr": "linda@yopmail.com",
+                    "firstName": "Naga",
+                    "lastName": "Lakshmi",
+                    "middleName": "",
+                    "salutation": "Ms",
+                    "state": "Karnataka",
+                    "zip": "562125",
+                    "phones": [
+                        {
+                            "elem": "1",
+                            "phone": "9916198722",
+                            "type": "1"
+                        }
+                    ]
+                }
+            ],
+            "profiles": [
+                {
+                    "elem": "0",
+                    "autoRenewFlags": "1",
+                    "deviceId": "190909001",
+                    "subscriberPreferences": [
+                        {
+                            "elem": "0",
+                            "name": "Customer Name",
+                            "value": "NagaLakshmi",
+                            "subscriberPreferenceId": "1"
+                        },
+                        {
+                            "elem": "1",
+                            "name": "Customer Email",
+                            "value": "linda@yopmail.com",
+                            "subscriberPreferenceId": "2"
+                        },
+                        {
+                            "elem": "2",
+                            "name": "Customer Phone",
+                            "value": "9916198722",
+                            "subscriberPreferenceId": "3"
+                        }
+                    ]
+                }
+            ],
+            "billInfo": [
+                {
+                    "elem": "0",
+                    "actgFutureDom": "5"
+                }
             ]
-          }
-        ],
-        "profiles": [
-          {
-            "elem": "string",
-            "deviceId": "string",
-            "autoRenewFlags": "string",
-            "subscriberPreferences": [
-              {
-                "elem": "string",
-                "value": "string",
-                "name": "string",
-                "subscriberPreferenceId": "string"
-              }
-            ]
-          }
-        ],
-        "billInfo": [
-          {
-            "elem": "string",
-            "actgFutureDom": "string"
-          }
-        ]
-      }
+        }
     ]
-  }
 }
 {{< / highlight >}}
 {{< /tab >}}

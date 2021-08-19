@@ -56,13 +56,13 @@ operation:verifyOTP
 {{< tab "Request Body" >}}
 {{< highlight java "linenos=table" >}}
 {
-  "deviceId": "string",
+  "deviceId": "1234A",
   "firebaseTockenId": [
-    "string"
+    "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJWVVMiLCJqdGkiOiJ0YXRhbW92ZSMxI1ZVUyNvasadfwredbd"
   ],
   "notification": {
-    "title": "string",
-    "body": "string"
+    "title": "Update Password",
+    "body": "Password is updated successfully"
   }
 }
 {{< / highlight >}}
