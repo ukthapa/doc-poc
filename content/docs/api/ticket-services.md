@@ -356,7 +356,7 @@ This service is allows the user to update comments for a particular ticket. It r
 ### *Request Body Parameters*
 | NAME        | TYPE           | DESCRIPTION  |
 | ------------- |:-------------:| ----- |
-| **ticketNumber** (mandatory)    | ``string`` (body)      |   Provide the number of the ticket as the value. For example - 10057 |
+| **ticketNo** (mandatory)    | ``string`` (body)      |   Provide the number of the ticket as the value. For example - 10057 |
 | **comment** (mandatory)    | ``string`` (body)      |   Provide the comment of the ticket as the value. For example - testing |
 | **contactId** (mandatory)    | ``string`` (body)      |   Provide the contact Id of the ticket as the value. For example - 649797 |
 

@@ -241,11 +241,10 @@ It requires correlationId, srdate, source, operation and destination as input pa
 ### *Request Body Parameters*
 | NAME        | TYPE           | DESCRIPTION  |
 | ------------- |:-------------:| ----- |
-| **correlationId** (mandatory)    | ``string`` (body)      |   Provide the correlationId as the value. For example - SO-100 |
-| **Source** (mandatory) | ``string`` (body)      |    Provide the source as the value. For example - Selfcare |
-| **srdate** (mandatory) | ``string`` (body)      |    Provide the date as the value. For example - 11-09-2021 |
-| **Operation** (mandatory) | ``string`` (body)      |    Provide the operation as the value. For example - emailExists |
-| **destination** (mandatory) | ``string`` (body)      |    Provide the destination as the value. |
+| **to** (mandatory)    | ``string`` (body)      |   Provide the phone number where to send the SMS as the value. For example - 9620757121 |
+| **content** (mandatory)    | ``string`` (body)      |   Provide the content of the SMS as the value. For example - This is custom message |
+| **subject** (mandatory)    | ``string`` (body)      |   Provide the subject of the SMS as the value. For example - Custom message |
+| **requestType** (mandatory)    | ``string`` (body)      |   Provide the request type of the SMS as the value. For example - simpleSMS |
 
 {{< tabs "uniqueid3" >}}
 {{< tab "Request Header" >}}
