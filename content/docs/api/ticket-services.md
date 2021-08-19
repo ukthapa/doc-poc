@@ -475,13 +475,6 @@ operation:verifyOTP
 {{< tab "Request Body" >}}
 {{< highlight java "linenos=table" >}}
 {
-  "file": "string"
-}
-{{< / highlight >}}
-{{< /tab >}}
-{{< tab "Response" >}}
-{{< highlight java "linenos=table" >}}
-{
 "source": "app",
 "ticketstatus": "Open",
 "effectivedate": "YYYY-MM-DD",
@@ -494,13 +487,6 @@ operation:verifyOTP
 "vouchertype":"",
 "voucheridformat":"",
 "passwordpattern":""
-}
-{{< / highlight >}}
-{{< /tab >}}
-{{< tab "Response" >}}
-{{< highlight java "linenos=table" >}}
-{
-  "file": "string"
 }
 {{< / highlight >}}
 {{< /tab >}}
