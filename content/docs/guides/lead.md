@@ -78,7 +78,7 @@ To view the updates, click the **Updates** tab as shown below:
 
 {{< img-simple src="/images/lead9.png"  alt="Dashboard" class="">}}
 
-The updates for that particular campaign will be shown.
+The updates for that particular lead will be shown.
 
 ### Comments
 
