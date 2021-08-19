@@ -15,7 +15,7 @@ toc: true
 
 To create Commissions, click the Marketing drop-down and select Commissions as shown below:
 
-{{< img-simple src="/images/commision1.png"  alt="Dashboard" class="">}}
+{{< img-simple src="/images/commission1.png"  alt="Dashboard" class="">}}
 
 The Commissions screen appears as shown below:
 
