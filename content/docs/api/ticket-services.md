@@ -208,11 +208,18 @@ This service is used to create new social media ticket for the customer. It requ
 ### *Request Body Parameters*
 | NAME        | TYPE           | DESCRIPTION  |
 | ------------- |:-------------:| ----- |
-| **correlationId** (mandatory)    | ``string`` (body)      |   Provide the correlationId as the value. For example - SO-100 |
-| **Source** (mandatory) | ``string`` (body)      |    Provide the source as the value. For example - Selfcare |
-| **srdate** (mandatory) | ``string`` (body)      |    Provide the date as the value. For example - 11-09-2021 |
-| **Operation** (mandatory) | ``string`` (body)      |    Provide the operation as the value. For example - emailExists |
-| **destination** (mandatory) | ``string`` (body)      |    Provide the destination as the value. |
+| **ticketStatus** (mandatory)    | ``string`` (body)      |   Provide the status of the ticket as the value. For example - Open |
+| **effectiveDate** (mandatory)    | ``string`` (body)      |   Provide the effective date of the ticket as the value. For example - YYYY-MM-DD |
+| **ticketCategories** (mandatory)    | ``string`` (body)      |   Provide the category of the ticket as the value. For example - Plan change |
+| **tickettitle** (mandatory)    | ``string`` (body)      |   Provide the title of the ticket as the value. For example - plan change |
+| **description** (mandatory)    | ``string`` (body)      |   Provide the description of the ticket as the value. For example - Request for plan change |
+| **subcategory** (mandatory)    | ``string`` (body)      |   Provide the sub-category of the ticket as the value. For example - sub1 |
+| **status** (mandatory)    | ``string`` (body)      |   Provide the status of the ticket as the value. For example - New |
+| **category** (mandatory)    | ``string`` (body)      |   Provide the category of the ticket as the value. For example - cat1 |
+| **voucherType** (mandatory)    | ``string`` (body)      |   Provide the type of voucher as the value. |
+| **voucherIdFormat** (mandatory)    | ``string`` (body)      |   Provide the format of the voucher as the value. |
+| **passwordPattern** (mandatory)    | ``string`` (body)      |   Provide the pattern of the password as the value.  |
+| **Source** (mandatory) | ``string`` (body)      |    Provide the source as the value. For example - app |
 
 {{< tabs "uniqueid1" >}}
 {{< tab "Request Header" >}}
@@ -227,14 +234,18 @@ operation:verifyOTP
 {{< tab "Request Body" >}}
 {{< highlight java "linenos=table" >}}
 {
-  "ticketStatus": "string",
-  "effectiveDate": "string",
-  "ticketCategories": "string",
-  "ticketTitle": "string",
-  "description": "string",
-  "assignedUserId": "string",
-  "assignedId": "string",
-  "contactId": "string"
+"source": "app",
+"ticketstatus": "Open",
+"effectivedate": "YYYY-MM-DD",
+"ticketcategories": "Plan change",
+"ticket_title": "Plan change",
+"description": "Plan change request for ",
+"subcategory": "sub1",
+"status": "New",
+"category": "cat1",
+"vouchertype":"",
+"voucheridformat":"",
+"passwordpattern":""
 }
 {{< / highlight >}}
 {{< /tab >}}
@@ -345,13 +356,9 @@ This service is allows the user to update comments for a particular ticket. It r
 ### *Request Body Parameters*
 | NAME        | TYPE           | DESCRIPTION  |
 | ------------- |:-------------:| ----- |
-| **token** (mandatory)    | ``string`` (body)      |   Provide the token of the ticket as the value. |
-| **data** (mandatory)    | ``string`` (body)      |   Provide the comment as the value. |
-| **correlationId** (mandatory)    | ``string`` (body)      |   Provide the correlationId as the value. For example - SO-100 |
-| **Source** (mandatory) | ``string`` (body)      |    Provide the source as the value. For example - Selfcare |
-| **srdate** (mandatory) | ``string`` (body)      |    Provide the date as the value. For example - 11-09-2021 |
-| **Operation** (mandatory) | ``string`` (body)      |    Provide the operation as the value. For example - emailExists |
-| **destination** (mandatory) | ``string`` (body)      |    Provide the destination as the value. |
+| **ticketNumber** (mandatory)    | ``string`` (body)      |   Provide the number of the ticket as the value. For example - 10057 |
+| **comment** (mandatory)    | ``string`` (body)      |   Provide the comment of the ticket as the value. For example - testing |
+| **contactId** (mandatory)    | ``string`` (body)      |   Provide the contact Id of the ticket as the value. For example - 649797 |
 
 {{< tabs "uniqueid2" >}}
 {{< tab "Request Header" >}}
@@ -366,7 +373,9 @@ operation:verifyOTP
 {{< tab "Request Body" >}}
 {{< highlight java "linenos=table" >}}
 {
-  "file": "string"
+  "ticketNo": "10057",
+  "comment": "venki testing",
+  "contactId": "649797"
 }
 {{< / highlight >}}
 {{< /tab >}}
@@ -440,12 +449,18 @@ It requires CorrelationId, Token, SR Date, Source, Operation, Destination as inp
 ### *Request Body Parameters*
 | NAME        | TYPE           | DESCRIPTION  |
 | ------------- |:-------------:| ----- |
-| **token** (mandatory)    | ``string`` (body)      |   Provide the token of the ticket as the value. |
-| **correlationId** (mandatory)    | ``string`` (body)      |   Provide the correlationId as the value. For example - SO-100 |
-| **Source** (mandatory) | ``string`` (body)      |    Provide the source as the value. For example - Selfcare |
-| **srdate** (mandatory) | ``string`` (body)      |    Provide the date as the value. For example - 11-09-2021 |
-| **Operation** (mandatory) | ``string`` (body)      |    Provide the operation as the value. For example - emailExists |
-| **destination** (mandatory) | ``string`` (body)      |    Provide the destination as the value. |
+| **ticketStatus** (mandatory)    | ``string`` (body)      |   Provide the status of the ticket as the value. For example - Open |
+| **effectiveDate** (mandatory)    | ``string`` (body)      |   Provide the effective date of the ticket as the value. For example - YYYY-MM-DD |
+| **ticketCategories** (mandatory)    | ``string`` (body)      |   Provide the category of the ticket as the value. For example - Plan change |
+| **tickettitle** (mandatory)    | ``string`` (body)      |   Provide the title of the ticket as the value. For example - plan change |
+| **description** (mandatory)    | ``string`` (body)      |   Provide the description of the ticket as the value. For example - Request for plan change |
+| **subcategory** (mandatory)    | ``string`` (body)      |   Provide the sub-category of the ticket as the value. For example - sub1 |
+| **status** (mandatory)    | ``string`` (body)      |   Provide the status of the ticket as the value. For example - New |
+| **category** (mandatory)    | ``string`` (body)      |   Provide the category of the ticket as the value. For example - cat1 |
+| **voucherType** (mandatory)    | ``string`` (body)      |   Provide the type of voucher as the value. |
+| **voucherIdFormat** (mandatory)    | ``string`` (body)      |   Provide the format of the voucher as the value. |
+| **passwordPattern** (mandatory)    | ``string`` (body)      |   Provide the pattern of the password as the value.  |
+| **Source** (mandatory) | ``string`` (body)      |    Provide the source as the value. For example - app |
 
 {{< tabs "uniqueid3" >}}
 {{< tab "Request Header" >}}
@@ -467,14 +482,18 @@ operation:verifyOTP
 {{< tab "Response" >}}
 {{< highlight java "linenos=table" >}}
 {
-  "ticketStatus": "string",
-  "effectiveDate": "string",
-  "ticketCategories": "string",
-  "ticketTitle": "string",
-  "description": "string",
-  "assignedUserId": "string",
-  "assignedId": "string",
-  "contactId": "string"
+"source": "app",
+"ticketstatus": "Open",
+"effectivedate": "YYYY-MM-DD",
+"ticketcategories": "Plan change",
+"ticket_title": "Plan change",
+"description": "Plan change request for ",
+"subcategory": "sub1",
+"status": "New",
+"category": "cat1",
+"vouchertype":"",
+"voucheridformat":"",
+"passwordpattern":""
 }
 {{< / highlight >}}
 {{< /tab >}}
