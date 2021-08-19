@@ -15,11 +15,11 @@ toc: true
 
 To view the list of mobile app users, click the Marketing drop-down and select Mobile App users as shown below:
 
-{{< img-simple src="/images/mobile1.png"  alt="Dashboard" class="">}}
+{{< img-simple src="/images/mobile_1.png"  alt="Dashboard" class="">}}
 
 The Mobile App users screen appears as shown below:
 
-{{< img-simple src="/images/mobile2.png"  alt="Dashboard" class="" width="987" height="367">}}
+{{< img-simple src="/images/mobile_2.png"  alt="Dashboard" class="" width="987" height="367">}}
 
 In the above screen, you can search users by the following:
 
@@ -41,11 +41,11 @@ You can also opt to export the list of mobile app users. To do so follow the ste
 
 1. Click the **More** drop-down button as shown below:
 
-{{< img-simple src="/images/mobile3.png"  alt="Dashboard" class="">}}
+{{< img-simple src="/images/mobile_3.png"  alt="Dashboard" class="">}}
 
 2. The export records pop-up appears. Select the appropriate option and click **Export Mobile App Users** button. Refer to the image below:
 
-{{< img-simple src="/images/mobile4.png"  alt="Dashboard" class="">}}
+{{< img-simple src="/images/mobile_4.png"  alt="Dashboard" class="">}}
 
 ## Find Duplicate Records
 
@@ -53,8 +53,8 @@ You can also opt to find the duplicate records. To do so follow the steps given 
 
 1. Click the **More** drop-down button as shown below:
 
-{{< img-simple src="/images/mobile3.png"  alt="Dashboard" class="">}}
+{{< img-simple src="/images/mobile_3.png"  alt="Dashboard" class="">}}
 
 2. The **Duplicate Search Criteria** pop-up appears. Enter the fields which you want to match in the text box and click **Find Duplicates**. Refer to the image below:
 
-{{< img-simple src="/images/mobile5.png"  alt="Dashboard" class="">}}
+{{< img-simple src="/images/mobile_5.png"  alt="Dashboard" class="">}}
