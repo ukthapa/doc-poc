@@ -57,8 +57,8 @@ In the above screen, you can do the following:
 25.	**State** - Click on the State drop-down to select the state of the lead.
 26.	**Country** - Click on the Country drop-down to select the Country of the lead.
 27.	**Description** - Enter additional information about the new lead.
-28.	Save - Click Save to add the new lead.
-29.	Cancel - Click Cancel to re-enter the details.
+28.	**Save** - Click Save to add the new lead.
+29.	**Cancel** - Click Cancel to re-enter the details.
 
 Once the lead is saved it will look like as shown below:
 
