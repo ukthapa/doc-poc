@@ -22,7 +22,7 @@ The Leads screen appears as shown below:
 {{< img-simple src="/images/lead2.png"  alt="Dashboard" class="" width="987" height="367">}}
 
 ## Add Leads
-To add a lead, click the {{< img-simple src="/images/lead3.png"  alt="Dashboard" class="border-0" width= "150" height= "100">}} button. The Create New Lead screen appears as shown below:
+To add a lead, click the {{< img-simple src="/images/lead3.png"  alt="Dashboard" class="border-0" width="150" height="100">}} button. The Create New Lead screen appears as shown below:
 
 {{< img-simple src="/images/lead4.png"  alt="Dashboard" class="">}}
 {{< img-simple src="/images/lead5.png"  alt="Dashboard" class="">}}
