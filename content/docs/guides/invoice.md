@@ -15,7 +15,7 @@ toc: true
 
 To create an Invoice, click the Marketing drop-down and select Invoice as shown below:
 
-{{< img-simple src="/images/invoice1.png"  alt="Dashboard" class="" width= "150" height= "100">}}
+{{< img-simple src="/images/invoice1.png"  alt="Dashboard" class="" >}}
 
 The Invoices screen appears as shown below:
 
