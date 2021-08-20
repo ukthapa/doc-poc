@@ -41,9 +41,9 @@ In the above screen, you can do the following:
 
 Once the lead is saved it will look like as shown below:
 
-{{< img-simple src="/images/lead7.png"  alt="Dashboard" class="">}}
+{{< img-simple src="/images/commission8.png"  alt="Dashboard" class="">}}
 
-After saving the lead you can view the details of the lead. We will now see how to view the details.
+After saving the lead you can view the details of the commission. We will now see how to view the details.
 
 ## Details
 
