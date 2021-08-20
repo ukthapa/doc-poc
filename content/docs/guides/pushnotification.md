@@ -54,6 +54,6 @@ To view any comments click the **Comments** tab as shown below:
 
 ### Mobile App Users
 
-To view any mobile app users click the {{< img-simple src="/images/pushnotification8.png"  alt="Dashboard" class="" >}} icon. The list of mobile users will appear as shown below:
+To view any mobile app users click the {{< img-simple src="/images/pushnotification8.png"  alt="Dashboard" class="" width= "150" height= "100">}} icon. The list of mobile users will appear as shown below:
 
 {{< img-simple src="/images/pushnotification9.png"  alt="Dashboard" class="">}}
