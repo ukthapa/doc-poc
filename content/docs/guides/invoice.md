@@ -51,7 +51,7 @@ In the above screen, you can do the following:
 
 Once the invoice is saved it will look like as shown below:
 
-{{< img-simple src="/images/invoice13.png"  alt="Dashboard" class="">}}
+{{< img-simple src="/images/invoice9.png"  alt="Dashboard" class="">}}
 
 After saving the invoice the detailed view of the invoice will appear.
 
@@ -114,4 +114,4 @@ You can also upload new documents by clicking the {{< img-simple src="/images/le
 
 To view the emails, click the {{< img-simple src="/images/lead12.png"  alt="Dashboard" class="">}}  icon as shown below:
 
-{{< img-simple src="/images/commssion15.png"  alt="Dashboard" class="">}}
+{{< img-simple src="/images/invoice13.png"  alt="Dashboard" class="">}}
