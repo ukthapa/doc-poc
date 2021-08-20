@@ -19,7 +19,7 @@ To create Push Notifications, click the Marketing drop-down and select Push Noti
 
 The Push Notification screen appears as shown below:
 
-{{< img-simple src="/images/pushnotification1.png"  alt="Dashboard" class="" width="987" height="367">}}
+{{< img-simple src="/images/pushnotification2.png"  alt="Dashboard" class="" width="987" height="367">}}
 
 ## Add Push Notification
 To add a push notification, click the {{< img-simple src="/images/pushnotification3.png"  alt="Dashboard" class="border-0" width= "150" height= "100">}} button. The Creating New Push Notification screen appears as shown below:
