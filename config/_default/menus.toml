@@ -52,6 +52,14 @@
   url = "/docs/guides/marketing/campaign"
   parent = "guides"
 
+  [[docs]]
+    name = "Sales"
+    weight = 103
+    identifier = "sales"
+    pre = '<img src="/svg-icons/stack.svg" alt="">'
+    url = "/docs/guides/sales/accounts"
+    parent = "guides"
+
 [[main]]
   name = "Guides"
   identifier = "guides"
