@@ -22,7 +22,7 @@ The Invoices screen appears as shown below:
 {{< img-simple src="/images/invoice2.png"  alt="Dashboard" class="">}}
 
 ## Add Invoices
-To add an invoice, click the {{< img-simple src="/images/invoice3.png"  alt="Dashboard" class="border-0">}} button. The Creating New Invoice screen appears as shown below:
+To add an invoice, click the {{< img-simple src="/images/invoice3.png"  alt="Dashboard" class="border-0" width= "150" height= "100">}} button. The Creating New Invoice screen appears as shown below:
 
 {{< img-simple src="/images/invoice4.png"  alt="Dashboard" class="">}}
 {{< img-simple src="/images/invoice5.png"  alt="Dashboard" class="">}}
@@ -71,7 +71,7 @@ To view any comments of the invoice click the **Comments** tab as shown below:
 
 ### Activities
 
-To add an activity to the invoice click the {{< img-simple src="/images/campaign13.png"  alt="Dashboard" class="">}} icon as shown below:
+To add an activity to the invoice click the {{< img-simple src="/images/campaign13.png"  alt="Dashboard" class="" width= "150" height= "100">}} icon as shown below:
 
 {{< img-simple src="/images/invoice12.png"  alt="Dashboard" class="">}}
 
@@ -102,16 +102,16 @@ In the above screen you can do the following:
 
 ### Documents
 
-To upload documents, click the {{< img-simple src="/images/lead14.png"  alt="Dashboard" class="">}} icon as shown below:
+To upload documents, click the {{< img-simple src="/images/lead14.png"  alt="Dashboard" class="" width= "150" height= "100">}} icon as shown below:
 
 {{< img-simple src="/images/commission14.png"  alt="Dashboard" class="">}}
 
-In the above screen you can select to add an existing document by clicking the {{< img-simple src="/images/lead16.png"  alt="Dashboard" class="">}} button and select the document.
+In the above screen you can select to add an existing document by clicking the {{< img-simple src="/images/lead16.png"  alt="Dashboard" class="" width= "150" height= "100">}} button and select the document.
 
-You can also upload new documents by clicking the {{< img-simple src="/images/lead17.png"  alt="Dashboard" class="">}} button.
+You can also upload new documents by clicking the {{< img-simple src="/images/lead17.png"  alt="Dashboard" class="" width= "150" height= "100">}} button.
 
 ### Emails
 
-To view the emails, click the {{< img-simple src="/images/lead12.png"  alt="Dashboard" class="">}}  icon as shown below:
+To view the emails, click the {{< img-simple src="/images/lead12.png"  alt="Dashboard" class="" width= "150" height= "100">}}  icon as shown below:
 
 {{< img-simple src="/images/invoice13.png"  alt="Dashboard" class="">}}

@@ -85,7 +85,7 @@ To view any comments of the campaign click the Comments tab as shown below:
 
 ### Contacts
 
-To view the contacts associated with the campaign click the {{< img-simple src="/images/campaign11.png"  alt="Dashboard" class="">}} icon as shown below:
+To view the contacts associated with the campaign click the {{< img-simple src="/images/campaign11.png"  alt="Dashboard" class="" width= "150" height= "100">}} icon as shown below:
 
 {{< img-simple src="/images/campaign12.png"  alt="Dashboard" class="">}}
 
@@ -99,7 +99,7 @@ In the above screen you can:
 
 ### Activities
 
-To add an activity to the campaign click the {{< img-simple src="/images/campaign13.png"  alt="Dashboard" class="">}} icon as shown below:
+To add an activity to the campaign click the {{< img-simple src="/images/campaign13.png"  alt="Dashboard" class="" width= "150" height= "100">}} icon as shown below:
 
 {{< img-simple src="/images/campaign14.png"  alt="Dashboard" class="">}}
 
@@ -130,7 +130,7 @@ In the above screen you can do the following:
 
 ### Accounts
 
-To add an account click the {{< img-simple src="/images/campaign17.png"  alt="Dashboard" class="">}} icon as shown below:
+To add an account click the {{< img-simple src="/images/campaign17.png"  alt="Dashboard" class="" width= "150" height= "100">}} icon as shown below:
 
 {{< img-simple src="/images/campaign18.png"  alt="Dashboard" class="">}}
 

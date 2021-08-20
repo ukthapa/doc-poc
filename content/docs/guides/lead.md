@@ -125,10 +125,10 @@ To view the emails, click the {{< img-simple src="/images/lead12.png"  alt="Dash
 
 ### Documents
 
-To upload documents, click the {{< img-simple src="/images/lead14.png"  alt="Dashboard" class="">}} icon as shown below:
+To upload documents, click the {{< img-simple src="/images/lead14.png"  alt="Dashboard" class="" width= "150" height= "100">}} icon as shown below:
 
 {{< img-simple src="/images/lead15.png"  alt="Dashboard" class="">}}
 
-In the above screen you can select to add an existing document by clicking the {{< img-simple src="/images/lead16.png"  alt="Dashboard" class="">}} button and select the document.
+In the above screen you can select to add an existing document by clicking the {{< img-simple src="/images/lead16.png"  alt="Dashboard" class="" width= "150" height= "100">}} button and select the document.
 
-You can also upload new documents by clicking the {{< img-simple src="/images/lead17.png"  alt="Dashboard" class="">}} button.
+You can also upload new documents by clicking the {{< img-simple src="/images/lead17.png"  alt="Dashboard" class=""> width= "150" height= "100"}} button.
