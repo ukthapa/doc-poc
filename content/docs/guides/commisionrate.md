@@ -35,7 +35,7 @@ In the above screen, you can do the following:
 5.  **Commission Amount** - Set the amount of the commission rate in the text box.
 6.	**Contacts** - Select for whom the commission rate  is applicable contacts or vendors. Based on the selection search and select the contact or vendor from the search box.
 7.	**Assigned To** - Enter the name of the user to whom the commission is assigned.
-8.	**Save** - Click Save to add the new lead.
+8.	**Save** - Click Save to add the new commission rate.
 9.	**Cancel** - Click Cancel to re-enter the details.
 
 Once the commission rate is saved it will look like as shown below:
@@ -48,10 +48,10 @@ After saving the commission rate you can view the details.
 
 To view the updates, click the **Updates** tab as shown below:
 
-{{< img-simple src="/images/commissionRte6.png"  alt="Dashboard" class="">}}
+{{< img-simple src="/images/commissionRate6.png"  alt="Dashboard" class="">}}
 
 ### Comments
 
-To view any comments of the lead click the **Comments** tab as shown below:
+To view any comments of the commission rate click the **Comments** tab as shown below:
 
 {{< img-simple src="/images/commissionRate7.png"  alt="Dashboard" class="">}}

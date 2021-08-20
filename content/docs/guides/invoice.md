@@ -28,6 +28,7 @@ To add an invoice, click the {{< img-simple src="/images/invoice3.png"  alt="Das
 {{< img-simple src="/images/invoice5.png"  alt="Dashboard" class="">}}
 {{< img-simple src="/images/invoice6.png"  alt="Dashboard" class="">}}
 {{< img-simple src="/images/invoice7.png"  alt="Dashboard" class="">}}
+{{< img-simple src="/images/invoice8.png"  alt="Dashboard" class="">}}
 
 In the above screen, you can do the following:
 
@@ -50,7 +51,7 @@ In the above screen, you can do the following:
 
 Once the invoice is saved it will look like as shown below:
 
-{{< img-simple src="/images/invoice8.png"  alt="Dashboard" class="">}}
+{{< img-simple src="/images/invoice13.png"  alt="Dashboard" class="">}}
 
 After saving the invoice the detailed view of the invoice will appear.
 
@@ -103,14 +104,14 @@ In the above screen you can do the following:
 
 To upload documents, click the {{< img-simple src="/images/lead14.png"  alt="Dashboard" class="">}} icon as shown below:
 
-{{< img-simple src="/images/lead15.png"  alt="Dashboard" class="">}}
+{{< img-simple src="/images/commission14.png"  alt="Dashboard" class="">}}
 
 In the above screen you can select to add an existing document by clicking the {{< img-simple src="/images/lead16.png"  alt="Dashboard" class="">}} button and select the document.
 
-You can also upload new documents by clicking the {{< img-simple src="/images/lead16.png"  alt="Dashboard" class="">}} button.
+You can also upload new documents by clicking the {{< img-simple src="/images/lead17.png"  alt="Dashboard" class="">}} button.
 
 ### Emails
 
 To view the emails, click the {{< img-simple src="/images/lead12.png"  alt="Dashboard" class="">}}  icon as shown below:
 
-{{< img-simple src="/images/lead13.png"  alt="Dashboard" class="">}}
+{{< img-simple src="/images/commssion15.png"  alt="Dashboard" class="">}}
