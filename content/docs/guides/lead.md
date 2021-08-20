@@ -131,4 +131,4 @@ To upload documents, click the {{< img-simple src="/images/lead14.png"  alt="Das
 
 In the above screen you can select to add an existing document by clicking the {{< img-simple src="/images/lead16.png"  alt="Dashboard" class="">}} button and select the document.
 
-You can also upload new documents by clicking the {{< img-simple src="/images/lead16.png"  alt="Dashboard" class="">}} button.
+You can also upload new documents by clicking the {{< img-simple src="/images/lead17.png"  alt="Dashboard" class="">}} button.

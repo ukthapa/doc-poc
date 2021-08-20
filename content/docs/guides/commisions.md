@@ -36,14 +36,14 @@ In the above screen, you can do the following:
 6.	**Amount** - Enter the amount of commission.
 7.	**Payment Done** -Click the check box if the payment is already done.
 8.	**Assigned To** - Enter the name of the user to whom the commission is assigned.
-9.	**Save** - Click Save to add the new lead.
+9.	**Save** - Click Save to add the new commission.
 10.	**Cancel** - Click Cancel to re-enter the details.
 
-Once the lead is saved it will look like as shown below:
+Once the commission is saved it will look like as shown below:
 
 {{< img-simple src="/images/commission8.png"  alt="Dashboard" class="">}}
 
-After saving the lead you can view the details of the commission. We will now see how to view the details.
+After saving the commission you can view the details of the commission. We will now see how to view the details.
 
 ## Details
 
@@ -59,6 +59,6 @@ To view the updates, click the **Updates** tab as shown below:
 
 ### Comments
 
-To view any comments of the lead click the **Comments** tab as shown below:
+To view any comments of the commission click the **Comments** tab as shown below:
 
 {{< img-simple src="/images/commission7.png"  alt="Dashboard" class="">}}
