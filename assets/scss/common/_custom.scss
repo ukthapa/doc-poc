@@ -116,6 +116,10 @@ main li, main p, main ul, main ol {
           &:first-child {
             width: 70px !important;
           }
+
+          &:last-child {
+            word-break: break-all;
+          }
       }
   }
     button {
@@ -137,6 +141,7 @@ main li, main p, main ul, main ol {
 
 .copy-code-button +  div {
   overflow: auto !important;
+  max-height: 350px;
 }
 
 
@@ -164,7 +169,8 @@ main section {
 
 .method-block {
   margin: 15px 0 20px;
-  display: inline-block;
+  display: inline-flex;
+  align-items: stretch;
 
   span {
     font-family: var(--bs-font-monospace);
@@ -174,6 +180,12 @@ main section {
   }
   span:first-child {
     font-weight: 500;
+    display:flex;
+    align-items:center;
+  }
+
+  span:last-child {
+    word-break: break-all
   }
 }
 
@@ -216,6 +228,19 @@ main section {
   }
 }
 
+
+.table-collapse {
+  .collapse {
+    position: absolute;
+    z-index: 2;
+    width: 90%;
+    .card {
+      table {
+        margin: 0;
+      }
+    }
+  }
+}
 
 // helper
 .hidden {
