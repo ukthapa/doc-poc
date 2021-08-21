@@ -1,0 +1,8 @@
+<div class="table-collapse">
+  <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#{{ .Get "id" }}" aria-expanded="false" aria-controls="{{ .Get "id" }}">{{ .Get "atext" }}</button>
+  <div class="collapse" id="{{ .Get "id" }}">
+    <div class="card card-body">
+      {{ .Inner  }}
+    </div>
+  </div>
+</div>
