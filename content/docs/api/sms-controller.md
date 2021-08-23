@@ -32,15 +32,75 @@ It requires correlationId, srdate, source, operation and destination as input pa
 | **Operation** (mandatory) | ``string`` (header)      |    Provide the operation as the value. For example - emailExists |
 | **destination** (mandatory) | ``string`` (header)      |    Provide the destination as the value. |
 
-### *Request Body Parameters*
-| NAME        | TYPE           | DESCRIPTION  |
-| ------------- |:-------------:| ----- |
-| **correlationId** (mandatory)    | ``string`` (body)      |   Provide the correlationId as the value. For example - SO-100 |
-| **Source** (mandatory) | ``string`` (body)      |    Provide the source as the value. For example - Selfcare |
-| **srdate** (mandatory) | ``string`` (body)      |    Provide the date as the value. For example - 11-09-2021 |
-| **Operation** (mandatory) | ``string`` (body)      |    Provide the operation as the value. For example - emailExists |
-| **destination** (mandatory) | ``string`` (body)      |    Provide the destination as the value. |
-
+#### *Request Body Parameters*
+| NAME        | TYPE         | DESCRIPTION  |
+|------------- |:-------------:| ----- |
+| **to** (mandatory)    | ``string`` (query) | Provide the phone number to whom the SMS will be sent as the value. |
+| **cc** (mandatory)    | ``string`` (query) | Provide the email address to whom the email will be copied as the value. |
+| **bcc** (mandatory)    | ``string`` (query) | Provide the email address to whom the email will be sent as bcc as the value. |
+| **replyTo** (mandatory)    | ``string`` (query) | Provide the email address to whom the reply of the email will go as the value. |
+| **subject* (mandatory)    | ``string`` (query) | Provide the subject of the notification as the value. |
+| **content** (mandatory)    | ``string`` (query) | Provide the content of the notification as the value. |
+| **attachment** (mandatory)    | ``string`` (query) | Provide the attachment of the notification as the value. |
+| **type** (mandatory)    | ``string`` (query) | Provide the type of the notification as the value. For example - ACCOUNT_CREATE |
+| {{< expand id="testing1" atext="UserInfo (object)">}}
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>FirstName</td>
+<td>string</td>
+<td>Provide the first name as the value.</td>
+</tr>
+<tr>
+<td>MiddleName</td>
+<td>string</td>
+<td>Provide the middle name as the value.</td>
+</tr>
+<tr>
+<td>LastName</td>
+<td>string</td>
+<td>Provide the last name as the value.</td>
+</tr>
+<tr>
+<td>accountNumber</td>
+<td>string</td>
+<td>Provide the account number as the value.</td>
+</tr>
+<tr>
+<td>mobNumber</td>
+<td>string</td>
+<td>Provide the mobile phone number as the value.</td>
+</tr>
+<tr>
+<td>email</td>
+<td>string</td>
+<td>Provide the email address as the value.</td>
+</tr>
+</tbody>
+</table>
+{{< /expand >}} |
+| {{< expand id="testing2" atext="data (object)">}}
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>address</td>
+<td>string</td>
+<td>Provide the address as the value.</td>
+</tr>
+</tbody>
+</table>
+{{< /expand >}} |
+| **requestType** (mandatory) | ``string``       |    Provide the type of request as the value. For example - simpleSMS |
 {{< tabs "uniqueid1" >}}
 {{< tab "Request Header" >}}
 {{< highlight java "linenos=table" >}}
@@ -135,14 +195,75 @@ It requires correlationId, srdate, source, operation and destination as input pa
 | **Operation** (mandatory) | ``string`` (header)      |    Provide the operation as the value. For example - emailExists |
 | **destination** (mandatory) | ``string`` (header)      |    Provide the destination as the value. |
 
-### *Request Body Parameters*
-| NAME        | TYPE           | DESCRIPTION  |
-| ------------- |:-------------:| ----- |
-| **correlationId** (mandatory)    | ``string`` (body)      |   Provide the correlationId as the value. For example - SO-100 |
-| **Source** (mandatory) | ``string`` (body)      |    Provide the source as the value. For example - Selfcare |
-| **srdate** (mandatory) | ``string`` (body)      |    Provide the date as the value. For example - 11-09-2021 |
-| **Operation** (mandatory) | ``string`` (body)      |    Provide the operation as the value. For example - emailExists |
-| **destination** (mandatory) | ``string`` (body)      |    Provide the destination as the value. |
+#### *Request Body Parameters*
+| NAME        | TYPE         | DESCRIPTION  |
+|------------- |:-------------:| ----- |
+| **to** (mandatory)    | ``string`` (query) | Provide the phone number to whom the SMS will be sent as the value. |
+| **cc** (mandatory)    | ``string`` (query) | Provide the email address to whom the email will be copied as the value. |
+| **bcc** (mandatory)    | ``string`` (query) | Provide the email address to whom the email will be sent as bcc as the value. |
+| **replyTo** (mandatory)    | ``string`` (query) | Provide the email address to whom the reply of the email will go as the value. |
+| **subject* (mandatory)    | ``string`` (query) | Provide the subject of the notification as the value. |
+| **content** (mandatory)    | ``string`` (query) | Provide the content of the notification as the value. |
+| **attachment** (mandatory)    | ``string`` (query) | Provide the attachment of the notification as the value. |
+| **type** (mandatory)    | ``string`` (query) | Provide the type of the notification as the value. For example - ACCOUNT_CREATE |
+| {{< expand id="testing1" atext="UserInfo (object)">}}
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>FirstName</td>
+<td>string</td>
+<td>Provide the first name as the value.</td>
+</tr>
+<tr>
+<td>MiddleName</td>
+<td>string</td>
+<td>Provide the middle name as the value.</td>
+</tr>
+<tr>
+<td>LastName</td>
+<td>string</td>
+<td>Provide the last name as the value.</td>
+</tr>
+<tr>
+<td>accountNumber</td>
+<td>string</td>
+<td>Provide the account number as the value.</td>
+</tr>
+<tr>
+<td>mobNumber</td>
+<td>string</td>
+<td>Provide the mobile phone number as the value.</td>
+</tr>
+<tr>
+<td>email</td>
+<td>string</td>
+<td>Provide the email address as the value.</td>
+</tr>
+</tbody>
+</table>
+{{< /expand >}} |
+| {{< expand id="testing2" atext="data (object)">}}
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>address</td>
+<td>string</td>
+<td>Provide the address as the value.</td>
+</tr>
+</tbody>
+</table>
+{{< /expand >}} |
+| **requestType** (mandatory) | ``string``       |    Provide the type of request as the value. For example - simpleSMS |
 
 {{< tabs "uniqueid2" >}}
 {{< tab "Request Header" >}}

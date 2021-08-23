@@ -691,8 +691,6 @@ This service is used to modify the status of the customer in BRM.
 #### *Request Body Parameters*
 | NAME        | TYPE         | DESCRIPTION  |
 |------------- |:-------------:| ----- |
-| **orderID** (mandatory)    | ``string`` (query) | Provide the order ID as the value. For example - Portal-5445 |
-| **orderType** (mandatory)    | ``string`` (query) | Provide the type of order as the value. For example - New |
 | {{< expand id="testing1" atext="accounts (array)">}}
 <table><thead>
 <tr>
