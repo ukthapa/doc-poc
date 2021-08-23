@@ -154,7 +154,7 @@ It requires correlationId, serviceProvider, srdate, operation, destination as in
 {{< /expand >}} |
 | **misisdn** (mandatory)    | ``string`` (query) | Provide the msisdn number as the value. For example - 123456789 |
 | **shortMessage** (mandatory)    | ``string`` (query) | Provide the short message as the value. |
-| **shortCodeNumber** (mandatory)    | ``string`` (query) | Provide from short code number as the value. For example - 12345|
+| **shortCodeNumber** (mandatory)    | ``string`` (query) | Provide from short code number as the value. For example - 12345 |
 | {{< expand id="testing1" atext="recipients (array)">}}
 <table><thead>
 <tr>
@@ -173,7 +173,7 @@ It requires correlationId, serviceProvider, srdate, operation, destination as in
 {{< /expand >}} |
 | **templateType** (mandatory)    | ``string`` (query) | Provide the type of template as the value. For example - WELCOME |
 | **EventName** (mandatory)    | ``string`` (query) | Provide the name of the event as the value. For example - ProductUpdate |
-| **EventCode** (mandatory)    | ``string`` (query) | Provide from event code as the value. For example - Success|
+| **EventCode** (mandatory)    | ``string`` (query) | Provide from event code as the value. For example - Success |
 {{< tabs "uniqueid2" >}}
 {{< tab "Request Header" >}}
 {{< highlight java "linenos=table" >}}
