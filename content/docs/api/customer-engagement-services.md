@@ -141,7 +141,7 @@ It requires correlationId, srdate, source, operation and destination along with 
 | **Operation** (mandatory) | ``string`` (header)      |    Provide the operation as the value. For example - emailExists |
 | **destination** (mandatory) | ``string`` (header)      |    Provide the destination as the value. |
 
-#### *Request Parameters*
+#### *Request Body Parameters*
 | NAME        | TYPE         | DESCRIPTION  |
 |------------- |:-------------:| ----- |
 | **orderID** (mandatory)    | ``string`` (query) | Provide the order ID as the value. For example - Portal-5445 |
@@ -164,23 +164,178 @@ It requires correlationId, srdate, source, operation and destination along with 
 <td>string</td>
 <td>Provide the first name as the value.</td>
 </tr>
+<tr>
+<td>LastName</td>
+<td>string</td>
+<td>Provide the last name as the value.</td>
+</tr>
+<tr>
+<td>MiddleName</td>
+<td>string</td>
+<td>Provide the middle name as the value.</td>
+</tr>
+<tr>
+<td>MobilePhone</td>
+<td>string</td>
+<td>Provide the mobile phone number as the value.</td>
+</tr>
+<tr>
+<td>Phone</td>
+<td>string</td>
+<td>Provide the phone number as the value.</td>
+</tr>
+<tr>
+<td>DocIdTypeEquipType</td>
+<td>string</td>
+<td>Provide doc id type or the equipment id type as the value. For example - SSN</td>
+</tr>
+<tr>
+<td>Title</td>
+<td>string</td>
+<td>Provide the title as the value.</td>
+</tr>
+<tr>
+<td>Department</td>
+<td>string</td>
+<td>Provide the department as the value.</td>
+</tr>
+<tr>
+<td>Designation</td>
+<td>string</td>
+<td>Provide the designation as the value.</td>
+</tr>
+<tr>
+<td>DocIdNumberMsgId</td>
+<td>string</td>
+<td>Provide the document Id number or message Id as the value. For example - 878-78-7878</td>
+</tr>
+<tr>
+<td>Gender</td>
+<td>string</td>
+<td>Provide the gender as the value.</td>
+</tr>
+<tr>
+<td>EmailAddress</td>
+<td>string</td>
+<td>Provide the email address as the value.</td>
+</tr>
+<tr>
+<td>Platform</td>
+<td>string</td>
+<td>Provide the platform as the value. For example - Postpaid</td>
+</tr>
+<tr>
+<td>Type</td>
+<td>string</td>
+<td>Provide the type as the value. For example - Residential</td>
+</tr>
+<tr>
+<td>ServiceType</td>
+<td>string</td>
+<td>Provide the service type as the value. For example - VoLTE</td>
+</tr>
 </tbody>
 </table>
 {{< /expand >}} |
-| **units** (optional) | ``string`` (query)      |    Provide the units as the value. |
-| {{< expand id="testing2" atext="Someother">}}
-<table><thead><tr><th>s2122dsa</th><th>2312213</th><th>2323121</th></tr></thead><tbody><tr><td>sadasdsa</td><td>sadssd</td><td>sasaddsa</td></tr></tbody></table>
+| {{< expand id="testing2" atext="AddressInfo (object)">}}
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>City</td>
+<td>string</td>
+<td>Provide the city as the value.</td>
+</tr>
+<tr>
+<td>Country</td>
+<td>string</td>
+<td>Provide the country as the value.</td>
+</tr>
+<tr>
+<td>PostalCode</td>
+<td>string</td>
+<td>Provide the postal code as the value.</td>
+</tr>
+<tr>
+<td>State</td>
+<td>string</td>
+<td>Provide the state as the value.</td>
+</tr>
+<tr>
+<td>StreetAddress</td>
+<td>string</td>
+<td>Provide the street address as the value.</td>
+</tr>
+</tbody>
+</table>
 {{< /expand >}} |
-
-### *Request Body Parameters*
-| NAME        | TYPE           | DESCRIPTION  |
-| ------------- |:-------------:| ----- |
-| **correlationId** (mandatory)    | ``string`` (body)      |   Provide the correlationId as the value. For example - SO-100 |
-| **Source** (mandatory) | ``string`` (body)      |    Provide the source as the value. For example - Selfcare |
-| **srdate** (mandatory) | ``string`` (body)      |    Provide the date as the value. For example - 11-09-2021 |
-| **Operation** (mandatory) | ``string`` (body)      |    Provide the operation as the value. For example - emailExists |
-| **destination** (mandatory) | ``string`` (body)      |    Provide the destination as the value. |
-
+| **PackageListId** (mandatory) | ``string``       |    Provide the package list ID as the value. For example - 653113 |
+| {{< expand id="testing3" atext="LineItems (array)">}}
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>packageId</td>
+<td>string</td>
+<td>Provide the package ID as the value. For example - 685782</td>
+</tr>
+<tr>
+<td>productGroupId</td>
+<td>string</td>
+<td>Provide the product group id as the value. For example - 685770</td>
+</tr>
+<tr>
+<td>productId</td>
+<td>string</td>
+<td>Provide the product ID as the value. For example - 650390</td>
+</tr>
+<tr>
+<td>price</td>
+<td>string</td>
+<td>Provide the price of the product as the value.</td>
+</tr>
+<tr>
+<td>qty</td>
+<td>string</td>
+<td>Provide the product quantity as the value.</td>
+</tr>
+<tr>
+<td>isInventory</td>
+<td>string</td>
+<td>Set the parameter as 1 if you want to add to the inventory.</td>
+</tr>
+<tr>
+<td>qty</td>
+<td>string</td>
+<td>Provide the product quantity as the value.</td>
+</tr>
+</tbody>
+</table>
+{{< /expand >}} |
+| {{< expand id="testing4" atext="inventoryAttributes (object)">}}
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>SIM</td>
+<td>string</td>
+<td>Provide the SIM number as the value. For example - 116402905</td>
+</tr>
+</tbody>
+</table>
+{{< /expand >}} |
 {{< tabs "uniqueid3" >}}
 {{< tab "Request Header" >}}
 {{< highlight java "linenos=table" >}}
