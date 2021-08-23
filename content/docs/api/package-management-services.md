@@ -13,7 +13,7 @@ weight: 204
 toc: false
 ---
 
-{{% method-block bgcolor="primary" type="bg-green" callmethod="GET" %}}
+{{% method-block bgcolor="primary" type="bg-blue" callmethod="GET" %}}
   /crm/v1/package/{location}
 {{% /method-block %}}
 
@@ -387,7 +387,7 @@ operation:verifyOTP
 {{< /tabs >}}
 </section>
 
-{{% method-block bgcolor="primary" type="bg-green" callmethod="GET" %}}
+{{% method-block bgcolor="primary" type="bg-blue" callmethod="GET" %}}
 ​/crm​/v1​/package
 {{% /method-block %}}
 
@@ -608,17 +608,31 @@ It requires token, serviceProvider, source, srdate, operation, correlationId and
 | **Operation** (mandatory) | ``string`` (header)      |    Provide the operation as the value. For example - emailExists |
 | **destination** (mandatory) | ``string`` (header)      |    Provide the destination as the value. |
 
-### *Request Body Parameters*
-| NAME        | TYPE           | DESCRIPTION  |
-| ------------- |:-------------:| ----- |
-| **token** (mandatory)    | ``string`` (body)      |   Provide the bolton token as the value. |
-| **serviceProvider** (mandatory)    | ``string`` (body)      |   Provide the serviceProvider as the value. |
-| **correlationId** (mandatory)    | ``string`` (body)      |   Provide the correlationId as the value. For example - SO-100 |
-| **Source** (mandatory) | ``string`` (body)      |    Provide the source as the value. For example - Selfcare |
-| **srdate** (mandatory) | ``string`` (body)      |    Provide the date as the value. For example - 11-09-2021 |
-| **Operation** (mandatory) | ``string`` (body)      |    Provide the operation as the value. For example - emailExists |
-| **destination** (mandatory) | ``string`` (body)      |    Provide the destination as the value. |
-
+#### *Request Body Parameters*
+| NAME        | TYPE         | DESCRIPTION  |
+|------------- |:-------------:| ----- |
+| {{< expand id="testing1" atext="boltOn (array)">}}
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>platform</td>
+<td>string</td>
+<td>Provide the platform as the value. For example - Postpaid</td>
+</tr>
+<tr>
+<td>ProductId</td>
+<td>string</td>
+<td>Provide product id as the value.</td>
+</tr>
+</tbody>
+</table>
+{{< /expand >}} |
+| **msisdn** (mandatory) | ``string``       |    Provide the msisdn number as the value. For example - 9800078903 |
 {{< tabs "uniqueid3" >}}
 {{< tab "Request Header" >}}
 {{< highlight java "linenos=table" >}}
@@ -633,35 +647,15 @@ operation:verifyOTP
 {{< /tab >}}
 {{< tab "Request Body" >}}
 {{< highlight java "linenos=table" >}}
+
 {
-  "lineItems": [
-    {
-      "packageId": "string",
-      "productGroupId": "string",
-      "productId": "string",
-      "price": "string",
-      "qty": "string",
-      "isInventory": "string",
-      "inventoryAttributes": {
-        "msisdn": "string",
-        "icicid": "string",
-        "imsi": "string",
-        "sim": "string"
-      }
-    }
-  ],
-  "paymentInfo": {
-    "amount": "string",
-    "description": "string",
-    "reasonCode": "string",
-    "paymentType": "string",
-    "transId": "string",
-    "effectiveT": "string"
-  },
-  "AttachTo": {
-    "key": "string",
-    "value": "string"
-  }
+    "boltOn": [
+        {
+            "platform": "PostPaid",
+            "productId": "646735"
+        }
+    ],
+    "msisdn": "9800078903"
 }
 {{< / highlight >}}
 {{< /tab >}}

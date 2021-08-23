@@ -688,8 +688,181 @@ srDate:11-09-2021
 
 This service is used to modify the status of the customer in BRM.
 
+#### *Request Body Parameters*
+| NAME        | TYPE         | DESCRIPTION  |
+|------------- |:-------------:| ----- |
+| **orderID** (mandatory)    | ``string`` (query) | Provide the order ID as the value. For example - Portal-5445 |
+| **orderType** (mandatory)    | ``string`` (query) | Provide the type of order as the value. For example - New |
+| {{< expand id="testing1" atext="accounts (array)">}}
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>poid</td>
+<td>string</td>
+<td>Provide the poid number as the value. For example - 0.0.0.1 /account -1 0</td>
+</tr>
+<tr>
+<td>accountNo</td>
+<td>string</td>
+<td>Provide the account number as the value.</td>
+</tr>
+<tr>
+<td>programName</td>
+<td>string</td>
+<td>Provide the program name as the value. For example - CSMART</td>
+</tr>
+</tbody>
+</table>
+{{< /expand >}} |
+| {{< expand id="testing2" atext="nameInfo (array)">}}
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>elem</td>
+<td>string</td>
+<td>Set the value as 1 if you want to enable elem.</td>
+</tr>
+<tr>
+<td>address</td>
+<td>string</td>
+<td>Provide the address as the value.</td>
+</tr>
+<tr>
+<td>city</td>
+<td>string</td>
+<td>Provide the city as the value.</td>
+</tr>
+<tr>
+<td>company</td>
+<td>string</td>
+<td>Provide the company as the value. For example - SSN</td>
+</tr>
+<tr>
+<td>contactType</td>
+<td>string</td>
+<td>Provide the type of account as the value. For example - Account holder</td>
+</tr>
+<tr>
+<td>country</td>
+<td>string</td>
+<td>Provide the country as the value.</td>
+</tr>
+<tr>
+<td>emailAddr</td>
+<td>string</td>
+<td>Provide the email address as the value.</td>
+</tr>
+<tr>
+<td>firstName</td>
+<td>string</td>
+<td>Provide the first name as the value.</td>
+</tr>
+<tr>
+<td>lastName</td>
+<td>string</td>
+<td>Provide the last name as the value.</td>
+</tr>
+<tr>
+<td>middleName</td>
+<td>string</td>
+<td>Provide the middle name as the value.</td>
+</tr>
+<tr>
+<td>salutation</td>
+<td>string</td>
+<td>Provide the salutation as the value. For example - Ms.</td>
+</tr>
+<tr>
+<td>State</td>
+<td>string</td>
+<td>Provide the state as the value. For example - karnataka</td>
+</tr>
+<tr>
+<td>zip</td>
+<td>string</td>
+<td>Provide the zip code as the value.</td>
+</tr>
+</tbody>
+</table>
+{{< /expand >}} |
+| {{< expand id="testing2" atext="phones (array)">}}
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>elem</td>
+<td>string</td>
+<td>Set the value as 1 if you want to enable elem.</td>
+</tr>
+<tr>
+<td>Country</td>
+<td>string</td>
+<td>Provide the country as the value.</td>
+</tr>
+<tr>
+<td>phone</td>
+<td>string</td>
+<td>Provide the phone number as the value.</td>
+</tr>
+<tr>
+<td>State</td>
+<td>string</td>
+<td>Provide the state as the value.</td>
+</tr>
+<tr>
+<td>type</td>
+<td>string</td>
+<td>Provide the type as the value.</td>
+</tr>
+</tbody>
+</table>
+{{< /expand >}} |
+| {{< expand id="testing2" atext="phones (array)">}}
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>elem</td>
+<td>string</td>
+<td>Set the value as 1 if you want to enable elem.</td>
+</tr>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>Provide the name of the customer as the value.</td>
+</tr>
+<tr>
+<td>value</td>
+<td>string</td>
+<td>Provide the email id as the value.</td>
+</tr>
+<tr>
+<td>subscriberPreferenceId</td>
+<td>string</td>
+<td>Provide the id as the value.</td>
+</tr>
+</tbody>
+</table>
+{{< /expand >}} |
 <section>
-
 {{< tabs "uniqueid1" >}}
 {{< tab "Request Body" >}}
 {{< highlight java "linenos=table" >}}
