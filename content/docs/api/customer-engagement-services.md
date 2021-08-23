@@ -543,16 +543,196 @@ It requires correlationId, srdate, source, operation and destination along with 
 | **destination** (mandatory) | ``string`` (header)      |    Provide the destination as the value. |
 | **type** (mandatory) | ``string`` (header)      |    Provide the type of OTP. |
 
-### *Request Body Parameters*
-| NAME        | TYPE           | DESCRIPTION  |
-| ------------- |:-------------:| ----- |
-| **Data** (mandatory)    | ``string`` (query)      |   Provide the registration data of the customer. |
-| **correlationId** (mandatory)    | ``string`` (body)      |   Provide the correlationId as the value. For example - SO-100 |
-| **Source** (mandatory) | ``string`` (body)      |    Provide the source as the value. For example - Selfcare |
-| **srdate** (mandatory) | ``string`` (body)      |    Provide the date as the value. For example - 11-09-2021 |
-| **Operation** (mandatory) | ``string`` (body)      |    Provide the operation as the value. For example - emailExists |
-| **destination** (mandatory) | ``string`` (body)      |    Provide the destination as the value. |
-| **type** (mandatory) | ``string`` (header)      |    Provide the type of OTP. |
+#### *Request Body Parameters*
+| NAME        | TYPE         | DESCRIPTION  |
+|------------- |:-------------:| ----- |
+| **orderID** (mandatory)    | ``string`` (query) | Provide the order ID as the value. For example - Portal-5445 |
+| **orderType** (mandatory)    | ``string`` (query) | Provide the type of order as the value. For example - New |
+| {{< expand id="testing4" atext="AcctInfo (object)">}}
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>ComnpanyName</td>
+<td>string</td>
+<td>Provide the company name as the value.</td>
+</tr>
+<tr>
+<td>FirstName</td>
+<td>string</td>
+<td>Provide the first name as the value.</td>
+</tr>
+<tr>
+<td>LastName</td>
+<td>string</td>
+<td>Provide the last name as the value.</td>
+</tr>
+<tr>
+<td>MiddleName</td>
+<td>string</td>
+<td>Provide the middle name as the value.</td>
+</tr>
+<tr>
+<td>MobilePhone</td>
+<td>string</td>
+<td>Provide the mobile phone number as the value.</td>
+</tr>
+<tr>
+<td>Phone</td>
+<td>string</td>
+<td>Provide the phone number as the value.</td>
+</tr>
+<tr>
+<td>DocIdTypeEquipType</td>
+<td>string</td>
+<td>Provide doc id type or the equipment id type as the value. For example - SSN</td>
+</tr>
+<tr>
+<td>Title</td>
+<td>string</td>
+<td>Provide the title as the value.</td>
+</tr>
+<tr>
+<td>Department</td>
+<td>string</td>
+<td>Provide the department as the value.</td>
+</tr>
+<tr>
+<td>Designation</td>
+<td>string</td>
+<td>Provide the designation as the value.</td>
+</tr>
+<tr>
+<td>DocIdNumberMsgId</td>
+<td>string</td>
+<td>Provide the document Id number or message Id as the value. For example - 878-78-7878</td>
+</tr>
+<tr>
+<td>Gender</td>
+<td>string</td>
+<td>Provide the gender as the value.</td>
+</tr>
+<tr>
+<td>EmailAddress</td>
+<td>string</td>
+<td>Provide the email address as the value.</td>
+</tr>
+<tr>
+<td>Platform</td>
+<td>string</td>
+<td>Provide the platform as the value. For example - Postpaid</td>
+</tr>
+<tr>
+<td>Type</td>
+<td>string</td>
+<td>Provide the type as the value. For example - Residential</td>
+</tr>
+<tr>
+<td>ServiceType</td>
+<td>string</td>
+<td>Provide the service type as the value. For example - VoLTE</td>
+</tr>
+</tbody>
+</table>
+{{< /expand >}} |
+| {{< expand id="testing5" atext="AddressInfo (object)">}}
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>City</td>
+<td>string</td>
+<td>Provide the city as the value.</td>
+</tr>
+<tr>
+<td>Country</td>
+<td>string</td>
+<td>Provide the country as the value.</td>
+</tr>
+<tr>
+<td>PostalCode</td>
+<td>string</td>
+<td>Provide the postal code as the value.</td>
+</tr>
+<tr>
+<td>State</td>
+<td>string</td>
+<td>Provide the state as the value.</td>
+</tr>
+<tr>
+<td>StreetAddress</td>
+<td>string</td>
+<td>Provide the street address as the value.</td>
+</tr>
+</tbody>
+</table>
+{{< /expand >}} |
+| {{< expand id="testing6" atext="Line (object)">}}
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>DataPkg</td>
+<td>string</td>
+<td>Provide the data package number as the value. For example - 10</td>
+</tr>
+<tr>
+<td>IMSI</td>
+<td>string</td>
+<td>Provide the IMSI as the value. For example - Reserved</td>
+</tr>
+<tr>
+<td>PackageName</td>
+<td>string</td>
+<td>Provide the name of the package as the value. For example - Platinum Bundle Flat</td>
+</tr>
+<tr>
+<td>SimCard</td>
+<td>string</td>
+<td>Provide the status of the sim card as the value. For example - Reserved</td>
+</tr>
+<tr>
+<td>Bolton</td>
+<td>string</td>
+<td>Provide the bolton number as the value.</td>
+</tr>
+<tr>
+<td>MSISDN</td>
+<td>string</td>
+<td>Set the Provide the MSISDN number as the value. For example - 19216811479854</td>
+</tr>
+</tbody>
+</table>
+{{< /expand >}} |
+| {{< expand id="testing7" atext="PayInfo (object)">}}
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>PayType</td>
+<td>string</td>
+<td>Provide the pay type as the value. For example - Paypal</td>
+</tr>
+</tbody>
+</table>
+{{< /expand >}} |
+| **Password** (mandatory)    | ``string`` | Provide the password as the value. |
 
 {{< tabs "uniqueid4" >}}
 {{< tab "Request Header" >}}
@@ -564,20 +744,6 @@ source:Selfcare
 destination:CRM
 operation:verifyOTP
 type:numbers
-{{< / highlight >}}
-{{< /tab >}}
-{{< tab "Response" >}}
-{{< highlight java "linenos=table" >}}
-{
-  "response": {
-    "success": "true",
-    "result": {
-      "salesOrder": {
-        "salesorder_no": "SO2542"
-      }
-    }
-  }
-}
 {{< / highlight >}}
 {{< /tab >}}
 {{< tab "Request Body" >}}
