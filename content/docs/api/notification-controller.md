@@ -32,15 +32,47 @@ It requires correlationId, serviceProvider, srdate, operation and requestorChann
 | **Operation** (mandatory) | ``string`` (header)      |    Provide the operation as the value. For example - emailExists |
 | **serviceProvider** (mandatory) | ``string`` (header)      |    Provide the name of the service provider. |
 
-### *Request Body Parameters*
-| NAME        | TYPE           | DESCRIPTION  |
-| ------------- |:-------------:| ----- |
-| **correlationId** (mandatory)    | ``string`` (body)      |   Provide the correlationId as the value. For example - SO-100 |
-| **requestorChannel** (mandatory) | ``string`` (body)      |    Provide the requestorChannel. |
-| **srdate** (mandatory) | ``string`` (body)      |    Provide the date as the value. For example - 11-09-2021 |
-| **Operation** (mandatory) | ``string`` (body)      |    Provide the operation as the value. For example - emailExists |
-| **serviceProvider** (mandatory) | ``string`` (body)      |    Provide the name of the service provider. |
-
+#### *Request Body Parameters*
+| NAME        | TYPE         | DESCRIPTION  |
+|------------- |:-------------:| ----- |
+| **deviceId** (mandatory)    | ``string`` (header)      |   Provide the deviceId as the value. For example - 1234A |
+| {{< expand id="testing1" atext="firebaseTockenId (array)">}}
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>firebaseTockenId</td>
+<td>string</td>
+<td>Provide the fire base token id as the value.</td>
+</tr>
+</tbody>
+</table>
+{{< /expand >}} |
+| {{< expand id="testing2" atext="notification (object)">}}
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>title</td>
+<td>string</td>
+<td>Provide the title of the notification as the value.</td>
+</tr>
+<tr>
+<td>body</td>
+<td>string</td>
+<td>Provide the body of the notification as the value.</td>
+</tr>
+</tbody>
+</table>
+{{< /expand >}} |
 {{< tabs "uniqueid2" >}}
 {{< tab "Request Header" >}}
 {{< highlight java "linenos=table" >}}
