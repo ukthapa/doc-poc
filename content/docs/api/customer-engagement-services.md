@@ -141,6 +141,37 @@ It requires correlationId, srdate, source, operation and destination along with 
 | **Operation** (mandatory) | ``string`` (header)      |    Provide the operation as the value. For example - emailExists |
 | **destination** (mandatory) | ``string`` (header)      |    Provide the destination as the value. |
 
+#### *Request Parameters*
+| NAME        | TYPE         | DESCRIPTION  |
+|------------- |:-------------:| ----- |
+| **orderID** (mandatory)    | ``string`` (query) | Provide the order ID as the value. For example - Portal-5445 |
+| **orderType** (mandatory)    | ``string`` (query) | Provide the type of order as the value. For example - New |
+| {{< expand id="testing1" atext="AcctInfo (object)">}}
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>ComnpanyName</td>
+<td>string</td>
+<td>Provide the company name as the value.</td>
+</tr>
+<tr>
+<td>FirstName</td>
+<td>string</td>
+<td>Provide the first name as the value.</td>
+</tr>
+</tbody>
+</table>
+{{< /expand >}} |
+| **units** (optional) | ``string`` (query)      |    Provide the units as the value. |
+| {{< expand id="testing2" atext="Someother">}}
+<table><thead><tr><th>s2122dsa</th><th>2312213</th><th>2323121</th></tr></thead><tbody><tr><td>sadasdsa</td><td>sadssd</td><td>sasaddsa</td></tr></tbody></table>
+{{< /expand >}} |
+
 ### *Request Body Parameters*
 | NAME        | TYPE           | DESCRIPTION  |
 | ------------- |:-------------:| ----- |
