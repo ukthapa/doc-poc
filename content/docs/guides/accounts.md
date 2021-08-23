@@ -137,14 +137,14 @@ In the above screen you can do the following:
 
 To view the emails, click the **email** icon as shown below:
 
-{{< img-simple src="/images/account13.png"  alt="Dashboard" class="">}}
+{{< img-simple src="/images/accounts13.png"  alt="Dashboard" class="">}}
 
 ### Documents
 
-To upload documents, click the {{< img-simple src="/images/lead14.png"  alt="Dashboard" class="" width= "150" height= "100">}} icon as shown below:
+To upload documents, click the **Documents** icon as shown below:
 
 {{< img-simple src="/images/accounts14.png"  alt="Dashboard" class="">}}
 
-In the above screen you can select to add an existing document by clicking the {{< img-simple src="/images/lead16.png"  alt="Dashboard" class="" width= "150" height= "100">}} button and select the document.
+In the above screen you can select to add an existing document by clicking the {{< img-simple src="/images/lead16.png"  alt="Dashboard" class="" width= "100" height= "80">}} button and select the document.
 
-You can also upload new documents by clicking the {{< img-simple src="/images/lead17.png"  alt="Dashboard" class="" width= "150" height= "100">}} button.
+You can also upload new documents by clicking the {{< img-simple src="/images/lead17.png"  alt="Dashboard" class="" width= "100" height= "80">}} button.
