@@ -64,6 +64,13 @@ It requires correlationId, serviceProvider, srdate, operation, destination as in
 </table>
 {{< /expand >}} |
 | {{< expand id="testing2" atext="data (object)">}}
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
 <tr>
 <td>userId</td>
 <td>string</td>
