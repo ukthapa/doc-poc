@@ -580,6 +580,63 @@ type:numbers
 }
 {{< / highlight >}}
 {{< /tab >}}
+{{< tab "Request Body" >}}
+{{< highlight java "linenos=table" >}}
+{
+    "OrderId": "Portal-5445",
+    "OrderType": "NEW",
+    "AcctInfo": {
+        "CompanyName": "ven",
+        "FirstName": "ven",
+        "LastName": "akk",
+        "MiddleName": "",
+        "MobilePhone": "19216811479854",
+        "Phone": "",
+        "DocIdTypeEquipType": "SSN",
+        "Title": "Mr.",
+        "Department": "",
+        "Designation": "",
+        "DocIdNumberMsgId": "333-33-3333",
+        "Gender": "Male",
+        "EmailAddress": "venkateh2e3fd@yopmail.com",
+        "Platform": "Postpaid"
+    },
+    "AddressInfo": {
+        "City": "Bengaluru",
+        "Country": "India",
+        "PostalCode": "560034",
+        "State": "Karnataka",
+        "StreetAddress": "Jakkasandra, Teacher's Colony, 1st Block Koramangala, Koramangala, Bengaluru, Bangalore Urban, Karnataka, India"
+    },
+    "Line": {
+        "DataPkg": 10,
+        "IMSI": "RESERVED",
+        "PackageName": "Platinum Bundle Flat",
+        "SimCard": "RESERVED",
+        "BoltOn": [],
+        "MSISDN": "19216811479854"
+    },
+    "PayInfo": {
+        "PayType": "paypal"
+    },
+    "Password": "Venky@151994"
+}
+{{< / highlight >}}
+{{< /tab >}}
+{{< tab "Response" >}}
+{{< highlight java "linenos=table" >}}
+{
+  "response": {
+    "success": "true",
+    "result": {
+      "salesOrder": {
+        "salesorder_no": "SO2542"
+      }
+    }
+  }
+}
+{{< / highlight >}}
+{{< /tab >}}
 {{< tab "Client Error" >}}
 {{< highlight java "linenos=table" >}}
 {
