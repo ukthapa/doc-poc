@@ -63,7 +63,7 @@ It requires correlationId, serviceProvider, srdate, operation, destination as in
 </tbody>
 </table>
 {{< /expand >}} |
-| {{< expand id="testing1" atext="data (object)">}}
+| {{< expand id="testing2" atext="data (object)">}}
 <tr>
 <td>userId</td>
 <td>string</td>
@@ -155,7 +155,7 @@ It requires correlationId, serviceProvider, srdate, operation, destination as in
 | **misisdn** (mandatory)    | ``string`` (query) | Provide the msisdn number as the value. For example - 123456789 |
 | **shortMessage** (mandatory)    | ``string`` (query) | Provide the short message as the value. |
 | **shortCodeNumber** (mandatory)    | ``string`` (query) | Provide from short code number as the value. For example - 12345 |
-| {{< expand id="testing1" atext="recipients (array)">}}
+| {{< expand id="testing3" atext="recipients (array)">}}
 <table><thead>
 <tr>
 <th>Name</th>
@@ -300,7 +300,7 @@ It requires correlationId, serviceProvider, srdate, operation, destination as in
 | **shortCode** (mandatory)    | ``string`` (query) | Provide the short code of the notification as the value. For example - 12345 |
 | **messageKey** (mandatory)    | ``string`` (query) | Provide the message key of the notification as the value. For example - sms123 |
 | **notificationType** (mandatory)    | ``string`` (query) | Provide the type of notification as the value. |
-| {{< expand id="testing1" atext="content (object)">}}
+| {{< expand id="testing4" atext="content (object)">}}
 <table><thead>
 <tr>
 <th>Name</th>
@@ -413,7 +413,7 @@ It requires correlationId, serviceProvider, srdate, operation, destination as in
 | **misisdn** (mandatory)    | ``string`` (query) | Provide the msisdn number as the value. For example - 123456789 |
 | **shortMessage** (mandatory)    | ``string`` (query) | Provide the short message as the value. |
 | **shortCodeNumber** (mandatory)    | ``string`` (query) | Provide from short code number as the value. For example - 12345 |
-| {{< expand id="testing1" atext="recipients (array)">}}
+| {{< expand id="testing5" atext="recipients (array)">}}
 <table><thead>
 <tr>
 <th>Name</th>
