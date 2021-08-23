@@ -32,15 +32,148 @@ It requires correlationId, serviceProvider, srdate, operation, destination as in
 | **source** (mandatory) | ``string`` (header)      |    Provide the source as the value. |
 | **destination** (mandatory) | ``string`` (header)      |    Provide the destination as the value. |
 
-### *Request Body Parameters*
-| NAME        | TYPE           | DESCRIPTION  |
-| ------------- |:-------------:| ----- |
-| **correlationId** (mandatory)    | ``string`` (header)      |   Provide the correlationId as the value. For example - SO-100 |
-| **srdate** (mandatory) | ``string`` (header)      |    Provide the date as the value. For example - 11-09-2021 |
-| **Operation** (mandatory) | ``string`` (header)      |    Provide the operation as the value. For example - emailExists |
-| **source** (mandatory) | ``string`` (header)      |    Provide the source as the value. |
-| **destination** (mandatory) | ``string`` (header)      |    Provide the destination as the value. |
-
+#### *Request Body Parameters*
+| NAME        | TYPE         | DESCRIPTION  |
+|------------- |:-------------:| ----- |
+| **activityId** (mandatory)    | ``string`` (query) | Provide the activity id as the value. For example - accountCreation |
+| **channel** (mandatory)    | ``string`` (query) | Provide the channel of notification as the value. For example - SMS |
+| **from** (mandatory)    | ``string`` (query) | Provide from whom the notification will be sent as the value. |
+| **message** (mandatory)    | ``string`` (query) | Provide the message as the value. |
+| **shortCode** (mandatory)    | ``string`` (query) | Provide the short code of the notification as the value. For example - 12345 |
+| **messageKey** (mandatory)    | ``string`` (query) | Provide the message key of the notification as the value. For example - sms123 |
+| **notificationType** (mandatory)    | ``string`` (query) | Provide the type of notification as the value. |
+| {{< expand id="testing1" atext="content (object)">}}
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>message</td>
+<td>string</td>
+<td>Provide the message of the notification as the value.</td>
+</tr>
+<tr>
+<td>from</td>
+<td>string</td>
+<td>Provide the from whom the notification will be sent as the value.</td>
+</tr>
+</tbody>
+</table>
+{{< /expand >}} |
+| {{< expand id="testing1" atext="data (object)">}}
+<tr>
+<td>userId</td>
+<td>string</td>
+<td>Provide the user id as the value.</td>
+</tr>
+<tr>
+<td>mobNumber</td>
+<td>string</td>
+<td>Provide the mobile phone number as the value.</td>
+</tr>
+<tr>
+<td>accountNumber</td>
+<td>string</td>
+<td>Provide the account number as the value.</td>
+</tr>
+<tr>
+<td>password</td>
+<td>string</td>
+<td>Provide the password as the value.</td>
+</tr>
+<tr>
+<td>expiryDate</td>
+<td>string</td>
+<td>Provide the expiry date as the value.</td>
+</tr>
+<tr>
+<td>total</td>
+<td>string</td>
+<td>Provide the total notifications to be sent as the value.</td>
+</tr>
+<tr>
+<td>plan</td>
+<td>string</td>
+<td>Provide the type of plan as the value. For example - F&F Offer 60GB17.5K ACE</td>
+</tr>
+<tr>
+<td>email</td>
+<td>string</td>
+<td>Provide the email as the value.</td>
+</tr>
+<tr>
+<td>msidn</td>
+<td>string</td>
+<td>Provide the msidn number as the value.</td>
+</tr>
+<tr>
+<td>segment</td>
+<td>string</td>
+<td>Provide the segment as the value. For example - Prepaid</td>
+</tr>
+<tr>
+<td>voucherCode</td>
+<td>string</td>
+<td>Provide the voucher code as the value.</td>
+</tr>
+<tr>
+<td>addOnName</td>
+<td>string</td>
+<td>Provide the add on name as the value. For example - msidn</td>
+</tr>
+<tr>
+<td>ticketNo</td>
+<td>string</td>
+<td>Provide the ticket number as the value.</td>
+</tr>
+<tr>
+<td>ticketStatus</td>
+<td>string</td>
+<td>Provide the ticket status as the value.</td>
+</tr>
+<tr>
+<td>accountStatus</td>
+<td>string</td>
+<td>Provide the account status as the value.</td>
+</tr>
+<tr>
+<td>startDate</td>
+<td>string</td>
+<td>Provide the start date as the value.</td>
+</tr>
+<tr>
+<td>updateDate</td>
+<td>string</td>
+<td>Provide the update date as the value.</td>
+</tr>
+</tbody>
+</table>
+{{< /expand >}} |
+| **misisdn** (mandatory)    | ``string`` (query) | Provide the msisdn number as the value. For example - 123456789 |
+| **shortMessage** (mandatory)    | ``string`` (query) | Provide the short message as the value. |
+| **shortCodeNumber** (mandatory)    | ``string`` (query) | Provide from short code number as the value. For example - 12345|
+| {{< expand id="testing1" atext="recipients (array)">}}
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>email</td>
+<td>string</td>
+<td>Provide the email address of the recipient as the value.</td>
+</tr>
+</tbody>
+</table>
+{{< /expand >}} |
+| **templateType** (mandatory)    | ``string`` (query) | Provide the type of template as the value. For example - WELCOME |
+| **EventName** (mandatory)    | ``string`` (query) | Provide the name of the event as the value. For example - ProductUpdate |
+| **EventCode** (mandatory)    | ``string`` (query) | Provide from event code as the value. For example - Success|
 {{< tabs "uniqueid2" >}}
 {{< tab "Request Header" >}}
 {{< highlight java "linenos=table" >}}
@@ -157,14 +290,148 @@ It requires correlationId, serviceProvider, srdate, operation, destination as in
 | **source** (mandatory) | ``string`` (header)      |    Provide the source as the value. |
 | **destination** (mandatory) | ``string`` (header)      |    Provide the destination as the value. |
 
-### *Request Body Parameters*
-| NAME        | TYPE           | DESCRIPTION  |
-| ------------- |:-------------:| ----- |
-| **correlationId** (mandatory)    | ``string`` (header)      |   Provide the correlationId as the value. For example - SO-100 |
-| **srdate** (mandatory) | ``string`` (header)      |    Provide the date as the value. For example - 11-09-2021 |
-| **Operation** (mandatory) | ``string`` (header)      |    Provide the operation as the value. For example - emailExists |
-| **source** (mandatory) | ``string`` (header)      |    Provide the source as the value. |
-| **destination** (mandatory) | ``string`` (header)      |    Provide the destination as the value. |
+#### *Request Body Parameters*
+| NAME        | TYPE         | DESCRIPTION  |
+|------------- |:-------------:| ----- |
+| **activityId** (mandatory)    | ``string`` (query) | Provide the activity id as the value. For example - accountCreation |
+| **channel** (mandatory)    | ``string`` (query) | Provide the channel of notification as the value. For example - SMS |
+| **from** (mandatory)    | ``string`` (query) | Provide from whom the notification will be sent as the value. |
+| **message** (mandatory)    | ``string`` (query) | Provide the message as the value. |
+| **shortCode** (mandatory)    | ``string`` (query) | Provide the short code of the notification as the value. For example - 12345 |
+| **messageKey** (mandatory)    | ``string`` (query) | Provide the message key of the notification as the value. For example - sms123 |
+| **notificationType** (mandatory)    | ``string`` (query) | Provide the type of notification as the value. |
+| {{< expand id="testing1" atext="content (object)">}}
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>message</td>
+<td>string</td>
+<td>Provide the message of the notification as the value.</td>
+</tr>
+<tr>
+<td>from</td>
+<td>string</td>
+<td>Provide the from whom the notification will be sent as the value.</td>
+</tr>
+</tbody>
+</table>
+{{< /expand >}} |
+| {{< expand id="testing1" atext="data (object)">}}
+<tr>
+<td>userId</td>
+<td>string</td>
+<td>Provide the user id as the value.</td>
+</tr>
+<tr>
+<td>mobNumber</td>
+<td>string</td>
+<td>Provide the mobile phone number as the value.</td>
+</tr>
+<tr>
+<td>accountNumber</td>
+<td>string</td>
+<td>Provide the account number as the value.</td>
+</tr>
+<tr>
+<td>password</td>
+<td>string</td>
+<td>Provide the password as the value.</td>
+</tr>
+<tr>
+<td>expiryDate</td>
+<td>string</td>
+<td>Provide the expiry date as the value.</td>
+</tr>
+<tr>
+<td>total</td>
+<td>string</td>
+<td>Provide the total notifications to be sent as the value.</td>
+</tr>
+<tr>
+<td>plan</td>
+<td>string</td>
+<td>Provide the type of plan as the value. For example - F&F Offer 60GB17.5K ACE</td>
+</tr>
+<tr>
+<td>email</td>
+<td>string</td>
+<td>Provide the email as the value.</td>
+</tr>
+<tr>
+<td>msidn</td>
+<td>string</td>
+<td>Provide the msidn number as the value.</td>
+</tr>
+<tr>
+<td>segment</td>
+<td>string</td>
+<td>Provide the segment as the value. For example - Prepaid</td>
+</tr>
+<tr>
+<td>voucherCode</td>
+<td>string</td>
+<td>Provide the voucher code as the value.</td>
+</tr>
+<tr>
+<td>addOnName</td>
+<td>string</td>
+<td>Provide the add on name as the value. For example - msidn</td>
+</tr>
+<tr>
+<td>ticketNo</td>
+<td>string</td>
+<td>Provide the ticket number as the value.</td>
+</tr>
+<tr>
+<td>ticketStatus</td>
+<td>string</td>
+<td>Provide the ticket status as the value.</td>
+</tr>
+<tr>
+<td>accountStatus</td>
+<td>string</td>
+<td>Provide the account status as the value.</td>
+</tr>
+<tr>
+<td>startDate</td>
+<td>string</td>
+<td>Provide the start date as the value.</td>
+</tr>
+<tr>
+<td>updateDate</td>
+<td>string</td>
+<td>Provide the update date as the value.</td>
+</tr>
+</tbody>
+</table>
+{{< /expand >}} |
+| **misisdn** (mandatory)    | ``string`` (query) | Provide the msisdn number as the value. For example - 123456789 |
+| **shortMessage** (mandatory)    | ``string`` (query) | Provide the short message as the value. |
+| **shortCodeNumber** (mandatory)    | ``string`` (query) | Provide from short code number as the value. For example - 12345|
+| {{< expand id="testing1" atext="recipients (array)">}}
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>email</td>
+<td>string</td>
+<td>Provide the email address of the recipient as the value.</td>
+</tr>
+</tbody>
+</table>
+{{< /expand >}} |
+| **templateType** (mandatory)    | ``string`` (query) | Provide the type of template as the value. For example - WELCOME |
+| **EventName** (mandatory)    | ``string`` (query) | Provide the name of the event as the value. For example - ProductUpdate |
+| **EventCode** (mandatory)    | ``string`` (query) | Provide from event code as the value. For example - Success|
 
 {{< tabs "uniqueid3" >}}
 {{< tab "Request Header" >}}
