@@ -45,98 +45,66 @@ In the above screen, you can do the following:
 10. **Parent Account** - Click the Parent Account search box to set the parent account.
 11. **Account Category** - Click the Account Category drop-down to set the category as Individual or MDSA Owner or MDSA Member. By default, Individual.
 12.	**Industry** - Click the Industry drop-down to set the industry.
-13. 
-10.
-11.
-12.	Select the Email Opt Out check box if the customer does not want to receive promotional emails.
-13.	Select the Call Opt Out check box if the customer does not want to receive promotional calls.
-14.	Select the Auto Renewal check box if the plan is automatically renewed.
-15.	Set the address details in the respective fields.
-16.	Click Save.
-
-After creating the account, the summary view screen will appear as shown below:
-
-The customer is now onboard.
-
-
-
-
-To create Leads, click the Marketing drop-down and select Leads as shown below:
-
-{{< img-simple src="/images/lead1.png"  alt="Dashboard" class="">}}
-
-The Leads screen appears as shown below:
-
-{{< img-simple src="/images/lead2.png"  alt="Dashboard" class="" width="987" height="367">}}
-
-## Add Leads
-To add a lead, click the {{< img-simple src="/images/lead3.png"  alt="Dashboard" class="border-0" width="150" height="100">}} button. The Create New Lead screen appears as shown below:
-
-{{< img-simple src="/images/lead4.png"  alt="Dashboard" class="">}}
-{{< img-simple src="/images/lead5.png"  alt="Dashboard" class="">}}
-{{< img-simple src="/images/lead6.png"  alt="Dashboard" class="">}}
-
-In the above screen, you can do the following:
-
-1.	**First Name** - Select the salutation from the drop-down. Enter the first name of the lead in the text box.
-2.	**Middle Name** - Enter the middle name of the lead.
-3.	**Last Name** - Enter the last name of the lead.
-4.	**Primary Phone** -Enter the primary phone number of the lead in the text.
-5.  **Mobile Phone** - Enter the mobile number of the lead in the text.
-6.	**Primary Email** - Enter the initial Email-Id of the lead.
-7.	**Secondary Email** -Enter the additional Email-Id of the lead.
-8.	**Company** - Enter the Company name of the lead.
-9.	**Department** - Enter the concerned department of the lead.
-10.	**Lead Source** - Click on Lead Source drop-down to select the source of the lead.
-11.	**Designation** - Enter the designation of the lead.
-12.	**Industry** - Click on the Industry drop-down to select the industry type of the lead.
-13.	**Lead Status** - Click on Lead Status drop-down to select the status of the lead.
-14.	**Annual Revenue** - Enter the annual revenue of the company of the lead.
-15.	**Number Of Employees** -Enter the number of employees of the lead’s company.
-16.	**Assigned To** -Click the Assigned To drop-down and select the person to whom the lead is assigned.
-17.	**Email Opt Out** -Click the check box if the lead has not opted for email.
-18.	**Gender** - Click on the Gender drop-down to select the gender of the lead.
-19.	**Twitter Handle** -Enter the Twitter-Id of the lead.
-20. **Leads Account** - Search and select the account of the lead from the search box.
-21.	**Street** - Enter the street address of the lead.
-22.	**PO** - Enter the post office of the lead.
-23.	**Zip** -Enter the postal code of the lead.
-24.	**City** -Enter the city of the lead.
-25.	**State** - Click on the State drop-down to select the state of the lead.
-26.	**Country** - Click on the Country drop-down to select the Country of the lead.
-27.	**Description** - Enter additional information about the new lead.
-28.	**Save** - Click Save to add the new lead.
-29.	**Cancel** - Click Cancel to re-enter the details.
-
-Once the lead is saved it will look like as shown below:
-
-{{< img-simple src="/images/lead7.png"  alt="Dashboard" class="">}}
-
-After saving the lead you can view the details of the lead. We will now see how to view the details.
-
-## Details
-
-To view the Details, click the **Details** tab as shown below:
-
-{{< img-simple src="/images/lead8.png"  alt="Dashboard" class="">}}
+13. **MDSA Owner** - Click the search icon to search and select the MDSA owner.
+14. **BDOM** - Click the drop-down to set the BDOM.
+15. **Annual Revenue** - Enter the annual revenue in the text box.
+16. **Current Speed** - Click the drop-down to select the current speed of the internet.
+17. **Credit Limit** - Enter the credit limit in the text box.
+18. **Email Opt In** - Uncheck the Email Opt In check box if the customer does not want to receive promotional emails.
+19. **Push Notifications** - Check the push notifications check box if the customer wants to receive notifications.
+20. **Do Not Disturb** - Check the DND check box if the customer does not wants to get disturbed by SMS or email.
+21. **SMS Opt In** - Uncheck the SMS Opt in check box if the customer does not want to receive SMS.
+22. **Roaming** - Check the Roaming check box if the customer wants roaming services.
+23. **Auto Renewal** - Uncheck the auto renewal check box if the customer does not wants to automatically renew the subscription.
+24. **Assigned To** - Set the user to whom the account will be assigned to.
+25.	**Billing Information** - Set the billing information by setting the billing cycle and billing frequency from the drop-down fields.
+26. **Address Details** - Set the billing and shipping address details in the respective fields.
+27.	**Description** - Enter the description of the account in the text box.
+28. **Portal User** - Uncheck the check box if the customer is not a portal user.
+29. **Mobile Dashboard settings** - Set the options that will appear in the mobile dashboard by checking the appropriate options.
+30.	**Save** - Click Save.
 
 ### Updates
 
 To view the updates, click the **Updates** tab as shown below:
 
-{{< img-simple src="/images/lead9.png"  alt="Dashboard" class="">}}
+{{< img-simple src="/images/accounts8.png"  alt="Dashboard" class="">}}
 
-The updates for that particular lead will be shown.
+The updates for that particular account will be shown.
 
 ### Comments
 
-To view any comments of the lead click the **Comments** tab as shown below:
+To view any comments click the **Comments** tab as shown below:
 
-{{< img-simple src="/images/lead10.png"  alt="Dashboard" class="">}}
+{{< img-simple src="/images/accounts9.png"  alt="Dashboard" class="">}}
+
+### Contacts
+
+To view the contacts of the account click the **Contacts** icon as shown below:
+
+{{< img-simple src="/images/accounts10.png"  alt="Dashboard" class="">}}
+
+You can also opt to select or add a contact using the respective buttons.
+
+### Quotes
+
+To view the quotes of the account click the **Quotes** icon as shown below:
+
+{{< img-simple src="/images/accounts11.png"  alt="Dashboard" class="">}}
+
+You can also opt to add a quote using the add quote button.
+
+### Sales order
+
+To view the sales order of the account click the **Sales Order** icon as shown below:
+
+{{< img-simple src="/images/accounts12.png"  alt="Dashboard" class="">}}
+
+You can also opt to add a sales order using the Add Sales Order button.
 
 ### Activities
 
-To add an activity to the lead click the {{< img-simple src="/images/campaign13.png"  alt="Dashboard" class="">}} icon as shown below:
+To add an activity click the {{< img-simple src="/images/campaign13.png"  alt="Dashboard" class="">}} icon as shown below:
 
 {{< img-simple src="/images/lead11.png"  alt="Dashboard" class="">}}
 
@@ -167,15 +135,15 @@ In the above screen you can do the following:
 
 ### Emails
 
-To view the emails, click the {{< img-simple src="/images/lead12.png"  alt="Dashboard" class="">}}  icon as shown below:
+To view the emails, click the **email** icon as shown below:
 
-{{< img-simple src="/images/lead13.png"  alt="Dashboard" class="">}}
+{{< img-simple src="/images/account13.png"  alt="Dashboard" class="">}}
 
 ### Documents
 
 To upload documents, click the {{< img-simple src="/images/lead14.png"  alt="Dashboard" class="" width= "150" height= "100">}} icon as shown below:
 
-{{< img-simple src="/images/lead15.png"  alt="Dashboard" class="">}}
+{{< img-simple src="/images/accounts14.png"  alt="Dashboard" class="">}}
 
 In the above screen you can select to add an existing document by clicking the {{< img-simple src="/images/lead16.png"  alt="Dashboard" class="" width= "150" height= "100">}} button and select the document.
 
