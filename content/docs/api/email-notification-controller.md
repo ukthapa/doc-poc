@@ -32,15 +32,326 @@ It requires correlationId, serviceProvider, srdate, operation and requestorChann
 | **Operation** (mandatory) | ``string`` (header)      |    Provide the operation as the value. For example - emailExists |
 | **serviceProvider** (mandatory) | ``string`` (header)      |    Provide the name of the service provider. |
 
-### *Request Body Parameters*
-| NAME        | TYPE           | DESCRIPTION  |
-| ------------- |:-------------:| ----- |
-| **correlationId** (mandatory)    | ``string`` (body)      |   Provide the correlationId as the value. For example - SO-100 |
-| **requestorChannel** (mandatory) | ``string`` (body)      |    Provide the requestorChannel. |
-| **srdate** (mandatory) | ``string`` (body)      |    Provide the date as the value. For example - 11-09-2021 |
-| **Operation** (mandatory) | ``string`` (body)      |    Provide the operation as the value. For example - emailExists |
-| **serviceProvider** (mandatory) | ``string`` (body)      |    Provide the name of the service provider. |
-
+#### *Request Body Parameters*
+| NAME        | TYPE         | DESCRIPTION  |
+|------------- |:-------------:| ----- |
+| {{< expand id="testing1" atext="header (object)">}}
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>correlationIdrelation</td>
+<td>string</td>
+<td>Provide the correlation id as the value. For example - S0643</td>
+</tr>
+<tr>
+<td>operation</td>
+<td>string</td>
+<td>Provide the operation as the value. For example - notification</td>
+</tr>
+<tr>
+<td>requestorChannel</td>
+<td>string</td>
+<td>Provide the requestor channel as the value. For example - CRM</td>
+</tr>
+<tr>
+<td>srDate</td>
+<td>string</td>
+<td>Provide the srDate as the value.</td>
+</tr>
+<tr>
+<td>serviceProvider</td>
+<td>string</td>
+<td>Provide the service provider name as the value. For example - MOM</td>
+</tr>
+<tr>
+<td>backEndChannel</td>
+<td>string</td>
+<td>Provide the back end channel as the value. For example - MOM</td>
+</tr>
+</tbody>
+</table>
+{{< /expand >}} |
+| {{< expand id="testing1" atext="message (object)">}}
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>activityId</td>
+<td>string</td>
+<td>Provide the activity id as the value. For example - accountCreation</td>
+</tr>
+<tr>
+<td>channel</td>
+<td>string</td>
+<td>Provide the channel as the value.</td>
+</tr>
+<tr>
+<td>notificationType</td>
+<td>string</td>
+<td>Provide the type of notification as the value. For example - SMS</td>
+</tr>
+</tbody>
+</table>
+{{< /expand >}} |
+| {{< expand id="testing2" atext="content (object)">}}
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>message</td>
+<td>string</td>
+<td>Provide the notification message as the value.</td>
+</tr>
+<tr>
+<td>from</td>
+<td>string</td>
+<td>Provide from where the notification is sent as the value.</td>
+</tr>
+</tbody>
+</table>
+{{< /expand >}} |
+| {{< expand id="testing1" atext="data (object)">}}
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>FirstName</td>
+<td>string</td>
+<td>Provide the first name as the value.</td>
+</tr>
+<tr>
+<td>LastName</td>
+<td>string</td>
+<td>Provide the last name as the value.</td>
+</tr>
+<tr>
+<td>email</td>
+<td>string</td>
+<td>Provide the email address as the value.</td>
+</tr>
+<tr>
+<td>cc</td>
+<td>string</td>
+<td>Provide the email address to whom the email will be copied as the value.</td>
+</tr>
+<tr>
+<td>bcc</td>
+<td>string</td>
+<td>Provide the email address to whom the email will be sent as bcc.</td>
+</tr>
+<tr>
+<td>salutation</td>
+<td>string</td>
+<td>Provide the salutation as the value. For example - Mr.</td>
+</tr>
+<tr>
+<td>middleName</td>
+<td>string</td>
+<td>Provide the middle name as the value.</td>
+</tr>
+<tr>
+<td>accountNumber</td>
+<td>string</td>
+<td>Provide the account number as the value.</td>
+</tr>
+<tr>
+<td>MobNumber</td>
+<td>string</td>
+<td>Provide the mobile phone number as the value.</td>
+</tr>
+<tr>
+<td>imsi</td>
+<td>string</td>
+<td>Provide the imsi number as the value. For example - Mb234</td>
+</tr>
+<tr>
+<td>imei</td>
+<td>string</td>
+<td>Provide imei as the value. For example - S81233SSN</td>
+</tr>
+<tr>
+<td>plan</td>
+<td>string</td>
+<td>Provide the plan as the value. For example - monthly plan</td>
+</tr>
+<tr>
+<td>userId</td>
+<td>string</td>
+<td>Provide the user id as the value.</td>
+</tr>
+<tr>
+<td>password</td>
+<td>string</td>
+<td>Provide the password as the value.</td>
+</tr>
+<tr>
+<td>createDate</td>
+<td>string</td>
+<td>Provide the create date as the value.</td>
+</tr>
+<tr>
+<td>paymentMethod</td>
+<td>string</td>
+<td>Provide the payment method as the value.</td>
+</tr>
+<tr>
+<td>paymentReceiver</td>
+<td>string</td>
+<td>Provide the payment receiver name as the value.</td>
+</tr>
+<tr>
+<td>total</td>
+<td>string</td>
+<td>Provide the total amount as the value.</td>
+</tr>
+<tr>
+<td>balance</td>
+<td>string</td>
+<td>Provide the balance as the value.</td>
+</tr>
+<tr>
+<td>treceipt</td>
+<td>string</td>
+<td>Provide the treceipt number as the value.</td>
+</tr>
+<tr>
+<td>userExpiryDate</td>
+<td>string</td>
+<td>Provide the user expiry date as the value.</td>
+</tr>
+<tr>
+<td>autoRegAccountName</td>
+<td>string</td>
+<td>Provide the auto registered account name as the value.</td>
+</tr>
+<tr>
+<td>userPaymentBalancebalance</td>
+<td>string</td>
+<td>Provide the user payment balance as the value.</td>
+</tr>
+<tr>
+<td>billIndex</td>
+<td>string</td>
+<td>Provide the bill index number as the value.</td>
+</tr>
+<tr>
+<td>invoiceNumber</td>
+<td>string</td>
+<td>Provide the invoice number as the value.</td>
+</tr>
+<tr>
+<td>partenrId</td>
+<td>string</td>
+<td>Provide the partner ID as the value. For example - PTR_NTR</td>
+</tr>
+<tr>
+<td>environment</td>
+<td>string</td>
+<td>Provide the environment as the value. For example - Dev</td>
+</tr>
+<tr>
+<td>comment</td>
+<td>string</td>
+<td>Provide the comment if any as the value.</td>
+</tr>
+<tr>
+<td>suppportEmail</td>
+<td>string</td>
+<td>Provide the support email id as the value.</td>
+</tr>
+<tr>
+<td>partnerContactNumber</td>
+<td>string</td>
+<td>Provide the contact number of the partner as the value.</td>
+</tr>
+<tr>
+<td>partnerEmailId</td>
+<td>string</td>
+<td>Provide the email id of the partner as the value.</td>
+</tr>
+<tr>
+<td>partnerStatus</td>
+<td>string</td>
+<td>Provide the status of the partner as the value.</td>
+</tr>
+<tr>
+<td>loginUrl</td>
+<td>string</td>
+<td>Provide the login URL as the value.</td>
+</tr>
+</tbody>
+</table>
+{{< /expand >}} |
+| {{< expand id="testing2" atext="attachments (array)">}}
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>fileName</td>
+<td>string</td>
+<td>Provide the file name as the value.</td>
+</tr>
+<tr>
+<td>filePath</td>
+<td>string</td>
+<td>Provide the file path as the value.</td>
+</tr>
+</tbody>
+</table>
+{{< /expand >}} |
+| {{< expand id="testing8" atext="recipients (array)">}}
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>to</td>
+<td>string</td>
+<td>Provide the email address to whom the notification will be sent as the value.</td>
+</tr>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>Provide the name of the customer as the value.</td>
+</tr>
+<tr>
+<td>cc</td>
+<td>string</td>
+<td>Provide the email address of the customer to whom the email will copied as the value.</td>
+</tr>
+<tr>
+<td>bcc</td>
+<td>string</td>
+<td>Provide the email address of the customer to whom the email will sent as bcc.</td>
+</tr>
+</tbody>
+</table>
+{{< /expand >}} |
+| **templateType** (mandatory) | ``string``       |    Provide the template type as the value. For example - WELCOME |
 {{< tabs "uniqueid2" >}}
 {{< tab "Request Header" >}}
 {{< highlight java "linenos=table" >}}
@@ -178,11 +489,273 @@ This service is used to send simple email to the partner. It requires EmailResul
 
 <section>
 
-### *Request Body Parameters*
-| NAME        | TYPE           | DESCRIPTION  |
-| ------------- |:-------------:| ----- |
-| **EmailResult** (mandatory)    | ``string`` (body)      |   Provide the result of the email as the value. |
-
+#### *Request Body Parameters*
+| NAME        | TYPE         | DESCRIPTION  |
+|------------- |:-------------:| ----- |
+| {{< expand id="testing1" atext="header (object)">}}
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>correlationIdrelation</td>
+<td>string</td>
+<td>Provide the correlation id as the value. For example - S0643</td>
+</tr>
+<tr>
+<td>operation</td>
+<td>string</td>
+<td>Provide the operation as the value. For example - notification</td>
+</tr>
+<tr>
+<td>requestorChannel</td>
+<td>string</td>
+<td>Provide the requestor channel as the value. For example - CRM</td>
+</tr>
+<tr>
+<td>srDate</td>
+<td>string</td>
+<td>Provide the srDate as the value.</td>
+</tr>
+<tr>
+<td>serviceProvider</td>
+<td>string</td>
+<td>Provide the service provider name as the value. For example - MOM</td>
+</tr>
+<tr>
+<td>backEndChannel</td>
+<td>string</td>
+<td>Provide the back end channel as the value. For example - MOM</td>
+</tr>
+</tbody>
+</table>
+{{< /expand >}} |
+| {{< expand id="testing1" atext="message (object)">}}
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>activityId</td>
+<td>string</td>
+<td>Provide the activity id as the value. For example - accountCreation</td>
+</tr>
+<tr>
+<td>channel</td>
+<td>string</td>
+<td>Provide the channel as the value.</td>
+</tr>
+<tr>
+<td>notificationType</td>
+<td>string</td>
+<td>Provide the type of notification as the value. For example - SMS</td>
+</tr>
+</tbody>
+</table>
+{{< /expand >}} |
+| {{< expand id="testing2" atext="content (object)">}}
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>message</td>
+<td>string</td>
+<td>Provide the notification message as the value.</td>
+</tr>
+<tr>
+<td>from</td>
+<td>string</td>
+<td>Provide from where the notification is sent as the value.</td>
+</tr>
+</tbody>
+</table>
+{{< /expand >}} |
+| {{< expand id="testing1" atext="data (object)">}}
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>FirstName</td>
+<td>string</td>
+<td>Provide the first name as the value.</td>
+</tr>
+<tr>
+<td>LastName</td>
+<td>string</td>
+<td>Provide the last name as the value.</td>
+</tr>
+<tr>
+<td>email</td>
+<td>string</td>
+<td>Provide the email address as the value.</td>
+</tr>
+<tr>
+<td>cc</td>
+<td>string</td>
+<td>Provide the email address to whom the email will be copied as the value.</td>
+</tr>
+<tr>
+<td>bcc</td>
+<td>string</td>
+<td>Provide the email address to whom the email will be sent as bcc.</td>
+</tr>
+<tr>
+<td>salutation</td>
+<td>string</td>
+<td>Provide the salutation as the value. For example - Mr.</td>
+</tr>
+<tr>
+<td>middleName</td>
+<td>string</td>
+<td>Provide the middle name as the value.</td>
+</tr>
+<tr>
+<td>accountNumber</td>
+<td>string</td>
+<td>Provide the account number as the value.</td>
+</tr>
+<tr>
+<td>MobNumber</td>
+<td>string</td>
+<td>Provide the mobile phone number as the value.</td>
+</tr>
+<tr>
+<td>imsi</td>
+<td>string</td>
+<td>Provide the imsi number as the value. For example - Mb234</td>
+</tr>
+<tr>
+<td>imei</td>
+<td>string</td>
+<td>Provide imei as the value. For example - S81233SSN</td>
+</tr>
+<tr>
+<td>plan</td>
+<td>string</td>
+<td>Provide the plan as the value. For example - monthly plan</td>
+</tr>
+<tr>
+<td>userId</td>
+<td>string</td>
+<td>Provide the user id as the value.</td>
+</tr>
+<tr>
+<td>password</td>
+<td>string</td>
+<td>Provide the password as the value.</td>
+</tr>
+<tr>
+<td>createDate</td>
+<td>string</td>
+<td>Provide the create date as the value.</td>
+</tr>
+<tr>
+<td>paymentMethod</td>
+<td>string</td>
+<td>Provide the payment method as the value.</td>
+</tr>
+<tr>
+<td>paymentReceiver</td>
+<td>string</td>
+<td>Provide the payment receiver name as the value.</td>
+</tr>
+<tr>
+<td>total</td>
+<td>string</td>
+<td>Provide the total amount as the value.</td>
+</tr>
+<tr>
+<td>balance</td>
+<td>string</td>
+<td>Provide the balance as the value.</td>
+</tr>
+<tr>
+<td>treceipt</td>
+<td>string</td>
+<td>Provide the treceipt number as the value.</td>
+</tr>
+<tr>
+<td>userExpiryDate</td>
+<td>string</td>
+<td>Provide the user expiry date as the value.</td>
+</tr>
+<tr>
+<td>autoRegAccountName</td>
+<td>string</td>
+<td>Provide the auto registered account name as the value.</td>
+</tr>
+<tr>
+<td>userPaymentBalancebalance</td>
+<td>string</td>
+<td>Provide the user payment balance as the value.</td>
+</tr>
+<tr>
+<td>billIndex</td>
+<td>string</td>
+<td>Provide the bill index number as the value.</td>
+</tr>
+<tr>
+<td>invoiceNumber</td>
+<td>string</td>
+<td>Provide the invoice number as the value.</td>
+</tr>
+<tr>
+<td>partenrId</td>
+<td>string</td>
+<td>Provide the partner ID as the value. For example - PTR_NTR</td>
+</tr>
+<tr>
+<td>environment</td>
+<td>string</td>
+<td>Provide the environment as the value. For example - Dev</td>
+</tr>
+<tr>
+<td>comment</td>
+<td>string</td>
+<td>Provide the comment if any as the value.</td>
+</tr>
+<tr>
+<td>suppportEmail</td>
+<td>string</td>
+<td>Provide the support email id as the value.</td>
+</tr>
+<tr>
+<td>partnerContactNumber</td>
+<td>string</td>
+<td>Provide the contact number of the partner as the value.</td>
+</tr>
+<tr>
+<td>partnerEmailId</td>
+<td>string</td>
+<td>Provide the email id of the partner as the value.</td>
+</tr>
+<tr>
+<td>partnerStatus</td>
+<td>string</td>
+<td>Provide the status of the partner as the value.</td>
+</tr>
+<tr>
+<td>loginUrl</td>
+<td>string</td>
+<td>Provide the login URL as the value.</td>
+</tr>
+</tbody>
+</table>
+{{< /expand >}} |
 {{< tabs "uniqueid3" >}}
 {{< tab "Request Body" >}}
 {{< highlight java "linenos=table" >}}
