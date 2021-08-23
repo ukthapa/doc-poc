@@ -33,8 +33,8 @@ It requires latitude and longitude coordinates as input parameters. The service 
 {{< /expand >}} |
 | **units** (optional) | ``string`` (query)      |    Provide the units as the value. |
 | {{< expand id="testing2" atext="Someother">}}
-<table><thead><tr><th>s2122dsa</th><th>2312213</th><th>2323121</th></tr></thead><tbody><tr><td>sadasdsa</td><td>sadssd</td><td>sasaddsa</td></tr></tbody></table>
-{{< /expand >}} |
+<table><thead><tr><th>s2122dsa</th><th>2312213</th><th>2323121</th></tr></thead><tbody><tr><td>sadasdsa</td><td>sadssd</td><td>sasaddsa</td></tr><tr><td>sadasdsa</td><td>sadssd</td><td>sasaddsa</td></tr><tr><td>sadasdsa</td><td>sadssd</td><td>sasaddsa</td></tr><tr><td>sadasdsa</td><td>sadssd</td><td>sasaddsa</td></tr><tr><td>sadasdsa</td><td>sadssd</td><td>sasaddsa</td></tr><tr><td>sadasdsa</td><td>sadssd</td><td>sasaddsa</td></tr><tr><td>sadasdsa</td><td>sadssd</td><td>sasaddsa</td></tr><tr><td>sadasdsa</td><td>sadssd</td><td>sasaddsa</td></tr><tr><td>sadasdsa</td><td>sadssd</td><td>sasaddsa</td></tr></tbody></table>
+{{< /expand >}} | string (query) | Description detail content |
 
 
 {{< tabs "uniqueid" >}}
