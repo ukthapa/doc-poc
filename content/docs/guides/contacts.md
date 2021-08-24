@@ -1,6 +1,6 @@
 ---
-title: "contacts"
-description: "contacts"
+title: "Contacts"
+description: "Contacts"
 lead: ""
 date:
 lastmod:
@@ -109,6 +109,6 @@ To view the sent SMS click the **SMS** icon as shown below:
 
 To view and add opportunities **Opportunities** icon as shown below:
 
-{{< img-simple src="/images/contacts12.png"  alt="Dashboard" class="">}}
+{{< img-simple src="/images/contacts13.png"  alt="Dashboard" class="">}}
 
 You can also opt to add an opportunity using the {{< img-simple src="/images/contacts12.png"  alt="Dashboard" class="">}} button.
