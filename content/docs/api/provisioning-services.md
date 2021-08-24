@@ -688,6 +688,8 @@ srDate:11-09-2021
 
 This service is used to modify the status of the customer in BRM.
 
+<section>
+
 #### *Request Body Parameters*
 | NAME        | TYPE         | DESCRIPTION  |
 |------------- |:-------------:| ----- |
