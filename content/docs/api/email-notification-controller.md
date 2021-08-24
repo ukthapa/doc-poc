@@ -76,7 +76,7 @@ It requires correlationId, serviceProvider, srdate, operation and requestorChann
 </tbody>
 </table>
 {{< /expand >}} |
-| {{< expand id="testing1" atext="message (object)">}}
+| {{< expand id="testing10" atext="message (object)">}}
 <table><thead>
 <tr>
 <th>Name</th>
@@ -123,7 +123,7 @@ It requires correlationId, serviceProvider, srdate, operation and requestorChann
 </tbody>
 </table>
 {{< /expand >}} |
-| {{< expand id="testing1" atext="data (object)">}}
+| {{< expand id="testing3" atext="data (object)">}}
 <table><thead>
 <tr>
 <th>Name</th>
@@ -299,7 +299,7 @@ It requires correlationId, serviceProvider, srdate, operation and requestorChann
 </tbody>
 </table>
 {{< /expand >}} |
-| {{< expand id="testing2" atext="attachments (array)">}}
+| {{< expand id="testing4" atext="attachments (array)">}}
 <table><thead>
 <tr>
 <th>Name</th>
@@ -492,7 +492,7 @@ This service is used to send simple email to the partner. It requires EmailResul
 #### *Request Body Parameters*
 | NAME        | TYPE         | DESCRIPTION  |
 |------------- |:-------------:| ----- |
-| {{< expand id="testing1" atext="header (object)">}}
+| {{< expand id="testing6" atext="header (object)">}}
 <table><thead>
 <tr>
 <th>Name</th>
@@ -533,7 +533,7 @@ This service is used to send simple email to the partner. It requires EmailResul
 </tbody>
 </table>
 {{< /expand >}} |
-| {{< expand id="testing1" atext="message (object)">}}
+| {{< expand id="testing7" atext="message (object)">}}
 <table><thead>
 <tr>
 <th>Name</th>
@@ -559,7 +559,7 @@ This service is used to send simple email to the partner. It requires EmailResul
 </tbody>
 </table>
 {{< /expand >}} |
-| {{< expand id="testing2" atext="content (object)">}}
+| {{< expand id="testing11" atext="content (object)">}}
 <table><thead>
 <tr>
 <th>Name</th>
@@ -580,7 +580,7 @@ This service is used to send simple email to the partner. It requires EmailResul
 </tbody>
 </table>
 {{< /expand >}} |
-| {{< expand id="testing1" atext="data (object)">}}
+| {{< expand id="testing9" atext="data (object)">}}
 <table><thead>
 <tr>
 <th>Name</th>

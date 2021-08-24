@@ -206,7 +206,7 @@ It requires correlationId, srdate, source, operation and destination as input pa
 | **content** (mandatory)    | ``string`` (query) | Provide the content of the notification as the value. |
 | **attachment** (mandatory)    | ``string`` (query) | Provide the attachment of the notification as the value. |
 | **type** (mandatory)    | ``string`` (query) | Provide the type of the notification as the value. For example - ACCOUNT_CREATE |
-| {{< expand id="testing1" atext="UserInfo (object)">}}
+| {{< expand id="testing2" atext="UserInfo (object)">}}
 <table><thead>
 <tr>
 <th>Name</th>
