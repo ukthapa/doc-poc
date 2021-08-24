@@ -862,7 +862,6 @@ This service is used to modify the status of the customer in BRM.
 </tbody>
 </table>
 {{< /expand >}} |
-<section>
 {{< tabs "uniqueid1" >}}
 {{< tab "Request Body" >}}
 {{< highlight java "linenos=table" >}}
