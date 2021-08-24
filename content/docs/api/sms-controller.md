@@ -202,7 +202,7 @@ It requires correlationId, srdate, source, operation and destination as input pa
 | **cc** (mandatory)    | ``string`` (query) | Provide the email address to whom the email will be copied as the value. |
 | **bcc** (mandatory)    | ``string`` (query) | Provide the email address to whom the email will be sent as bcc as the value. |
 | **replyTo** (mandatory)    | ``string`` (query) | Provide the email address to whom the reply of the email will go as the value. |
-| **subject* (mandatory)    | ``string`` (query) | Provide the subject of the notification as the value. |
+| **subject** (mandatory)    | ``string`` (query) | Provide the subject of the notification as the value. |
 | **content** (mandatory)    | ``string`` (query) | Provide the content of the notification as the value. |
 | **attachment** (mandatory)    | ``string`` (query) | Provide the attachment of the notification as the value. |
 | **type** (mandatory)    | ``string`` (query) | Provide the type of the notification as the value. For example - ACCOUNT_CREATE |
