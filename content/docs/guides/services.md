@@ -62,13 +62,13 @@ The updates for that particular service will be shown.
 
 To view any comments click the **Comments** tab as shown below:
 
-{{< img-simple src="/images/service8.png"  alt="Dashboard" class="">}}
+{{< img-simple src="/images/services8.png"  alt="Dashboard" class="">}}
 
 ### Quotes
 
 To view the quotes click the **Quotes** tab as shown below:
 
-{{< img-simple src="/images/service9.png"  alt="Dashboard" class="">}}
+{{< img-simple src="/images/services9.png"  alt="Dashboard" class="">}}
 
 ### Purchase Order
 
