@@ -26,7 +26,7 @@ It requires correlationId, serviceProvider, srdate, operation and requestorChann
 ### *Request Parameters*
 | NAME        | TYPE           | DESCRIPTION  |
 | ------------- |:-------------:| ----- |
-| **correlationId** (mandatory)    | ``string`` (header)      |   Provide the correlationId as the value. For example - SO-100 |
+| **correlationId** (mandatory)    | ``string`` (header)      |   Provide the correlationId as the value. For example - 123e4567-e89b-12d3-a456-426614174000 |
 | **requestorChannel** (mandatory) | ``string`` (header)      |    Provide the requestorChannel. |
 | **srdate** (mandatory) | ``string`` (header)      |    Provide the date as the value. For example - 11-09-2021 |
 | **Operation** (mandatory) | ``string`` (header)      |    Provide the operation as the value. For example - emailExists |

@@ -24,7 +24,7 @@ This service allows you to fetch the list of bill details available in the syste
 #### *Request Parameters*
 | NAME        | TYPE          | DESCRIPTION  |
 | ------------- |:-------------:| ----- |
-| **correlationId** (mandatory)    | ``string`` (header)      |   Provide the correlationId as the value. For example - SO-100 |
+| **correlationId** (mandatory)    | ``string`` (header)      |   Provide the correlationId as the value. For example - 123e4567-e89b-12d3-a456-426614174000 |
 | **Source** (mandatory) | ``string`` (header)      |    Provide the source as the value. For example - Selfcare |
 | **srdate** (mandatory) | ``string`` (header)      |    Provide the date as the value. For example - 11-09-2021 |
 | **Operation** (mandatory) | ``string`` (header)      |    Provide the operation as the value. For example - Inventory |
@@ -33,7 +33,7 @@ This service allows you to fetch the list of bill details available in the syste
 {{< tabs "uniqueid9" >}}
 {{< tab "Request Header" >}}
 {{< highlight java "linenos=table" >}}
-correlationId:SO-100
+correlationId:123e4567-e89b-12d3-a456-426614174000
 operation:emailExists
 destination:CRM
 source:Selfcare
@@ -542,7 +542,7 @@ This service allows you to fetch the list of provisioning tags available in the 
 #### *Request Parameters*
 | NAME        | TYPE          | DESCRIPTION  |
 | ------------- |:-------------:| ----- |
-| **correlationId** (mandatory)    | ``string`` (header)      |   Provide the correlationId as the value. For example - SO-100 |
+| **correlationId** (mandatory)    | ``string`` (header)      |   Provide the correlationId as the value. For example - 123e4567-e89b-12d3-a456-426614174000 |
 | **Source** (mandatory) | ``string`` (header)      |    Provide the source as the value. For example - Selfcare |
 | **srdate** (mandatory) | ``string`` (header)      |    Provide the date as the value. For example - 11-09-2021 |
 | **Operation** (mandatory) | ``string`` (header)      |    Provide the operation as the value. For example - Inventory |
@@ -551,7 +551,7 @@ This service allows you to fetch the list of provisioning tags available in the 
 {{< tabs "uniqueid7" >}}
 {{< tab "Request Header" >}}
 {{< highlight java "linenos=table" >}}
-correlationId:SO-100
+correlationId:123e4567-e89b-12d3-a456-426614174000
 operation:emailExists
 destination:CRM
 source:Selfcare

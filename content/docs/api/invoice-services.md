@@ -27,7 +27,7 @@ It requires accountNo, correlationid, srdate, source, operation and destination 
 | NAME        | TYPE          | DESCRIPTION  |
 | ------------- |:-------------:| ----- |
 | **accountNo** (mandatory)    | ``string`` (path) | Provide the account number of which you want to view the balance details. |
-| **correlationId** (mandatory)    | ``string`` (header)      |   Provide the correlationId as the value. For example - SO-100 |
+| **correlationId** (mandatory)    | ``string`` (header)      |   Provide the correlationId as the value. For example - 123e4567-e89b-12d3-a456-426614174000 |
 | **Source** (mandatory) | ``string`` (header)      |    Provide the source as the value. For example - Selfcare |
 | **srdate** (mandatory) | ``string`` (header)      |    Provide the date as the value. For example - 11-09-2021 |
 | **Operation** (mandatory) | ``string`` (header)      |    Provide the operation as the value. For example - Inventory |
@@ -37,7 +37,7 @@ It requires accountNo, correlationid, srdate, source, operation and destination 
 {{< tab "Request Header" >}}
 {{< highlight java "linenos=table" >}}
 accountNo:string
-correlationId:SO-100
+correlationId:123e4567-e89b-12d3-a456-426614174000
 operation:emailExists
 destination:CRM
 source:Selfcare
@@ -145,7 +145,7 @@ It requires billNo, correlationid, srdate, source, operation and destination as 
 | NAME        | TYPE          | DESCRIPTION  |
 | ------------- |:-------------:| ----- |
 | **billNo** (mandatory)    | ``string`` (path) | Provide the bill number of which you want to view the invoice details. |
-| **correlationId** (mandatory)    | ``string`` (header)      |   Provide the correlationId as the value. For example - SO-100 |
+| **correlationId** (mandatory)    | ``string`` (header)      |   Provide the correlationId as the value. For example - 123e4567-e89b-12d3-a456-426614174000 |
 | **Source** (mandatory) | ``string`` (header)      |    Provide the source as the value. For example - Selfcare |
 | **srdate** (mandatory) | ``string`` (header)      |    Provide the date as the value. For example - 11-09-2021 |
 | **Operation** (mandatory) | ``string`` (header)      |    Provide the operation as the value. For example - Inventory |
@@ -155,7 +155,7 @@ It requires billNo, correlationid, srdate, source, operation and destination as 
 {{< tab "Request Header" >}}
 {{< highlight java "linenos=table" >}}
 billNo:string
-correlationId:SO-100
+correlationId:123e4567-e89b-12d3-a456-426614174000
 operation:emailExists
 destination:CRM
 source:Selfcare
@@ -699,7 +699,7 @@ It requires accountNo, number of bill, start date, end date, correlationid, srda
 | **noOfbill** (optional)    | ``string`` (query) | Provide the bill number. |
 | **start** (optional)    | ``string`` (query) | Provide the start date. |
 | **end** (optional)    | ``string`` (query) | Provide the end date. |
-| **correlationId** (mandatory)    | ``string`` (header)      |   Provide the correlationId as the value. For example - SO-100 |
+| **correlationId** (mandatory)    | ``string`` (header)      |   Provide the correlationId as the value. For example - 123e4567-e89b-12d3-a456-426614174000 |
 | **Source** (mandatory) | ``string`` (header)      |    Provide the source as the value. For example - Selfcare |
 | **srdate** (mandatory) | ``string`` (header)      |    Provide the date as the value. For example - 11-09-2021 |
 | **Operation** (mandatory) | ``string`` (header)      |    Provide the operation as the value. For example - Inventory |
@@ -709,7 +709,7 @@ It requires accountNo, number of bill, start date, end date, correlationid, srda
 {{< tab "Request Header" >}}
 {{< highlight java "linenos=table" >}}
 accountNo:string
-correlationId:SO-100
+correlationId:123e4567-e89b-12d3-a456-426614174000
 operation:emailExists
 destination:CRM
 source:Selfcare
@@ -914,7 +914,7 @@ It requires accountNo, account name, start date, end date, correlationid, srdate
 | **accountName** (mandatory)    | ``string`` (path) | Provide the name of the account. |
 | **start** (optional)    | ``string`` (query) | Provide the start date. |
 | **end** (optional)    | ``string`` (query) | Provide the end date. |
-| **correlationId** (mandatory)    | ``string`` (header)      |   Provide the correlationId as the value. For example - SO-100 |
+| **correlationId** (mandatory)    | ``string`` (header)      |   Provide the correlationId as the value. For example - 123e4567-e89b-12d3-a456-426614174000 |
 | **Source** (mandatory) | ``string`` (header)      |    Provide the source as the value. For example - Selfcare |
 | **srdate** (mandatory) | ``string`` (header)      |    Provide the date as the value. For example - 11-09-2021 |
 | **Operation** (mandatory) | ``string`` (header)      |    Provide the operation as the value. For example - Inventory |
@@ -925,7 +925,7 @@ It requires accountNo, account name, start date, end date, correlationid, srdate
 {{< highlight java "linenos=table" >}}
 accountNo:string
 accountName:string
-correlationId:SO-100
+correlationId:123e4567-e89b-12d3-a456-426614174000
 operation:emailExists
 destination:CRM
 source:Selfcare
