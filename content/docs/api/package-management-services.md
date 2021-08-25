@@ -27,10 +27,10 @@ It requires location, correlationid, source, srdate, operation and destination a
 | NAME        | TYPE           | DESCRIPTION  |
 | ------------- |:-------------:| ----- |
 | **location** (mandatory)    | ``string`` (path)      |   Provide the location of the package as the value. |
-| **correlationId** (mandatory)    | ``string`` (header)      |   Provide the correlationId as the value. For example - SO-100 |
+| **correlationId** (mandatory)    | ``string`` (header)      |   Provide the correlationId as the value. For example - 123e4567-e89b-12d3-a456-426614174000 |
 | **Source** (mandatory) | ``string`` (header)      |    Provide the source as the value. For example - Selfcare |
 | **srdate** (mandatory) | ``string`` (header)      |    Provide the date as the value. For example - 11-09-2021 |
-| **Operation** (mandatory) | ``string`` (header)      |    Provide the operation as the value. For example - emailExists |
+| **Operation** (mandatory) | ``string`` (header)      |    Provide the operation as the value. For example - getPackageDetails |
 | **destination** (mandatory) | ``string`` (header)      |    Provide the destination as the value. |
 | **param** (mandatory)    | ``object`` (query)      |   Provide the parameter as the value. Available values are, **platform** and **packagetype**. For example - "additionalProp1": "platform" |
 
@@ -400,10 +400,10 @@ It requires correlationid, token, srDate, operation, destination and source as i
 ### *Request Parameters*
 | NAME        | TYPE           | DESCRIPTION  |
 | ------------- |:-------------:| ----- |
-| **correlationId** (mandatory)    | ``string`` (header)      |   Provide the correlationId as the value. For example - SO-100 |
+| **correlationId** (mandatory)    | ``string`` (header)      |   Provide the correlationId as the value. For example - 123e4567-e89b-12d3-a456-426614174000 |
 | **Source** (mandatory) | ``string`` (header)      |    Provide the source as the value. For example - Selfcare |
 | **srdate** (mandatory) | ``string`` (header)      |    Provide the date as the value. For example - 11-09-2021 |
-| **Operation** (mandatory) | ``string`` (header)      |    Provide the operation as the value. For example - emailExists |
+| **Operation** (mandatory) | ``string`` (header)      |    Provide the operation as the value. For example - getSubscribedPackageDetails |
 | **destination** (mandatory) | ``string`` (header)      |    Provide the destination as the value. |
 
 {{< tabs "uniqueid2" >}}
@@ -602,10 +602,10 @@ It requires token, serviceProvider, source, srdate, operation, correlationId and
 | ------------- |:-------------:| ----- |
 | **token** (mandatory)    | ``string`` (header)      |   Provide the bolton token as the value. |
 | **serviceProvider** (mandatory)    | ``string`` (header)      |   Provide the serviceProvider as the value. |
-| **correlationId** (mandatory)    | ``string`` (header)      |   Provide the correlationId as the value. For example - SO-100 |
+| **correlationId** (mandatory)    | ``string`` (header)      |   Provide the correlationId as the value. For example - 123e4567-e89b-12d3-a456-426614174000 |
 | **Source** (mandatory) | ``string`` (header)      |    Provide the source as the value. For example - Selfcare |
 | **srdate** (mandatory) | ``string`` (header)      |    Provide the date as the value. For example - 11-09-2021 |
-| **Operation** (mandatory) | ``string`` (header)      |    Provide the operation as the value. For example - emailExists |
+| **Operation** (mandatory) | ``string`` (header)      |    Provide the operation as the value. For example - purchaseBolton |
 | **destination** (mandatory) | ``string`` (header)      |    Provide the destination as the value. |
 
 #### *Request Body Parameters*

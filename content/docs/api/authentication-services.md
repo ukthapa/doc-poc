@@ -25,7 +25,7 @@ This service allows you to verify the customer's email ID. It requires input par
 | NAME        | TYPE          | DESCRIPTION  |
 | ------------- |:-------------:| ----- |
 | **email** (mandatory)    | ``string`` (header) | Provide the customer's email ID as the value. For example - adarsha_cds1@yopmail.com |
-| **correlationId** (mandatory)    | ``string`` (header)      |   Provide the correlationId as the value. For example - SO-100 |
+| **correlationId** (mandatory)    | ``string`` (header)      |   Provide the correlationId as the value. For example - 123e4567-e89b-12d3-a456-426614174000 |
 | **Source** (mandatory) | ``string`` (header)      |    Provide the source as the value. For example - Selfcare |
 | **srdate** (mandatory) | ``string`` (header)      |    Provide the date as the value. For example - 11-09-2021 |
 | **Operation** (mandatory) | ``string`` (header)      |    Provide the operation as the value. For example - emailExists |
@@ -34,7 +34,7 @@ This service allows you to verify the customer's email ID. It requires input par
 {{< tabs "uniqueid" >}}
 {{< tab "Request Header" >}}
 {{< highlight java "linenos=table" >}}
-correlationId:SO-100
+correlationId:123e4567-e89b-12d3-a456-426614174000
 email:adarsha_cds1@yopmail.com
 operation:emailExists
 destination:CRM
@@ -102,17 +102,17 @@ This service requires correlationId, source, srdate, operation and destination a
 ### *Request Parameters*
 | NAME        | TYPE           | DESCRIPTION  |
 | ------------- |:-------------:| ----- |
-| **correlationId** (mandatory)    | ``string`` (header)      |   Provide the correlationId as the value. For example - SO-100 |
+| **correlationId** (mandatory)    | ``string`` (header)      |   Provide the correlationId as the value. For example - 123e4567-e89b-12d3-a456-426614174000 |
 | **Source** (mandatory) | ``string`` (header)      |    Provide the source as the value. For example - Selfcare |
 | **srdate** (mandatory) | ``string`` (header)      |    Provide the date as the value. For example - 11-09-2021 |
-| **Operation** (mandatory) | ``string`` (header)      |    Provide the operation as the value. For example - emailExists |
+| **Operation** (mandatory) | ``string`` (header)      |    Provide the operation as the value. For example - sendOtp |
 | **destination** (mandatory) | ``string`` (header)      |    Provide the destination as the value. |
 
 ### *Request Body Parameters*
 | NAME        | TYPE           | DESCRIPTION  |
 | ------------- |:-------------:| ----- |
 | **email** (mandatory)    | ``string`` (body)      |   Provide the email Id as the value. For example -adarsha_cds3@yopmail.com |
-| **encryptedOtp** (mandatory) | ``string`` (body)      |    Provide the encryptedOtp as the value. For example - e1aa84d4a0a00d21f960b8938a23cb890e35609b080174b74753839587cbce42 |
+| **encryptedOtp** (mandatory) | ``string`` (body)      |    Provide the encryptedOtp as the value. |
 | **otp** (mandatory) | ``string`` (body)      |    Provide the OTP as the value. For example - 115695 |
 
 {{< tabs "uniqueid1" >}}
@@ -176,16 +176,16 @@ This service is used to retrieve the captcha of the customer from the system for
 #### *Request Parameters*
 | NAME        | TYPE          | DESCRIPTION  |
 | ------------- |:-------------:| ----- |
-| **correlationId** (mandatory)    | ``string`` (header)      |   Provide the correlationId as the value. For example - SO-100 |
+| **correlationId** (mandatory)    | ``string`` (header)      |   Provide the correlationId as the value. For example - 123e4567-e89b-12d3-a456-426614174000 |
 | **Source** (mandatory) | ``string`` (header)      |    Provide the source as the value. For example - Selfcare |
 | **srdate** (mandatory) | ``string`` (header)      |    Provide the date as the value. For example - 11-09-2021 |
-| **Operation** (mandatory) | ``string`` (header)      |    Provide the operation as the value. For example - emailExists |
+| **Operation** (mandatory) | ``string`` (header)      |    Provide the operation as the value. For example - getCaptcha |
 | **destination** (mandatory) | ``string`` (header)      |    Provide the destination as the value. |
 
 {{< tabs "uniqueid2" >}}
 {{< tab "Request Header" >}}
 {{< highlight java "linenos=table" >}}
-correlationId:SO-100
+correlationId:123e4567-e89b-12d3-a456-426614174000
 operation:emailExists
 destination:CRM
 source:Selfcare
@@ -254,10 +254,10 @@ It requires correlationId, source, srdate, operation and destination as input pa
 ### *Request Parameters*
 | NAME        | TYPE           | DESCRIPTION  |
 | ------------- |:-------------:| ----- |
-| **correlationId** (mandatory)    | ``string`` (header)      |   Provide the correlationId as the value. For example - SO-100 |
+| **correlationId** (mandatory)    | ``string`` (header)      |   Provide the correlationId as the value. For example - 123e4567-e89b-12d3-a456-426614174000 |
 | **Source** (mandatory) | ``string`` (header)      |    Provide the source as the value. For example - Selfcare |
 | **srdate** (mandatory) | ``string`` (header)      |    Provide the date as the value. For example - 11-09-2021 |
-| **Operation** (mandatory) | ``string`` (header)      |    Provide the operation as the value. For example - emailExists |
+| **Operation** (mandatory) | ``string`` (header)      |    Provide the operation as the value. For example - verifyCaptcha |
 | **destination** (mandatory) | ``string`` (header)      |    Provide the destination as the value. |
 
 ### *Request Body Parameters*
@@ -327,10 +327,10 @@ It requires correlationId, source, srdate, operation and destination as input pa
 ### *Request Parameters*
 | NAME        | TYPE           | DESCRIPTION  |
 | ------------- |:-------------:| ----- |
-| **correlationId** (mandatory)    | ``string`` (header)      |   Provide the correlationId as the value. For example - SO-100 |
+| **correlationId** (mandatory)    | ``string`` (header)      |   Provide the correlationId as the value. For example - 123e4567-e89b-12d3-a456-426614174000 |
 | **Source** (mandatory) | ``string`` (header)      |    Provide the source as the value. For example - Selfcare |
 | **srdate** (mandatory) | ``string`` (header)      |    Provide the date as the value. For example - 11-09-2021 |
-| **Operation** (mandatory) | ``string`` (header)      |    Provide the operation as the value. For example - emailExists |
+| **Operation** (mandatory) | ``string`` (header)      |    Provide the operation as the value. For example - verifyOTP |
 | **destination** (mandatory) | ``string`` (header)      |    Provide the destination as the value. |
 | **type** (mandatory) | ``string`` (header)      |    Provide the type of OTP. |
 

@@ -27,10 +27,10 @@ It requires token,serviceProvider,correlationId,srdate,source,operation,destinat
 | NAME        | TYPE           | DESCRIPTION  |
 | ------------- |:-------------:| ----- |
 | **token** (mandatory)    | ``string`` (header)      |   Provide the token of the voucher as the value. |
-| **correlationId** (mandatory)    | ``string`` (header)      |   Provide the correlationId as the value. For example - SO-100 |
+| **correlationId** (mandatory)    | ``string`` (header)      |   Provide the correlationId as the value. For example - 123e4567-e89b-12d3-a456-426614174000 |
 | **Source** (mandatory) | ``string`` (header)      |    Provide the source as the value. For example - Selfcare |
 | **srdate** (mandatory) | ``string`` (header)      |    Provide the date as the value. For example - 11-09-2021 |
-| **Operation** (mandatory) | ``string`` (header)      |    Provide the operation as the value. For example - emailExists |
+| **Operation** (mandatory) | ``string`` (header)      |    Provide the operation as the value. For example - redeemVoucher |
 | **destination** (mandatory) | ``string`` (header)      |    Provide the destination as the value. |
 
 ### *Request Body Parameters*
@@ -120,10 +120,10 @@ It requires token,serviceProvider,correlationId,srdate,source,operation,destinat
 | ------------- |:-------------:| ----- |
 | **token** (mandatory)    | ``string`` (header)      |   Provide the token of the voucher as the value. |
 | **serviceProvider** (mandatory)    | ``string`` (header)      |   Provide the name of the service provider. |
-| **correlationId** (mandatory)    | ``string`` (header)      |   Provide the correlationId as the value. For example - SO-100 |
+| **correlationId** (mandatory)    | ``string`` (header)      |   Provide the correlationId as the value. For example - 123e4567-e89b-12d3-a456-426614174000 |
 | **Source** (mandatory) | ``string`` (header)      |    Provide the source as the value. For example - Selfcare |
 | **srdate** (mandatory) | ``string`` (header)      |    Provide the date as the value. For example - 11-09-2021 |
-| **Operation** (mandatory) | ``string`` (header)      |    Provide the operation as the value. For example - emailExists |
+| **Operation** (mandatory) | ``string`` (header)      |    Provide the operation as the value. For example - voucherInfo |
 | **destination** (mandatory) | ``string`` (header)      |    Provide the destination as the value. |
 
 ### *Request Body Parameters*

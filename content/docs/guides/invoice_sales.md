@@ -1,5 +1,5 @@
 ---
-title: "Invoice"
+title: "Sales Invoice"
 description: "Invoice"
 lead: ""
 date:

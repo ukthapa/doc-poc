@@ -28,7 +28,7 @@ It requires accountNo, token, correlationid, srdate, source, operation and desti
 | ------------- |:-------------:| ----- |
 | **accountNo** (mandatory)    | ``string`` (path) | Provide the account number of which you want to view the balance details. |
 | **token** (optional)    | ``string`` (header) | Provide the token of the ticket. |
-| **correlationId** (mandatory)    | ``string`` (header)      |   Provide the correlationId as the value. For example - SO-100 |
+| **correlationId** (mandatory)    | ``string`` (header)      |   Provide the correlationId as the value. For example - 123e4567-e89b-12d3-a456-426614174000 |
 | **Source** (mandatory) | ``string`` (header)      |    Provide the source as the value. For example - Selfcare |
 | **srdate** (mandatory) | ``string`` (header)      |    Provide the date as the value. For example - 11-09-2021 |
 | **Operation** (mandatory) | ``string`` (header)      |    Provide the operation as the value. For example - Inventory |
@@ -39,7 +39,7 @@ It requires accountNo, token, correlationid, srdate, source, operation and desti
 {{< highlight java "linenos=table" >}}
 accountNo:string
 token:string
-correlationId:SO-100
+correlationId:123e4567-e89b-12d3-a456-426614174000
 operation:emailExists
 destination:CRM
 source:Selfcare
@@ -106,7 +106,7 @@ This service is used to update the credit limit of the customer. It requires cor
 | NAME        | TYPE           | DESCRIPTION  |
 | ------------- |:-------------:| ----- |
 | **token** (optional)    | ``string`` (header) | Provide the token of the ticket. |
-| **correlationId** (mandatory)    | ``string`` (header)      |   Provide the correlationId as the value. For example - SO-100 |
+| **correlationId** (mandatory)    | ``string`` (header)      |   Provide the correlationId as the value. For example - 123e4567-e89b-12d3-a456-426614174000 |
 | **Source** (mandatory) | ``string`` (header)      |    Provide the source as the value. For example - Selfcare |
 | **srdate** (mandatory) | ``string`` (header)      |    Provide the date as the value. For example - 11-09-2021 |
 | **Operation** (mandatory) | ``string`` (header)      |    Provide the operation as the value. For example - emailExists |
