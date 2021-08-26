@@ -101,7 +101,7 @@ You can also opt to select a contact using the respective buttons.
 
 ### Products
 
-To view the products of the opportunity click the **Contacts** icon as shown below:
+To view the products of the opportunity click the **Products** icon as shown below:
 
 {{< img-simple src="/images/opportunity9.png"  alt="Dashboard" class="">}}
 
