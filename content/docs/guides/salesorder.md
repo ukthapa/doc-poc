@@ -38,7 +38,7 @@ In the above screen, you can do the following:
 5. **Base Package** - Enter the base package amount in the text box.
 6. **Terms & Conditions** - Enter the terms & conditions in the text box.
 7. **Item Details** - The item details fields are auto filled based on the package list selected.
-31. **Save** - Click save.
+8. **Save** - Click save.
 
 Once the sales order is saved it will look like as shown below:
 
