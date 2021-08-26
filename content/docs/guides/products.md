@@ -64,7 +64,7 @@ In the above screen, you can do the following:
 
 Once the product is saved it will look like as shown below:
 
-{{< img-simple src="/images/package7.png"  alt="Dashboard" class="">}}
+{{< img-simple src="/images/product7.png"  alt="Dashboard" class="">}}
 
 ### Updates
 
