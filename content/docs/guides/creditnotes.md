@@ -23,7 +23,7 @@ Now we will learn how to add a credit note. After logging in, follow the steps g
 
  {{< img-simple src="/images/creditnote2.png"  alt="Dashboard" class="">}}
 
-3.	To add a credit note, click the  {{< img-simple src="/images/creditnote3.png"  alt="Dashboard" class="">}} button. The Create New Payment screen appears as shown below:
+3.	To add a credit note, click the  {{< img-simple src="/images/creditnote3.png"  alt="Dashboard" class="">}} button. The Create New Credit  Note screen appears as shown below:
 
 {{< img-simple src="/images/creditnote4.png"  alt="Dashboard" class="">}}
 
