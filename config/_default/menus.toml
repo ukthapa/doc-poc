@@ -60,6 +60,14 @@
     url = "/docs/guides/sales/accounts"
     parent = "guides"
 
+    [[docs]]
+      name = "Inventory"
+      weight = 104
+      identifier = "inven"
+      pre = '<img src="/svg-icons/stack.svg" alt="">'
+      url = "/docs/guides/inventory/packagelist"
+      parent = "guides"
+
 [[main]]
   name = "Guides"
   identifier = "guides"
