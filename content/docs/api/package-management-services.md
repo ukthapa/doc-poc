@@ -38,11 +38,11 @@ It requires location, correlationid, source, srdate, operation and destination a
 {{< tab "Request Header" >}}
 {{< highlight java "linenos=table" >}}
 location:path
-correlationId:SO-101
+correlationId:123e4567-e89b-12d3-a456-426614174000
 srDate:11-09-2021
 source:Selfcare
 destination:CRM
-operation:verifyOTP
+operation:getPackageDetails
 {{< / highlight >}}
 {{< /tab >}}
 {{< tab "Response" >}}
@@ -409,11 +409,11 @@ It requires correlationid, token, srDate, operation, destination and source as i
 {{< tabs "uniqueid2" >}}
 {{< tab "Request Header" >}}
 {{< highlight java "linenos=table" >}}
-correlationId:SO-101
+correlationId:123e4567-e89b-12d3-a456-426614174000
 srDate:11-09-2021
 source:Selfcare
 destination:CRM
-operation:verifyOTP
+operation:getSubscribedPackageDetails
 {{< / highlight >}}
 {{< /tab >}}
 {{< tab "Response" >}}
@@ -638,11 +638,11 @@ It requires token, serviceProvider, source, srdate, operation, correlationId and
 {{< highlight java "linenos=table" >}}
 token:string
 serviceProvider:string
-correlationId:SO-101
+correlationId:123e4567-e89b-12d3-a456-426614174000
 srDate:11-09-2021
 source:Selfcare
 destination:CRM
-operation:verifyOTP
+operation:purchaseBolton
 {{< / highlight >}}
 {{< /tab >}}
 {{< tab "Request Body" >}}

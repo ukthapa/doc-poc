@@ -39,7 +39,7 @@ correlationId:123e4567-e89b-12d3-a456-426614174000
 email:adarsha_cds1@yopmail.com
 irStatus:reserved
 limit:5
-operation:emailExists
+operation:msisdn
 destination:CRM
 source:Selfcare
 srDate:11-09-2021
@@ -136,11 +136,11 @@ This service is used to record the review comments by the customers. It requires
 {{< tab "Request Header" >}}
 {{< highlight java "linenos=table" >}}
 token:AB110F
-correlationId:SO-101
+correlationId:123e4567-e89b-12d3-a456-426614174000
 srDate:11-09-2021
 source:Selfcare
 destination:CRM
-operation:verifyOTP
+operation:addReview
 {{< / highlight >}}
 {{< /tab >}}
 {{< tab "Request Body" >}}
@@ -229,7 +229,7 @@ It requires token, correlationId, srdate, source, operation, destination as inpu
 {{< highlight java "linenos=table" >}}
 correlationId:123e4567-e89b-12d3-a456-426614174000
 token:string
-operation:emailExists
+operation:getSubscribedPackageListDetails
 destination:CRM
 source:Selfcare
 srDate:11-09-2021
@@ -320,7 +320,7 @@ It requires operation names ( promotions, troubleshoot FAQ ,offer, coupon, store
 {{< tab "Request Header" >}}
 {{< highlight java "linenos=table" >}}
 token:string
-operation:emailExists
+operation:getReviews
 destination:CRM
 source:Selfcare
 srDate:11-09-2021
@@ -699,7 +699,7 @@ It requires token, correlationId, srdate, source, operation, destination as inpu
 {{< tab "Request Header" >}}
 {{< highlight java "linenos=table" >}}
 token:string
-operation:emailExists
+operation:Promotions
 destination:CRM
 source:Selfcare
 srDate:11-09-2021

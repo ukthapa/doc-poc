@@ -355,13 +355,13 @@ It requires correlationId, serviceProvider, srdate, operation and requestorChann
 {{< tabs "uniqueid2" >}}
 {{< tab "Request Header" >}}
 {{< highlight java "linenos=table" >}}
-correlationId:SO-101
+correlationId:123e4567-e89b-12d3-a456-426614174000
 requestorChannel:string
 serviceProvider:string
 srDate:11-09-2021
 source:Selfcare
 destination:CRM
-operation:verifyOTP
+operation:userSms
 {{< / highlight >}}
 {{< /tab >}}
 {{< tab "Request Body" >}}

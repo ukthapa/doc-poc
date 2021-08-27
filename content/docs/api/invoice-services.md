@@ -38,7 +38,7 @@ It requires accountNo, correlationid, srdate, source, operation and destination 
 {{< highlight java "linenos=table" >}}
 accountNo:string
 correlationId:123e4567-e89b-12d3-a456-426614174000
-operation:emailExists
+operation:balance
 destination:CRM
 source:Selfcare
 srDate:11-09-2021
@@ -156,7 +156,7 @@ It requires billNo, correlationid, srdate, source, operation and destination as 
 {{< highlight java "linenos=table" >}}
 billNo:string
 correlationId:123e4567-e89b-12d3-a456-426614174000
-operation:emailExists
+operation:viewinvoice
 destination:CRM
 source:Selfcare
 srDate:11-09-2021
@@ -710,7 +710,7 @@ It requires accountNo, number of bill, start date, end date, correlationid, srda
 {{< highlight java "linenos=table" >}}
 accountNo:string
 correlationId:123e4567-e89b-12d3-a456-426614174000
-operation:emailExists
+operation:viewbill
 destination:CRM
 source:Selfcare
 srDate:11-09-2021
@@ -926,7 +926,7 @@ It requires accountNo, account name, start date, end date, correlationid, srdate
 accountNo:string
 accountName:string
 correlationId:123e4567-e89b-12d3-a456-426614174000
-operation:emailExists
+operation:getUsageDetails
 destination:CRM
 source:Selfcare
 srDate:11-09-2021
