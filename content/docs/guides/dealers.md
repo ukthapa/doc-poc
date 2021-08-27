@@ -15,43 +15,49 @@ toc: true
 
 Now we will learn how to add a dealer. After logging in, follow the steps given below:
 
-1.	Click the **Inventory** drop-down and select **Purchase Order** in the navigation menu as shown below:
+1.	Click the **Inventory** drop-down and select **Dealers** in the navigation menu as shown below:
 
- {{< img-simple src="/images/purchaseorder1.png"  alt="Dashboard" class="">}}
+ {{< img-simple src="/images/dealer1.png"  alt="Dashboard" class="">}}
 
-2.	The Purchase Order screen appears as shown below:
+2.	The Dealers screen appears as shown below:
 
- {{< img-simple src="/images/purchaseorder2.png"  alt="Dashboard" class="">}}
+ {{< img-simple src="/images/dealer2.png"  alt="Dashboard" class="">}}
 
-3.	To add a purchase order, click the  {{< img-simple src="/images/purchaseorder3.png"  alt="Dashboard" class="">}} button. The Create New Purchase order screen appears as shown below:
+3.	To add a purchase order, click the  {{< img-simple src="/images/dealer3.png"  alt="Dashboard" class="">}} button. The Create New Dealer order screen appears as shown below:
 
-{{< img-simple src="/images/purchaseorder4.png"  alt="Dashboard" class="">}}
-{{< img-simple src="/images/purchaseorder5.png"  alt="Dashboard" class="">}}
-{{< img-simple src="/images/purchaseorder6.png"  alt="Dashboard" class="">}}
-{{< img-simple src="/images/purchaseorder7.png"  alt="Dashboard" class="">}}
+{{< img-simple src="/images/dealer4.png"  alt="Dashboard" class="">}}
+{{< img-simple src="/images/dealer5.png"  alt="Dashboard" class="">}}
+{{< img-simple src="/images/dealer6.png"  alt="Dashboard" class="">}}
+{{< img-simple src="/images/dealer7.png"  alt="Dashboard" class="">}}
 
 In the above screen, you can do the following:
-1. **Subject** - Enter the subject of the purchase order.
-2. **Contact Name** - Search and select the contact name.
-3. **Due Date** - Set the due date of the purchase order.
-4. **Status** - Select the status of the purchase order.
-5. **Assigned To** - Enter the terms & conditions in the text box.
-6. **Vendor** - Search and select the vendor.
-7. **Address Details** - The address details fields will be auto-filled based on the contact selected.
-8. **Terms & Conditions** - Enter the terms and conditions in the text box.
-9. **Description** - Enter the description in the text box.
-10. **Add Product** - Click the add product button to add a product. The rest of the item details fields will be auto-filled.
+1. **Parent Dealer** - Search and select the name of the parent dealer.
+2. **Dealer Name** - Enter the name of the dealer in the text box.
+3. **Dealer Type** - Click the drop-down to select the dealer type.
+4. **Dealer Rating** - Click the drop-down to select the dealer rating.
+5. **Primary Email** - Enter the primary email in the text box.
+6. **Primary Phone** - Enter the primary phone in the text box.
+7. **Mobile Phone** - Enter the mobile phone in the text box.
+8. **Assigned To** - Enter the terms & conditions in the text box.
+9. **Contact** - Search and select the name of the contact.
+10. **Status** - Click the drop-down to select the status of the dealer.
+11. **Credit Limit** - Enter the credit limit of the deale i nthe text box.
+12. **Description** - Enter the description in the text box.
+13. **Address Details** - The address details fields will be auto-filled based on the contact selected.
+14. **Bank Account Number** - Enter the bank account details in the text box.
+15. **Accounts Name** - Enter the account name of the dealer in the text box.
+10. **Bank Name** - Enter the bank name of the dealer in the text box.
 11. **Save** - Click save.
 
-Once the purchase order is saved it will look like as shown below:
+Once the dealer is saved it will look like as shown below:
 
-{{< img-simple src="/images/purchaseorder8.png"  alt="Dashboard" class="">}}
+{{< img-simple src="/images/dealer8.png"  alt="Dashboard" class="">}}
 
 ### Updates
 
 To view the updates, click the **Updates** tab as shown below:
 
-{{< img-simple src="/images/purchaseorder9.png"  alt="Dashboard" class="">}}
+{{< img-simple src="/images/dealer9.png"  alt="Dashboard" class="">}}
 
 The updates for that particular purchase order will be shown.
 
@@ -59,44 +65,43 @@ The updates for that particular purchase order will be shown.
 
 To view any comments click the **Comments** tab as shown below:
 
-{{< img-simple src="/images/purchaseorder10.png"  alt="Dashboard" class="">}}
+{{< img-simple src="/images/dealer10.png"  alt="Dashboard" class="">}}
 
-### Activities
+### Contacts
 
-To add an activity to the lead click the {{< img-simple src="/images/campaign13.png"  alt="Dashboard" class="">}} icon as shown below:
+To view the contacts click the **Contacts** tab as shown below:
 
-{{< img-simple src="/images/lead11.png"  alt="Dashboard" class="">}}
+{{< img-simple src="/images/dealer11.png"  alt="Dashboard" class="">}}
 
-In the above image, click the **Add Event** button to add an event. The Quick Create Event pop-up appears as shown below:
+### Dealers
 
-{{< img-simple src="/images/campaign15.png"  alt="Dashboard" class="">}}
+To view the dealers click the **Delaers** tab as shown below:
 
-In the above screen you can:
+{{< img-simple src="/images/dealer12.png"  alt="Dashboard" class="">}}
 
-* Enter the subject of the event.
-* Enter the start date and end date of the event.
-* Enter the start time and end time of the event.
-* Select the user whom you want to assign the event.
-* Select the status of the event. The options are, planned, held and not held.
-* Select the type of activity of the event. The options are, call, meeting, mobile task and task.
+### Purchase Orders
 
-You can also opt to add a task. Click the **Add Task** to add a task. The Quick Create Task pop-up appears as shown below:
+To view the purchase orders click the **Purchase Orders** tab as shown below:
 
-{{< img-simple src="/images/campaign16.png"  alt="Dashboard" class="">}}
+{{< img-simple src="/images/dealer13.png"  alt="Dashboard" class="">}}
 
-In the above screen you can do the following:
+### Related Dealers
 
-* Enter the subject of the task.
-* Enter the start date and end date of the task.
-* Enter the start time and end time of the task.
-* Select the user whom you want to assign the task.
-* Select the status of the event. The options are, not started, in progress, completed,  pending input, deferred and planned.
+To view the related dealers click the **Related Dealers** tab as shown below:
+
+{{< img-simple src="/images/dealer14.png"  alt="Dashboard" class="">}}
+
+### Users
+
+To view the users click the **Users** tab as shown below:
+
+{{< img-simple src="/images/dealer15.png"  alt="Dashboard" class="">}}
 
 ### Documents
 
 To view the documents click the **Documents** tab as shown below:
 
-{{< img-simple src="/images/purchaseorder11.png"  alt="Dashboard" class="">}}
+{{< img-simple src="/images/dealer16.png"  alt="Dashboard" class="">}}
 
 In the above screen you can select to add an existing document by clicking the {{< img-simple src="/images/lead16.png"  alt="Dashboard" class="" width= "150" height= "100">}} button and select the document.
 
@@ -106,22 +111,10 @@ You can also upload new documents by clicking the {{< img-simple src="/images/le
 
 To view the payments click the **Payments** tab as shown below:
 
-{{< img-simple src="/images/purchaseorder12.png"  alt="Dashboard" class="">}}
+{{< img-simple src="/images/dealer17.png"  alt="Dashboard" class="">}}
 
-### Invoice
+### Transactions
 
-To view the invoice click the **Invoice** tab as shown below:
+To view the transaction click the **Transaction** tab as shown below:
 
-{{< img-simple src="/images/purchaseorder13.png"  alt="Dashboard" class="">}}
-
-### Stock Transfer
-
-To view the stock transfers click the **Stock Transfer** tab as shown below:
-
-{{< img-simple src="/images/purchaseorder14.png"  alt="Dashboard" class="">}}
-
-### Emails
-
-To view the emails click the **Emails** tab as shown below:
-
-{{< img-simple src="/images/purchaseorder15.png"  alt="Dashboard" class="">}}
+{{< img-simple src="/images/dealer18.png"  alt="Dashboard" class="">}}
