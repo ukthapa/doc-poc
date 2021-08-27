@@ -29,7 +29,7 @@ It requires correlationId, serviceProvider, srdate, operation and requestorChann
 | **correlationId** (mandatory)    | ``string`` (header)      |   Provide the correlationId as the value. For example - 123e4567-e89b-12d3-a456-426614174000 |
 | **requestorChannel** (mandatory) | ``string`` (header)      |    Provide the requestorChannel. |
 | **srdate** (mandatory) | ``string`` (header)      |    Provide the date as the value. For example - 11-09-2021 |
-| **Operation** (mandatory) | ``string`` (header)      |    Provide the operation as the value. For example - emailExists |
+| **Operation** (mandatory) | ``string`` (header)      |    Provide the operation as the value. For example - fcmNotification |
 | **serviceProvider** (mandatory) | ``string`` (header)      |    Provide the name of the service provider. |
 
 #### *Request Body Parameters*
