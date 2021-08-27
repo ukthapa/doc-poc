@@ -35,7 +35,7 @@ In the above screen, you can do the following:
 2. **Contact Name** - Search and select the contact name.
 3. **Due Date** - Set the due date of the purchase order.
 4. **Status** - Select the status of the purchase order.
-5. **Assigned To** - Enter the terms & conditions in the text box.
+5. **Assigned To** - Select the user to whom the purchase order will be assigned to.
 6. **Vendor** - Search and select the vendor.
 7. **Address Details** - The address details fields will be auto-filled based on the contact selected.
 8. **Terms & Conditions** - Enter the terms and conditions in the text box.
