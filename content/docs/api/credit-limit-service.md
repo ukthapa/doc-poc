@@ -31,7 +31,7 @@ It requires accountNo, token, correlationid, srdate, source, operation and desti
 | **correlationId** (mandatory)    | ``string`` (header)      |   Provide the correlationId as the value. For example - 123e4567-e89b-12d3-a456-426614174000 |
 | **Source** (mandatory) | ``string`` (header)      |    Provide the source as the value. For example - Selfcare |
 | **srdate** (mandatory) | ``string`` (header)      |    Provide the date as the value. For example - 11-09-2021 |
-| **Operation** (mandatory) | ``string`` (header)      |    Provide the operation as the value. For example - Inventory |
+| **Operation** (mandatory) | ``string`` (header)      |    Provide the operation as the value. For example - getcreditlimit |
 | **destination** (mandatory) | ``string`` (header)      |    Provide the destination as the value. |
 
 {{< tabs "uniqueid9" >}}
@@ -109,7 +109,7 @@ This service is used to update the credit limit of the customer. It requires cor
 | **correlationId** (mandatory)    | ``string`` (header)      |   Provide the correlationId as the value. For example - 123e4567-e89b-12d3-a456-426614174000 |
 | **Source** (mandatory) | ``string`` (header)      |    Provide the source as the value. For example - Selfcare |
 | **srdate** (mandatory) | ``string`` (header)      |    Provide the date as the value. For example - 11-09-2021 |
-| **Operation** (mandatory) | ``string`` (header)      |    Provide the operation as the value. For example - emailExists |
+| **Operation** (mandatory) | ``string`` (header)      |    Provide the operation as the value. For example - creditlimit |
 | **destination** (mandatory) | ``string`` (header)      |    Provide the destination as the value. |
 
 ### *Request Body Parameters*

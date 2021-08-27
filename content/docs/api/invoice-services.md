@@ -30,7 +30,7 @@ It requires accountNo, correlationid, srdate, source, operation and destination 
 | **correlationId** (mandatory)    | ``string`` (header)      |   Provide the correlationId as the value. For example - 123e4567-e89b-12d3-a456-426614174000 |
 | **Source** (mandatory) | ``string`` (header)      |    Provide the source as the value. For example - Selfcare |
 | **srdate** (mandatory) | ``string`` (header)      |    Provide the date as the value. For example - 11-09-2021 |
-| **Operation** (mandatory) | ``string`` (header)      |    Provide the operation as the value. For example - Inventory |
+| **Operation** (mandatory) | ``string`` (header)      |    Provide the operation as the value. For example - balance |
 | **destination** (mandatory) | ``string`` (header)      |    Provide the destination as the value. |
 
 {{< tabs "uniqueid9" >}}
@@ -148,7 +148,7 @@ It requires billNo, correlationid, srdate, source, operation and destination as 
 | **correlationId** (mandatory)    | ``string`` (header)      |   Provide the correlationId as the value. For example - 123e4567-e89b-12d3-a456-426614174000 |
 | **Source** (mandatory) | ``string`` (header)      |    Provide the source as the value. For example - Selfcare |
 | **srdate** (mandatory) | ``string`` (header)      |    Provide the date as the value. For example - 11-09-2021 |
-| **Operation** (mandatory) | ``string`` (header)      |    Provide the operation as the value. For example - Inventory |
+| **Operation** (mandatory) | ``string`` (header)      |    Provide the operation as the value. For example - viewinvoice |
 | **destination** (mandatory) | ``string`` (header)      |    Provide the destination as the value. |
 
 {{< tabs "uniqueid10" >}}
@@ -702,7 +702,7 @@ It requires accountNo, number of bill, start date, end date, correlationid, srda
 | **correlationId** (mandatory)    | ``string`` (header)      |   Provide the correlationId as the value. For example - 123e4567-e89b-12d3-a456-426614174000 |
 | **Source** (mandatory) | ``string`` (header)      |    Provide the source as the value. For example - Selfcare |
 | **srdate** (mandatory) | ``string`` (header)      |    Provide the date as the value. For example - 11-09-2021 |
-| **Operation** (mandatory) | ``string`` (header)      |    Provide the operation as the value. For example - Inventory |
+| **Operation** (mandatory) | ``string`` (header)      |    Provide the operation as the value. For example - viewbill |
 | **destination** (mandatory) | ``string`` (header)      |    Provide the destination as the value. |
 
 {{< tabs "uniqueid11" >}}
@@ -917,7 +917,7 @@ It requires accountNo, account name, start date, end date, correlationid, srdate
 | **correlationId** (mandatory)    | ``string`` (header)      |   Provide the correlationId as the value. For example - 123e4567-e89b-12d3-a456-426614174000 |
 | **Source** (mandatory) | ``string`` (header)      |    Provide the source as the value. For example - Selfcare |
 | **srdate** (mandatory) | ``string`` (header)      |    Provide the date as the value. For example - 11-09-2021 |
-| **Operation** (mandatory) | ``string`` (header)      |    Provide the operation as the value. For example - Inventory |
+| **Operation** (mandatory) | ``string`` (header)      |    Provide the operation as the value. For example - getUsageDetails |
 | **destination** (mandatory) | ``string`` (header)      |    Provide the destination as the value. |
 
 {{< tabs "uniqueid12" >}}

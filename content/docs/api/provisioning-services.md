@@ -27,7 +27,7 @@ This service allows you to fetch the list of bill details available in the syste
 | **correlationId** (mandatory)    | ``string`` (header)      |   Provide the correlationId as the value. For example - 123e4567-e89b-12d3-a456-426614174000 |
 | **Source** (mandatory) | ``string`` (header)      |    Provide the source as the value. For example - Selfcare |
 | **srdate** (mandatory) | ``string`` (header)      |    Provide the date as the value. For example - 11-09-2021 |
-| **Operation** (mandatory) | ``string`` (header)      |    Provide the operation as the value. For example - Inventory |
+| **Operation** (mandatory) | ``string`` (header)      |    Provide the operation as the value. For example - getBeId |
 | **destination** (mandatory) | ``string`` (header)      |    Provide the destination as the value. |
 
 {{< tabs "uniqueid9" >}}
@@ -545,7 +545,7 @@ This service allows you to fetch the list of provisioning tags available in the 
 | **correlationId** (mandatory)    | ``string`` (header)      |   Provide the correlationId as the value. For example - 123e4567-e89b-12d3-a456-426614174000 |
 | **Source** (mandatory) | ``string`` (header)      |    Provide the source as the value. For example - Selfcare |
 | **srdate** (mandatory) | ``string`` (header)      |    Provide the date as the value. For example - 11-09-2021 |
-| **Operation** (mandatory) | ``string`` (header)      |    Provide the operation as the value. For example - Inventory |
+| **Operation** (mandatory) | ``string`` (header)      |    Provide the operation as the value. For example - getProvisioningTag |
 | **destination** (mandatory) | ``string`` (header)      |    Provide the destination as the value. |
 
 {{< tabs "uniqueid7" >}}
