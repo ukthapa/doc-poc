@@ -29,7 +29,7 @@ It requires correlationId, srdate, source, operation and destination as input pa
 | **correlationId** (mandatory)    | ``string`` (header)      |   Provide the correlationId as the value. For example - 123e4567-e89b-12d3-a456-426614174000 |
 | **Source** (mandatory) | ``string`` (header)      |    Provide the source as the value. For example - Selfcare |
 | **srdate** (mandatory) | ``string`` (header)      |    Provide the date as the value. For example - 11-09-2021 |
-| **Operation** (mandatory) | ``string`` (header)      |    Provide the operation as the value. For example - emailExists |
+| **Operation** (mandatory) | ``string`` (header)      |    Provide the operation as the value. For example - customSms |
 | **destination** (mandatory) | ``string`` (header)      |    Provide the destination as the value. |
 
 #### *Request Body Parameters*
@@ -192,7 +192,7 @@ It requires correlationId, srdate, source, operation and destination as input pa
 | **correlationId** (mandatory)    | ``string`` (header)      |   Provide the correlationId as the value. For example - 123e4567-e89b-12d3-a456-426614174000 |
 | **Source** (mandatory) | ``string`` (header)      |    Provide the source as the value. For example - Selfcare |
 | **srdate** (mandatory) | ``string`` (header)      |    Provide the date as the value. For example - 11-09-2021 |
-| **Operation** (mandatory) | ``string`` (header)      |    Provide the operation as the value. For example - emailExists |
+| **Operation** (mandatory) | ``string`` (header)      |    Provide the operation as the value. For example - campaignSms |
 | **destination** (mandatory) | ``string`` (header)      |    Provide the destination as the value. |
 
 #### *Request Body Parameters*
@@ -356,7 +356,7 @@ It requires correlationId, srdate, source, operation and destination as input pa
 | **correlationId** (mandatory)    | ``string`` (header)      |   Provide the correlationId as the value. For example - 123e4567-e89b-12d3-a456-426614174000 |
 | **Source** (mandatory) | ``string`` (header)      |    Provide the source as the value. For example - Selfcare |
 | **srdate** (mandatory) | ``string`` (header)      |    Provide the date as the value. For example - 11-09-2021 |
-| **Operation** (mandatory) | ``string`` (header)      |    Provide the operation as the value. For example - emailExists |
+| **Operation** (mandatory) | ``string`` (header)      |    Provide the operation as the value. For example - simpleSms |
 | **destination** (mandatory) | ``string`` (header)      |    Provide the destination as the value. |
 
 ### *Request Body Parameters*

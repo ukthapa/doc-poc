@@ -28,7 +28,7 @@ It requires correlationId, serviceProvider, srdate, operation, destination as in
 | ------------- |:-------------:| ----- |
 | **correlationId** (mandatory)    | ``string`` (header)      |   Provide the correlationId as the value. For example - 123e4567-e89b-12d3-a456-426614174000 |
 | **srdate** (mandatory) | ``string`` (header)      |    Provide the date as the value. For example - 11-09-2021 |
-| **Operation** (mandatory) | ``string`` (header)      |    Provide the operation as the value. For example - emailExists |
+| **Operation** (mandatory) | ``string`` (header)      |    Provide the operation as the value. For example - smppUserSms |
 | **source** (mandatory) | ``string`` (header)      |    Provide the source as the value. |
 | **destination** (mandatory) | ``string`` (header)      |    Provide the destination as the value. |
 
@@ -293,7 +293,7 @@ It requires correlationId, serviceProvider, srdate, operation, destination as in
 | ------------- |:-------------:| ----- |
 | **correlationId** (mandatory)    | ``string`` (header)      |   Provide the correlationId as the value. For example - 123e4567-e89b-12d3-a456-426614174000 |
 | **srdate** (mandatory) | ``string`` (header)      |    Provide the date as the value. For example - 11-09-2021 |
-| **Operation** (mandatory) | ``string`` (header)      |    Provide the operation as the value. For example - emailExists |
+| **Operation** (mandatory) | ``string`` (header)      |    Provide the operation as the value. For example - smppBulkUserSms |
 | **source** (mandatory) | ``string`` (header)      |    Provide the source as the value. |
 | **destination** (mandatory) | ``string`` (header)      |    Provide the destination as the value. |
 
