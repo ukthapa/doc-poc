@@ -40,7 +40,7 @@ It requires accountNo, token, correlationid, srdate, source, operation and desti
 accountNo:string
 token:string
 correlationId:123e4567-e89b-12d3-a456-426614174000
-operation:emailExists
+operation:getcreditlimit
 destination:CRM
 source:Selfcare
 srDate:11-09-2021
@@ -124,11 +124,11 @@ This service is used to update the credit limit of the customer. It requires cor
 {{< tabs "uniqueid1" >}}
 {{< tab "Request Header" >}}
 {{< highlight java "linenos=table" >}}
-correlationId:SO-101
+correlationId:123e4567-e89b-12d3-a456-426614174000
 srDate:11-09-2021
 source:Selfcare
 destination:CRM
-operation:verifyOTP
+operation:creditlimit
 {{< / highlight >}}
 {{< /tab >}}
 {{< tab "Request Body" >}}

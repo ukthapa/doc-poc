@@ -39,7 +39,7 @@ It requires correlationid, token, operation, source, destination, srDate as inpu
 token:string
 correlationId:123e4567-e89b-12d3-a456-426614174000
 email:adarsha_cds1@yopmail.com
-operation:emailExists
+operation:revise
 destination:CRM
 source:Selfcare
 srDate:11-09-2021
@@ -201,11 +201,11 @@ It requires correlationid, token, operation, source, destination, srDate as inpu
 {{< tab "Request Header" >}}
 {{< highlight java "linenos=table" >}}
 token:string
-correlationId:SO-101
+correlationId:123e4567-e89b-12d3-a456-426614174000
 srDate:11-09-2021
 source:Selfcare
 destination:CRM
-operation:verifyOTP
+operation:revise
 {{< / highlight >}}
 {{< /tab >}}
 {{< tab "Request Body" >}}
@@ -306,11 +306,11 @@ It requires correlationid, token, operation, source, destination, srDate as inpu
 {{< tabs "uniqueid3" >}}
 {{< tab "Request Header" >}}
 {{< highlight java "linenos=table" >}}
-correlationId:SO-101
+correlationId:123e4567-e89b-12d3-a456-426614174000
 srDate:11-09-2021
 source:Selfcare
 destination:CRM
-operation:verifyOTP
+operation:forgotPassword
 {{< / highlight >}}
 {{< /tab >}}
 {{< tab "Request Body" >}}
@@ -400,11 +400,11 @@ It requires correlationid, token, operation, source, destination, srDate along w
 {{< tab "Request Header" >}}
 {{< highlight java "linenos=table" >}}
 token:string
-correlationId:SO-101
+correlationId:123e4567-e89b-12d3-a456-426614174000
 srDate:11-09-2021
 source:Selfcare
 destination:CRM
-operation:verifyOTP
+operation:changePassword
 {{< / highlight >}}
 {{< /tab >}}
 {{< tab "Request Body" >}}
@@ -505,11 +505,11 @@ It requires correlationid, email, token, operation, source, destination, srDate 
 {{< highlight java "linenos=table" >}}
 token:string
 email:something@abc.com
-correlationId:SO-101
+correlationId:123e4567-e89b-12d3-a456-426614174000
 srDate:11-09-2021
 source:Selfcare
 destination:CRM
-operation:verifyOTP
+operation:revise
 {{< / highlight >}}
 {{< /tab >}}
 {{< tab "Request Body" >}}
@@ -686,11 +686,11 @@ It requires correlationid, token, operation, source, destination, srDate as inpu
 {{< tab "Request Header" >}}
 {{< highlight java "linenos=table" >}}
 token:string
-correlationId:SO-101
+correlationId:123e4567-e89b-12d3-a456-426614174000
 srDate:11-09-2021
 source:Selfcare
 destination:CRM
-operation:verifyOTP
+operation:revise
 {{< / highlight >}}
 {{< /tab >}}
 {{< tab "Request Body" >}}

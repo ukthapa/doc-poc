@@ -38,7 +38,7 @@ It requires Token, Correlation ID, SEdated, Operation, Destination, Source as in
 {{< highlight java "linenos=table" >}}
 token:string
 correlationId:123e4567-e89b-12d3-a456-426614174000
-operation:emailExists
+operation:ticketDetail
 destination:CRM
 source:Selfcare
 srDate:11-09-2021
@@ -131,7 +131,7 @@ It requires token, correlation ID, sedated, operation, destination and source. I
 {{< highlight java "linenos=table" >}}
 token: string
 correlationId:123e4567-e89b-12d3-a456-426614174000
-operation:emailExists
+operation:issueTypes
 destination:CRM
 source:Selfcare
 srDate:11-09-2021
@@ -224,11 +224,11 @@ This service is used to create new social media ticket for the customer. It requ
 {{< tabs "uniqueid1" >}}
 {{< tab "Request Header" >}}
 {{< highlight java "linenos=table" >}}
-correlationId:SO-101
+correlationId:123e4567-e89b-12d3-a456-426614174000
 srDate:11-09-2021
 source:Selfcare
 destination:CRM
-operation:verifyOTP
+operation:create
 {{< / highlight >}}
 {{< /tab >}}
 {{< tab "Request Body" >}}
@@ -363,11 +363,11 @@ This service is allows the user to update comments for a particular ticket. It r
 {{< tabs "uniqueid2" >}}
 {{< tab "Request Header" >}}
 {{< highlight java "linenos=table" >}}
-correlationId:SO-101
+correlationId:123e4567-e89b-12d3-a456-426614174000
 srDate:11-09-2021
 source:Selfcare
 destination:CRM
-operation:verifyOTP
+operation:addTicketComment
 {{< / highlight >}}
 {{< /tab >}}
 {{< tab "Request Body" >}}
@@ -465,11 +465,11 @@ It requires CorrelationId, Token, SR Date, Source, Operation, Destination as inp
 {{< tabs "uniqueid3" >}}
 {{< tab "Request Header" >}}
 {{< highlight java "linenos=table" >}}
-correlationId:SO-101
+correlationId:123e4567-e89b-12d3-a456-426614174000
 srDate:11-09-2021
 source:Selfcare
 destination:CRM
-operation:verifyOTP
+operation:create
 {{< / highlight >}}
 {{< /tab >}}
 {{< tab "Request Body" >}}

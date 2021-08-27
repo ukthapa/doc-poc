@@ -34,7 +34,7 @@ This service allows you to fetch the list of bill details available in the syste
 {{< tab "Request Header" >}}
 {{< highlight java "linenos=table" >}}
 correlationId:123e4567-e89b-12d3-a456-426614174000
-operation:emailExists
+operation:getBeId
 destination:CRM
 source:Selfcare
 srDate:11-09-2021
@@ -552,7 +552,7 @@ This service allows you to fetch the list of provisioning tags available in the 
 {{< tab "Request Header" >}}
 {{< highlight java "linenos=table" >}}
 correlationId:123e4567-e89b-12d3-a456-426614174000
-operation:emailExists
+operation:getProvisioningTag
 destination:CRM
 source:Selfcare
 srDate:11-09-2021

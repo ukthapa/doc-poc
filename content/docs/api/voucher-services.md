@@ -43,11 +43,11 @@ It requires token,serviceProvider,correlationId,srdate,source,operation,destinat
 {{< tab "Request Header" >}}
 {{< highlight java "linenos=table" >}}
 toekn:string
-correlationId:SO-101
+correlationId:123e4567-e89b-12d3-a456-426614174000
 srDate:11-09-2021
 source:Selfcare
 destination:CRM
-operation:verifyOTP
+operation:redeemVoucher
 {{< / highlight >}}
 {{< /tab >}}
 {{< tab "Request Body" >}}
@@ -136,11 +136,11 @@ It requires token,serviceProvider,correlationId,srdate,source,operation,destinat
 {{< tab "Request Header" >}}
 {{< highlight java "linenos=table" >}}
 toekn:string
-correlationId:SO-101
+correlationId:123e4567-e89b-12d3-a456-426614174000
 srDate:11-09-2021
 source:Selfcare
 destination:CRM
-operation:verifyOTP
+operation:redeemVoucher
 {{< / highlight >}}
 {{< /tab >}}
 {{< tab "Request Body" >}}

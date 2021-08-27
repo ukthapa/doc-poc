@@ -43,11 +43,11 @@ It requires correlationid, srdate, source, operation and destination as input pa
 {{< tabs "uniqueid1" >}}
 {{< tab "Request Header" >}}
 {{< highlight java "linenos=table" >}}
-correlationId:SO-101
+correlationId:123e4567-e89b-12d3-a456-426614174000
 srDate:11-09-2021
 source:Selfcare
 destination:CRM
-operation:verifyOTP
+operation:customerLogin
 type:numbers
 {{< / highlight >}}
 {{< /tab >}}
@@ -339,11 +339,11 @@ It requires correlationId, srdate, source, operation and destination along with 
 {{< tabs "uniqueid3" >}}
 {{< tab "Request Header" >}}
 {{< highlight java "linenos=table" >}}
-correlationId:SO-101
+correlationId:123e4567-e89b-12d3-a456-426614174000
 srDate:11-09-2021
 source:Selfcare
 destination:CRM
-operation:verifyOTP
+operation:signup
 {{< / highlight >}}
 {{< /tab >}}
 {{< tab "Request Body" >}}
@@ -738,11 +738,11 @@ It requires correlationId, srdate, source, operation and destination along with 
 {{< tab "Request Header" >}}
 {{< highlight java "linenos=table" >}}
 Data:query
-correlationId:SO-101
+correlationId:123e4567-e89b-12d3-a456-426614174000
 srDate:11-09-2021
 source:Selfcare
 destination:CRM
-operation:verifyOTP
+operation:signUp
 type:numbers
 {{< / highlight >}}
 {{< /tab >}}

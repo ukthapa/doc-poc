@@ -118,11 +118,11 @@ This service requires correlationId, source, srdate, operation and destination a
 {{< tabs "uniqueid1" >}}
 {{< tab "Request Header" >}}
 {{< highlight java "linenos=table" >}}
-correlationId:SO-101
+correlationId:123e4567-e89b-12d3-a456-426614174000
 srDate:11-09-2021
 source:Selfcare
 destination:CRM
-operation:verifyOTP
+operation:sendOtp
 {{< / highlight >}}
 {{< /tab >}}
 {{< tab "Request Body" >}}
@@ -186,7 +186,7 @@ This service is used to retrieve the captcha of the customer from the system for
 {{< tab "Request Header" >}}
 {{< highlight java "linenos=table" >}}
 correlationId:123e4567-e89b-12d3-a456-426614174000
-operation:emailExists
+operation:getCaptcha
 destination:CRM
 source:Selfcare
 srDate:11-09-2021
@@ -269,11 +269,11 @@ It requires correlationId, source, srdate, operation and destination as input pa
 {{< tabs "uniqueid3" >}}
 {{< tab "Request Header" >}}
 {{< highlight java "linenos=table" >}}
-correlationId:SO-101
+correlationId:123e4567-e89b-12d3-a456-426614174000
 srDate:11-09-2021
 source:Selfcare
 destination:CRM
-operation:verifyOTP
+operation:verifyCaptcha
 {{< / highlight >}}
 {{< /tab >}}
 {{< tab "Request Body" >}}
@@ -342,7 +342,7 @@ It requires correlationId, source, srdate, operation and destination as input pa
 {{< tabs "uniqueid4" >}}
 {{< tab "Request Header" >}}
 {{< highlight java "linenos=table" >}}
-correlationId:SO-101
+correlationId:123e4567-e89b-12d3-a456-426614174000
 srDate:11-09-2021
 source:Selfcare
 destination:CRM
