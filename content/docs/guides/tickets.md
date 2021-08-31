@@ -32,7 +32,7 @@ In the above screen, you can do the following:
 1. **Title** - Enter the title of the ticket in the text box.
 2. **Accounts Number** - Search and select the account number for whom the ticket is being created.
 3. **Product Name** - Search and select the product name against which the ticket is being created.
-4. **Catefory** - Click the drop-down to select the category of the ticket.
+4. **Category** - Click the drop-down to select the category of the ticket.
 5. **Status** - Click the drop-down to select the status of the ticket.
 6. **Priority** - Click the drop-down to select the priority of the ticket.
 7. **Severity** - Click the drop-down to select the severity of the ticket.
@@ -41,7 +41,7 @@ In the above screen, you can do the following:
 10. **Dealer Name** - Search and select the delaer name.
 11. **Contact Name** - Search and select the name of the contact.
 12. **Contacted Before** - Select the check box if the customer contacted before.
-13. **Assigned To** - Enter the terms & conditions in the text box.
+13. **Assigned To** - Click the drop-down to select the user to whom the dealer will be assigned.
 14. **Description** - Enter the description in the text box.
 15. **Solution** - Enter the solution of the ticket in the text box.
 16. **Save** - Click save.

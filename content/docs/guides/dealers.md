@@ -38,7 +38,7 @@ In the above screen, you can do the following:
 5. **Primary Email** - Enter the primary email in the text box.
 6. **Primary Phone** - Enter the primary phone in the text box.
 7. **Mobile Phone** - Enter the mobile phone in the text box.
-8. **Assigned To** - Enter the terms & conditions in the text box.
+8. **Assigned To** - Click the drop-down to select the user to whom the dealer will be assigned.
 9. **Contact** - Search and select the name of the contact.
 10. **Status** - Click the drop-down to select the status of the dealer.
 11. **Credit Limit** - Enter the credit limit of the deale i nthe text box.
