@@ -28,15 +28,15 @@ Now we will learn how to add promotions. After logging in, follow the steps give
 {{< img-simple src="/images/promotion4.png"  alt="Dashboard" class="">}}
 
 In the above screen, you can do the following:
-1. **Promotion Title** - Set the redeem date.
-2. **Promotion Content** - Enter the reason for redemption in the text box.
-3. **Start ID** - Enter the order id in the text box.
-4. **End Date** -
-5. **Active** -
-6. **Promotion Source** -
-7. **Promotion Image** -
-8. **Promotion Category** -
-9. **Assigned To** - Click and select hte user to whom the redemption will be assigned to.
+1. **Promotion Title** - Enter the promotion title in the text box.
+2. **Promotion Content** - Enter the promotion content in the text box.
+3. **Start Date** - Set the start date of the promotion.
+4. **End Date** - Set the end date of the promotion
+5. **Active** - Click the check box to make the promotion active.
+6. **Promotion Source** - Click the drop-down to select the soirce of the promotion.
+7. **Promotion Image** - Upload the promotion image.
+8. **Promotion Category** - Click the drop-down to set the prmotion category.
+9. **Assigned To** - Click and select hte user to whom the prmotion will be assigned to.
 10. **Save** - Click save.
 
 Once the promotion is saved it will look like as shown below:
