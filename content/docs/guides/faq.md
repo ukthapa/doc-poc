@@ -13,7 +13,7 @@ menu:
 toc: true
 ---
 
-Now we will learn how to an FAQ. After logging in, follow the steps given below:
+Now we will learn how to add an FAQ. After logging in, follow the steps given below:
 
 1.	Click the **Support** drop-down and select **FAQ** in the navigation menu as shown below:
 
