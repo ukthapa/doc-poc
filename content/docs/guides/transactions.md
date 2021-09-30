@@ -6,7 +6,7 @@ date:
 lastmod:
 draft: false
 images: []
-weight: 306
+weight: 114
 menu:
   docs:
     parent: "sales"
