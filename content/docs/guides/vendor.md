@@ -6,7 +6,7 @@ date:
 lastmod:
 draft: false
 images: []
-weight: 412
+weight: 130
 menu:
   docs:
     parent: "inven"
