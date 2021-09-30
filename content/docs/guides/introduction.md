@@ -13,8 +13,6 @@ weight: 100
 toc: true
 ---
 
-**cSMART** is a cloud based E2E subscriber management and billing solution for enterprises, enabling monetizing the business offerings in a quick time and with no upfront investments. **cSmart** CRM comes with a suite of simple and intuitive web-based applications for business and provides the complete lead to cash realization. Being a multi-tenanted application, it facilitates enterprises to quickly self-on-board themselves, start implementing their offerings, mange leads and opportunities, generate quotation, register customers and billing them for their services, manage taxes and perform business analytics on their offerings and revenue. It also provides a self-service portal for the end customers.
-
 ## Overview
 
 **cSMART** is a cloud based E2E subscriber management and billing solution for enterprises, enabling monetizing the business offerings in a quick time and with no upfront investments.
