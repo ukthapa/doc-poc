@@ -6,7 +6,7 @@ date:
 lastmod:
 draft: false
 images: []
-weight: 501
+weight: 132
 menu:
   docs:
     parent: "support"

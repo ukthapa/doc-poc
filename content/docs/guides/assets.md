@@ -6,7 +6,7 @@ date:
 lastmod:
 draft: false
 images: []
-weight: 506
+weight: 135
 menu:
   docs:
     parent: "support"
@@ -25,4 +25,4 @@ Now we will learn how to view the assets. After logging in, follow the steps giv
 
 3.	To view the details of an asset, click the asset. The asset details screen appears as shown below:
 
-{{< img-simple src="/images/assets3.png"  alt="Dashboard" class="">}} 
+{{< img-simple src="/images/assets3.png"  alt="Dashboard" class="">}}
