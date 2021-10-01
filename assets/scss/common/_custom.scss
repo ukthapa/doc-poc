@@ -164,7 +164,60 @@ main section {
   .doc-tabs {
     position: relative;
     background-color: #3C4257;
+    &.non-indent-light {
+      position: relative;
+      background-color: #fff;
+      .doc-tabs__label {
+        color: #3C4257 !important;
+        font-size: 18px;
+        margin-right: 30px;
+      }
+      .doc-tabs__control:checked + .doc-tabs__label {
+        border-bottom: 4px solid #7749bf !important;
+        color: #7749bf !important;
+      }
+
+      .doc-tabs__content {
+        border-top: 1px solid #7749bf !important;
+        padding-top: 30px;
+        margin-top: -1px;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        li {
+          margin: 10px;
+          flex: 0 0 45%;
+          a {
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+            font-weight: 600;
+            border: 1px solid rgba(62,57,107,.08);
+            border-radius: 5px;
+            padding: 15px;
+            color: #3C4257 !important;
+            transition: all .4s ease;
+            &:hover {
+              text-decoration: none;
+              box-shadow: 0 3px 8px 0 rgba(62, 57, 107, .2);
+              transition: all .4s ease;
+            }
+
+            img {
+              margin-right: 15px;
+            }
+          }
+        }
+      }
+    }
   }
+
+
 }
 
 .method-block {
@@ -224,6 +277,12 @@ main section {
       width: calc(42.7vw - 40px);
       top: 64px;
       z-index: 2;
+    }
+    .non-indent-light {
+      position: relative;
+      left: 0;
+      top: 0;
+      width: 100%;
     }
   }
 }
