@@ -1,8 +1,9 @@
 {{ if .Inner }}{{ end }}
 {{ $id := .Get 0 }}
+{{ $className := .Get 1 }}
 {{ $group := printf "tabs-%s" $id }}
 
-<div class="doc-tabs">
+<div class="doc-tabs {{printf $className}}">
   {{ range $index, $tab :=  .Scratch.Get $group }}
     <input type="radio" class="doc-tabs__control hidden" name="{{ $group }}" id="{{ printf "%s-%d" $group $index }}"
       {{ if not $index }}checked="checked" {{ end }} />
@@ -14,3 +15,5 @@
     </div>
   {{ end }}
 </div>
+
+<!-- <div class="{{ if $className }}{{printf $className}}{{ else }}doc-tabs{{ end }}"> -->

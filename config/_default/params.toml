@@ -1,26 +1,26 @@
 # Meta Data for SEO
 
 ## Homepage
-title = "DocUI"
+title = "Csmart "
 titleSeparator = "-"
-titleAddition = "Modern Documentation Theme"
-description = "DocUI is a Hugo theme for modern documentation websites that are secure, fast, and SEO-ready"
+titleAddition = "Documentation"
+description = "Csmart is a cloud based E2E subscriber management and billing solution for enterprises, enabling monetizing the business offerings in a quick time and with no upfront investments."
 
 ## Open Graph + Twitter Cards
-images = ["doks.png"]
-twitterSite = "henkverlinde"
-twitterCreator = "henkverlinde"
-facebookAuthor = "verlinde.henk"
-facebookPublisher = "verlinde.henk"
+images = ["csmart-screen.png"]
+twitterSite = "Covalensedigi"
+twitterCreator = "Covalensedigi"
+facebookAuthor = "covalensedigital"
+facebookPublisher = "covalensedigital"
 ogLocale = "en_US"
 
 ## JSON-LD
 schemaType = "Organization"
-schemaLogo = "logo-doks.png"
-schemaTwitter = "https://twitter.com/henkverlinde"
-schemaLinkedIn = "https://www.linkedin.com/in/henkverlinde/"
-schemaGitHub = "https://github.com/h-enk"
-schemaSection = "blog"
+schemaLogo = "cSMART-logo.png"
+schemaTwitter = "https://twitter.com/Covalensedigi"
+schemaLinkedIn = "https://www.linkedin.com/company/covalensedigital/"
+##schemaGitHub = "https://github.com/h-enk"
+schemaSection = "documentation"
 
 ## Sitelinks Search Box
 siteLinksSearchBox = false

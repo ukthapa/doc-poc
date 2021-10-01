@@ -3,7 +3,7 @@
   weight = 10
   identifier = "guides"
   pre = '<img src="/svg-icons/tiles.svg" alt="">'
-  url = "/docs/guides/"
+  url = "/guides/"
 
 [[docs]]
   name = "Api Reference"
@@ -86,7 +86,7 @@
 [[main]]
   name = "Api Reference"
   identifier = "api"
-  url = "/docs/api/introduction/"
+  url = "/docs/api/authentication-services/"
   weight = 20
 
 [[social]]
