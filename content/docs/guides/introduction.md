@@ -13,8 +13,6 @@ weight: 100
 toc: true
 ---
 
-## Overview
-
 **Csmart** is a NextGen digital platform designed to simplify the new age enterprise solution needs & challenges.
 
 In the product line, the platform is vertically classified. The most prominent business line for **Csmart** platform is ‘Communications’. It’s a completely stitched solution and can be offered in a detachable layer format. It consists of CX which includes CRM, Smart Care and MApps; DX with low code integration; and revenue realization layer to support complex-to-simple recurring/usage-based metering.  
